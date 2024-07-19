@@ -8,7 +8,7 @@ const App = () => {
 
   return (
     <>
-    <h1 className='text-white-p4'>Hey</h1>
+    {/* <h1 className='text-green-700 border-solid font-extrabold'>Heyyy?</h1> */}
       <NavBar/>
       <Home/>
     </>

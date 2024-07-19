@@ -1,11 +1,15 @@
 import React from "react";
+import Rock1 from '../assets/Ellipse 1.png'
 
 const Home = () => {
 
     return (
         <>
             <div>
-                <h2>Stinky</h2>
+                <h1>Welcome to Pilates!</h1>
+                    <div>
+                        <img className='object-center' src={Rock1} alt=''></img>
+                    </div>
             </div>
         </>
     )
