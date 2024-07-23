@@ -14,6 +14,11 @@
 
 /* Format for all pages -------------------------------------------------------------*/
 
+.container {
+  display: flex;
+  max-width: 70rem;
+  padding: 0 5rem;
+}
 
 /* Nav Bar --------------------------------------------------------------------------*/
 
@@ -64,4 +69,44 @@ ul:hover li:hover ~ li:before {
   translate: -100% 0;
   transition: .2s .2s,scale 0s .4s;
 }
-/* come back to above */
+
+/* Home Page --------------------------------------------------------------------------*/
+
+/* Background */
+
+.rockContainer {
+  padding: 0 15rem;
+}
+
+.rock1 {
+  object-position: center;
+  width: 695px;
+  height: 570px;
+  z-index: -1;
+  position: absolute;
+  margin-top: 500px;
+}
+
+.rock2{
+  object-position: center;
+  width: 365px;
+  height: 322px;
+  z-index: 0;
+  position: absolute;
+  margin: 300px 60px;
+}
+
+.rock3 {
+  object-position: center; 
+  width: 240px;
+  height: 195px;
+  z-index: 0;
+  position: absolute;
+  margin: 890px 500px;
+}
+
+/* Home Info */
+.homeContainer {
+
+
+}

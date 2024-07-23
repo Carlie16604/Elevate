@@ -6,8 +6,8 @@ const NavBar = () => {
         <>
         <div className='p-0 w-screen fixed'>
             <div className='flex flex-row-reverse'>
-                <div className='NavBar'>
-                    <ul className='font-medium cursor-pointer text-lg'>                
+                <div className='NavBar'> 
+                    <ul className='font-bold cursor-pointer text-lg'>                
                         <li>Home</li>
                         <li>About Us</li>
                         <li>Classes</li>
