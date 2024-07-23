@@ -3,6 +3,7 @@ import Rock1 from '../assets/Ellipse 1.png'
 import Rock2 from '../assets/Ellipse 2.png'
 import Rock3 from '../assets/Ellipse 3.png'
 import Logo from '../assets/Logo Placeholder.png'
+import WhyUs from '../assets/Blur.png'
 
 const Home = () => {
 
@@ -21,6 +22,11 @@ const Home = () => {
                                 Lets get Elevated!
                             </h3> */}
                 </div>
+            </div>
+            <div className='container'>
+                <section className='grid items-end'>
+                    <img className='w-screen h-10' src={WhyUs} alt='Why Us Box'/>
+                </section>
             </div>
         </>
     )
