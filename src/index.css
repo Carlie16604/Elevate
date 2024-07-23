@@ -5,6 +5,7 @@
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -16,8 +17,8 @@
 
 .container {
   display: flex;
-  max-width: 70rem;
-  padding: 0 5rem;
+  margin: 0 auto;
+  max-width: 72rem;
 }
 
 /* Nav Bar --------------------------------------------------------------------------*/
@@ -74,39 +75,39 @@ ul:hover li:hover ~ li:before {
 
 /* Background */
 
-.rockContainer {
-  padding: 0 15rem;
-}
+/* .rockContainer {
+  margin: 0 -10rem;
+} */
 
 .rock1 {
   object-position: center;
-  width: 695px;
-  height: 570px;
-  z-index: -1;
+  width: 955px;
+  height: 770px;
+  z-index: -2;
   position: absolute;
-  margin-top: 500px;
+  margin: 650px -150px;
 }
 
 .rock2{
   object-position: center;
-  width: 365px;
-  height: 322px;
-  z-index: 0;
+  width: 465px;
+  height: 422px;
+  z-index: -1;
   position: absolute;
-  margin: 300px 60px;
+  margin: 400px -50px;
 }
 
 .rock3 {
   object-position: center; 
-  width: 240px;
-  height: 195px;
-  z-index: 0;
+  width: 340px;
+  height: 295px;
+  z-index: -1;
   position: absolute;
-  margin: 890px 500px;
+  margin: 1140px 525px;
 }
 
-/* Home Info */
+/* Home */
 .homeContainer {
-
-
+  display: flex;
+  height: 64vh;
 }

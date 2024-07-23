@@ -8,7 +8,10 @@ const App = () => {
   return (
     <>
       <NavBar/>
-      <Home/>
+      <div>
+        {/* ml-[700px] */}
+        <Home/>
+      </div>
     </>
   )
 }
