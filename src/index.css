@@ -81,7 +81,7 @@ ul:hover li:hover ~ li:before {
 
 .rock1 {
   object-position: center;
-  width: 955px;
+  width: 1005px;
   height: 770px;
   z-index: -2;
   position: absolute;
@@ -99,15 +99,25 @@ ul:hover li:hover ~ li:before {
 
 .rock3 {
   object-position: center; 
-  width: 340px;
-  height: 295px;
+  width: 300px;
+  height: 255px;
   z-index: -1;
   position: absolute;
-  margin: 1140px 525px;
+  margin: 1180px 625px;
 }
 
 /* Home */
 .homeContainer {
   display: flex;
   height: 64vh;
+}
+
+.homeGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  height: 420px;
+  width: screen;
+  margin-top: 6rem;
+  background-color: rgba(84, 48, 25, 25%)
 }
