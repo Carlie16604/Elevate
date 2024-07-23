@@ -7,10 +7,8 @@ const App = () => {
 
   return (
     <>
-    <div className='max-w-6xl'>
-        <NavBar/>
-        <Home/>
-    </div>
+      <NavBar/>
+      <Home/>
     </>
   )
 }

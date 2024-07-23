@@ -13,7 +13,7 @@ const Home = () => {
               <img className='rock3' src={Rock3} alt='Rocks'></img>
             </div>
                 <div className='homeContainer'>
-                    <h1 className='text-8xl pt-60 flex justify-center z-10 relative'>
+                    <h1 className='text-8xl pt-60 flex justify-center z-10'>
                         Welcome to Pilates!
                         {/* ml-[700px] */}
                     </h1>
