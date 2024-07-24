@@ -1,6 +1,7 @@
 import React from "react";
 import '../index.css';
 import imgPl from '../assets/Offers/ImgPlaceholder.png';
+import Rock from '../assets/Offers/rock.png';
 
 const Offers = () => {
 
@@ -13,6 +14,7 @@ const Offers = () => {
                     <h1 className='text-[65px] flex flex-col stroke-black'>What we Offer</h1>
                     <span className='absolute w-[5.5rem] h-[4px] my-[-15px] bg-[#949978]'></span>
                 </div>
+                <img className='pg2rock' src={Rock} alt='rock' />
                 <div className='cardContainer'>
                     <div className='card-deck'>
                         <div className='card'>
