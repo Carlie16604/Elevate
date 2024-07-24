@@ -42,7 +42,6 @@ const Home = () => {
                 </div>
             </section>
         </>
-        // I'd like to figure out why this page breaks when zooming in or out. 
     )
 }
 
