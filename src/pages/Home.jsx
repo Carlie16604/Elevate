@@ -11,19 +11,22 @@ const Home = () => {
 
     return (
         <>
-            <div className='container'>
-              <img className='rock1' src={Rock1} alt='Rocks'></img>
-              <img className='rock2' src={Rock2} alt='Rocks'></img>
-              <img className='rock3' src={Rock3} alt='Rocks'></img>
-                <div className='homeContainer'>
-                    <img className='h-[350px] w-auto pl-[25px] pr-[175px] flex self-center' src={Logo} alt='Logo'></img>
-                        <h1 className='text-[100px] pt-[190px] text-center'>
-                            Welcome to Pilates!
-                        </h1>
-                </div>
-            </div>
-            <div className='container'>
-                <div className='homeGrid'>
+            <section id='Home' className='container'>
+                {/* <div className='h-100'> */}
+                <img className='rock1' src={Rock1} alt='Rocks'></img>
+                <img className='rock2' src={Rock2} alt='Rocks'></img>
+                <img className='rock3' src={Rock3} alt='Rocks'></img>
+                    <div className='homeContainer'>
+                        <img className='h-[350px] w-auto pl-[25px] pr-[175px] flex self-center' src={Logo} alt='Logo'></img>
+                            <h1 className='text-[100px] pt-[190px] text-center'>
+                                Welcome to Pilates!
+                            </h1>
+                    </div>
+                {/* </div> */}
+            </section>
+            <section className='container'>
+                {/* <div>?</div> */}
+                <div className='homeGrid h-100'>
                     <div className='p-8 flex'>
                         <div className='text-center pr-8'>
                             <h3 className='text-5xl items-center flex-col text-black'>
@@ -38,7 +41,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </>
         // I'd like to figure out why this page breaks when zooming in or out. 
     )
