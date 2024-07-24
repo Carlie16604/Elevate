@@ -4,6 +4,7 @@ import imgPl from '../assets/Offers/ImgPlaceholder.png';
 
 const Offers = () => {
 
+    // https://github.com/michalsnik/aos for card animation
 
     return (
         <section id='offers' className='mt-80'>

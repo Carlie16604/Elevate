@@ -128,8 +128,10 @@ ul:hover li:hover ~ li:before {
   display: flex;
   flex-flow: row wrap;
   /* transform: translateY(-20px); */
-  transition: transform linear;
-  will-change: transform;
+  /* transition: transform linear;
+  will-change: transform; */
+  animation: 2.5s ease 0s slide-and-fade-in;
+  animation-fill-mode: forwards;
 }
 
 .card {
@@ -166,4 +168,16 @@ ul:hover li:hover ~ li:before {
 
 .classType {
   font-size: 50px;
+}
+
+@keyframes slide-and-fade-in {
+  0% {
+    top: 100px;
+    opacity: 0;
+  }
+
+  100% {
+    top: 0px;
+    opacity: 1.0;
+  }
 }
