@@ -25,6 +25,7 @@
 .NavBar {
   margin: 0 177px;
   padding: 20px 50px;
+  z-index: auto;
 }
 
 ul {
@@ -101,10 +102,68 @@ ul:hover li:hover ~ li:before {
   margin: 1180px 625px;
 }
 
-/* Home */
+/* Home Content */
 
 .whyUs {
   display: flex;
   width: 100%;
   background-color: rgba(84, 48, 25, 25%)
+}
+
+/* Offers -------------------------------------------------------------------------- */
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem 5rem;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.card-deck {
+  margin: 0 0 7rem;
+  position: relative;
+  /* justify-content: center; */
+  max-width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  /* transform: translateY(-20px); */
+  transition: transform linear;
+  will-change: transform;
+}
+
+.card {
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 32.8125rem;
+  max-height: 38.125rem;
+  position: relative;
+}
+
+.imgWrapper {
+  height: 100%;
+  transform: scale(1);
+  transition: all .5 ease;
+  width: 100;
+}
+
+.book {
+  background-color: white;
+  position: absolute;
+  text-transform: uppercase;
+  padding: .5rem 1rem;
+  bottom: 5%;
+  left: 5%;
+}
+
+.adjectives {
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+  opacity: .35;
+  padding-top: 0.5rem;
+}
+
+.classType {
+  font-size: 50px;
 }

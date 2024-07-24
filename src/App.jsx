@@ -1,17 +1,16 @@
 import React from "react"
 import './index.css'
-import Home from "./pages/Home"
 import NavBar from "./pages/NavBar"
+import Home from "./pages/Home"
+import Offers from './pages/Offers'
 
 const App = () => {
 
   return (
     <>
       <NavBar/>
-      <div>
-        {/* ml-[700px] */}
-        <Home/>
-      </div>
+      <Home/>
+      <Offers />
     </>
   )
 }

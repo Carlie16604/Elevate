@@ -1,9 +1,9 @@
 import React from "react";
-import Rock1 from '../assets/Ellipse 1.png'
-import Rock2 from '../assets/Ellipse 2.png'
-import Rock3 from '../assets/Ellipse 3.png'
-import Logo from '../assets/Logo Placeholder.png'
-import Photo from '../assets/Photo.png'
+import Rock1 from '../assets/Home/Ellipse 1.png'
+import Rock2 from '../assets/Home/Ellipse 2.png'
+import Rock3 from '../assets/Home/Ellipse 3.png'
+import Logo from '../assets/Home/Logo Placeholder.png'
+import Photo from '../assets/Home/Photo.png'
 
 const Home = () => {
     // https://blennd.com/
@@ -23,7 +23,7 @@ const Home = () => {
                                         Welcome to Pilates!
                                     </h1>
                             </div>
-                        <div className='whyUs'>
+                        <div className='whyUs mt-32'>
                             <div className='p-8 flex'>
                                 <div className='text-center pr-8'>
                                     <h3 className='text-5xl items-center flex-col text-black'>
