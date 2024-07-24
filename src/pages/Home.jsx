@@ -40,6 +40,7 @@ const Home = () => {
                 </div>
             </div>
         </>
+        // I'd like to figure out why this page breaks when zooming in or out. 
     )
 }
 
