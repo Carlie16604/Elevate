@@ -16,10 +16,8 @@
 /* Format for all pages -------------------------------------------------------------*/
 
 .container {
-  display: flex;
   margin: 0 auto;
   max-width: 72rem;
-  max-height: 100vh;
 }
 
 /* Nav Bar --------------------------------------------------------------------------*/
@@ -104,16 +102,9 @@ ul:hover li:hover ~ li:before {
 }
 
 /* Home */
-.homeContainer {
-  display: flex;
-  height: 64vh;
-}
 
-.homeGrid {
-  display: grid;
-  grid-template-columns: 1fr;
-  height: 456px;
-  width: screen;
-  margin-top: 6rem;
+.whyUs {
+  display: flex;
+  width: 100%;
   background-color: rgba(84, 48, 25, 25%)
 }

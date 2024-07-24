@@ -11,33 +11,32 @@ const Home = () => {
 
     return (
         <>
-            <section id='Home' className='container'>
-                {/* <div className='h-100'> */}
-                <img className='rock1' src={Rock1} alt='Rocks'></img>
-                <img className='rock2' src={Rock2} alt='Rocks'></img>
-                <img className='rock3' src={Rock3} alt='Rocks'></img>
-                    <div className='homeContainer'>
-                        <img className='h-[350px] w-auto pl-[25px] pr-[175px] flex self-center' src={Logo} alt='Logo'></img>
-                            <h1 className='text-[100px] pt-[190px] text-center'>
-                                Welcome to Pilates!
-                            </h1>
-                    </div>
-                {/* </div> */}
-            </section>
-            <section className='container'>
-                {/* <div>?</div> */}
-                <div className='homeGrid h-100'>
-                    <div className='p-8 flex'>
-                        <div className='text-center pr-8'>
-                            <h3 className='text-5xl items-center flex-col text-black'>
-                                Why Us?
-                            </h3>
-                                <p className='flex text-center content-center flex-wrap leading-8 mt-12'>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                                </p>
-                        </div>
-                        <div className='flex justify-end flex-row'>
-                            <img className='' src={Photo} alt='Photo'/>
+            <section id='Home'>
+                <div className='container'>
+                    <div className='flex flex-wrap'>
+                        <img className='rock1' src={Rock1} alt='Rocks'></img>
+                        <img className='rock2' src={Rock2} alt='Rocks'></img>
+                        <img className='rock3' src={Rock3} alt='Rocks'></img>
+                            <div className='flex h-[650.88px]'>
+                                <img className='h-[350px] w-auto pl-[25px] pr-[175px] flex self-center' src={Logo} alt='Logo'></img>
+                                    <h1 className='text-[100px] pt-[190px] text-center'>
+                                        Welcome to Pilates!
+                                    </h1>
+                            </div>
+                        <div className='whyUs'>
+                            <div className='p-8 flex'>
+                                <div className='text-center pr-8'>
+                                    <h3 className='text-5xl items-center flex-col text-black'>
+                                        Why Us?
+                                    </h3>
+                                        <p className='flex text-center content-center flex-wrap leading-8 mt-12'>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                        </p>
+                                </div>
+                                <div className='flex justify-end flex-row'>
+                                    <img src={Photo} alt='Photo'/>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
