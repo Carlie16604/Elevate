@@ -29,11 +29,11 @@ const Home = () => {
                             <h3 className='relative mb-4 text-5xl flex items-center flex-col text-black gap-1 m-auto'>
                                 Why Us?
                             </h3>
-                                <p className='flex items-center justify-center'>
+                                <p className='flex text-center'>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                                 </p>
-                            <div className=''>
-                                <img className='w-[150px] h-[150px]' src={Photo} alt='Photo'/>
+                            <div className='flex justify-end'>
+                                <img className='w-[250px] h-[250px]' src={Photo} alt='Photo'/>
                             </div>
                         </div>
                     </div>
