@@ -24,17 +24,17 @@ const Home = () => {
             </div>
             <div className='container'>
                 <div className='homeGrid'>
-                    <div className='flex flex-col gap-32 p-8'>
-                        <div className='gap-8'>
-                            <h3 className='relative mb-4 text-5xl flex items-center flex-col text-black gap-1 m-auto'>
+                    <div className='p-8 flex'>
+                        <div className='text-center pr-8'>
+                            <h3 className='text-5xl items-center flex-col text-black'>
                                 Why Us?
                             </h3>
-                                <p className='flex text-center'>
+                                <p className='flex text-center content-center flex-wrap leading-8 mt-12'>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                                 </p>
-                            <div className='flex justify-end'>
-                                <img className='w-[250px] h-[250px]' src={Photo} alt='Photo'/>
-                            </div>
+                        </div>
+                        <div className='flex justify-end flex-row'>
+                            <img className='' src={Photo} alt='Photo'/>
                         </div>
                     </div>
                 </div>
