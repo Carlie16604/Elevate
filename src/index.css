@@ -187,3 +187,18 @@ ul:hover li:hover ~ li:before {
 .classType {
   font-size: 50px;
 }
+
+/* Reviews ------------------------------------------------------------------ */
+ 
+.portalsContainer {
+  display:flex;
+  flex-wrap: wrap;
+
+}
+
+.portals {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  /* border-radius: 50%; */
+ }

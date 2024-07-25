@@ -25,7 +25,7 @@ const Home = () => {
                                         Welcome to Pilates!
                                     </h1>
                             </div>
-                        <div className='whyUs mt-32 mx-[115.5px]'>
+                        <div className='whyUs mt-24 mx-[115.5px]'>
                             <div className='p-8 flex'>
                                 <div className='text-center pr-8'>
                                     <h3 className='text-5xl items-center flex-col text-black'>
@@ -36,7 +36,7 @@ const Home = () => {
                                         </p>
                                 </div>
                                 <div className='flex justify-end flex-row'>
-                                    <img className='w-min-[350.5px] h-min-[295.39]' src={ScaryPilates} alt='Photo'/>
+                                    <img className='w-min-[350.5px] h-min-[295.39]' src={Photo} alt='Photo'/>
                                 </div>
                             </div>
                         </div>
