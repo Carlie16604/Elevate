@@ -1,3 +1,5 @@
+// import photos here
+
 export const puppyList = [
     {
       id: 1,
