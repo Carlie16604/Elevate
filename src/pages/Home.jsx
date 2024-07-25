@@ -4,6 +4,8 @@ import Rock2 from '../assets/Home/Ellipse 2.png'
 import Rock3 from '../assets/Home/Ellipse 3.png'
 import Logo from '../assets/Home/Logo Placeholder.png'
 import Photo from '../assets/Home/Photo.png'
+import ScaryPilates from '../assets/Home/ScaryPilates.png';
+
 
 const Home = () => {
     // https://blennd.com/
@@ -18,12 +20,12 @@ const Home = () => {
                         <img className='rock2' src={Rock2} alt='Rocks'></img>
                         <img className='rock3' src={Rock3} alt='Rocks'></img>
                             <div className='flex h-[650.88px]'>
-                                <img className='h-[350px] w-auto pl-[25px] pr-[175px] flex self-center' src={Logo} alt='Logo'></img>
-                                    <h1 className='text-[100px] pt-[190px] text-center'>
+                                <img className='h-[250px] w-auto pl-[175px] pr-[145px] flex self-center' src={Logo} alt='Logo'></img>
+                                    <h1 className='text-[80px] flex flex-wrap content-center text-center'>
                                         Welcome to Pilates!
                                     </h1>
                             </div>
-                        <div className='whyUs mt-32'>
+                        <div className='whyUs mt-32 mx-[115.5px]'>
                             <div className='p-8 flex'>
                                 <div className='text-center pr-8'>
                                     <h3 className='text-5xl items-center flex-col text-black'>
@@ -34,7 +36,7 @@ const Home = () => {
                                         </p>
                                 </div>
                                 <div className='flex justify-end flex-row'>
-                                    <img src={Photo} alt='Photo'/>
+                                    <img className='w-min-[350.5px] h-min-[295.39]' src={ScaryPilates} alt='Photo'/>
                                 </div>
                             </div>
                         </div>

@@ -77,11 +77,11 @@ ul:hover li:hover ~ li:before {
 
 .rock1 {
   object-position: center;
-  width: 1005px;
-  height: 770px;
+  width: 955px;
+  height: 720px;
   z-index: -2;
   position: absolute;
-  margin: 650px -150px;
+  margin: 550px 0;
 }
 
 .rock2{
@@ -90,7 +90,7 @@ ul:hover li:hover ~ li:before {
   height: 422px;
   z-index: -1;
   position: absolute;
-  margin: 400px -50px;
+  margin: 300px 100px;
 }
 
 .rock3 {
@@ -99,14 +99,15 @@ ul:hover li:hover ~ li:before {
   height: 255px;
   z-index: -1;
   position: absolute;
-  margin: 1180px 625px;
+  margin: 1080px 775px;
 }
 
 /* Home Content */
 
 .whyUs {
   display: flex;
-  width: 100%;
+  /* width: 921.6px; */
+  align-items: center;
   background-color: rgba(84, 48, 25, 25%)
 }
 
@@ -125,9 +126,10 @@ ul:hover li:hover ~ li:before {
 .cardContainer {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem 5rem;
+  gap: 2rem 11.2rem;
   justify-content: center;
   margin: 20px 0;
+  position: relative;
 }
 
 .card-deck {
@@ -136,24 +138,33 @@ ul:hover li:hover ~ li:before {
   max-width: 100%;
   display: flex;
   flex-flow: row wrap;
+  transition: all .2s ease-in-out;
+}
+
+.card-deck:hover {
+  transform: scale(1.1);
 }
 
 .card {
-  margin-left: 0;
-  margin-right: 0;
-  /* max-width: 32.8125rem; */
-  /* max-height: 38.125rem; */
-  max-width: 450px;
+  max-width: 398px;
   max-height: 450px;
   position: relative;
   margin: 0 2rem;
 }
+
+
 
 .imgWrapper {
   height: 100%;
   transform: scale(1);
   transition: all .5 ease;
   width: 100;
+  filter: grayscale(50%);
+  transition: all .2s ease-in-out;
+}
+
+.imgWrapper:hover {
+  filter: grayscale(0%);
 }
 
 .book {
@@ -175,167 +186,4 @@ ul:hover li:hover ~ li:before {
 
 .classType {
   font-size: 50px;
-}
-
-/* CARD TEST ----------------------------------------------------------------- */
-
-:root {
-  --host: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/';
-  --big-stone: #152536;
-  --white: #fff;
-  --smalt-blue: #4e958b;
-  --maroon-flush: #C32361;
-  --black: #000;
-  --lite-grey: rgba(var(--black), .2);
-  --lite-big-stone: rgba(var(--big-stone), .7);
-  --card-width: 350px;
-  --card-height: 350px;
-  --thumb-height: 260px;
-  --border-radius: 3px;
-  --box-shadow: 0 1px 4px rgba(var(--black), .3);
-  --transition: cubic-bezier(.17,.67,.5,1.03);
-  --timing-1: .4s .15s;
-  --timing-2: .5s .25s;
-  --grotesque-black: 'Grotesque Black', sans-serif;
-  --grotesque-regular: 'Grotesque', sans-serif;
-  --merriweather: 'Merriweather', sans-serif;
-  --new-york-city: url('#{var(--host)}new-york-city.png');
-  --flag: url('#{var(--host)}flag.png');
-}
-
-a[href] {
-  position: relative;
-  text-decoration: none;
-  padding-bottom: 3px;
-  font-weight: bold;
-}
-
-a[href]::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background: var(--white);
-  width: 0;
-  height: 1px;
-  transition: .35s var(--transition);
-}
-
-a[href]:hover::after {
-  width: 100%;
-  box-shadow: var(--box-shadow);
-}
-
-.note {
-  margin-top: 30px;
-  color: var(--white);
-  font-size: 1rem;
-  font-family: var(--merriweather);
-  line-height: 1.5;
-  text-align: center;
-}
-
-article.card {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: var(--card-width);
-  height: var(--card-height);
-  transform: translate(-50%, -50%) translateZ(0);
-  border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
-  overflow: hidden;
-}
-
-article.card .thumb {
-  width: auto;
-  height: var(--thumb-height);
-  /* background: url(var(--new-york-city)) no-repeat center; */
-  background-size: cover;
-  border-radius: var(--border-radius);
-}
-
-article.card .infos {
-  width: auto;
-  height: var(--card-height);
-  position: relative;
-  padding: 14px 24px;
-  background: var(--white);
-  transition: var(--timing-1) var(--transition);
-}
-
-article.card .infos .title {
-  position: relative;
-  margin: 10px 0;
-  letter-spacing: 3px;
-  color: var(--big-stone);
-  font-family: var(--grotesque-black);
-  font-size: 1rem;
-  text-transform: uppercase;
-  text-shadow: 0 0 0px lighten(var(--big-stone), 20%);
-}
-
-article.card .infos .flag {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  width: 35px;
-  height: 23px;
-  /* background: url(var(--flag)) no-repeat top right; */
-  background-size: 100% auto;
-  display: inline-block;
-}
-
-article.card .infos .date,
-article.card .infos .seats {
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  font-size: .85rem;
-  color: var(--lite-big-stone);
-  font-family: var(--grotesque-regular);
-}
-
-article.card .infos .seats {
-  display: inline-block;
-  margin-bottom: 24px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid var(--lite-grey);
-  opacity: 0;
-  transition: var(--timing-2) var(--transition);
-}
-
-article.card .infos .txt {
-  font-family: var(--merriweather);
-  line-height: 2;
-  font-size: .95rem;
-  color: var(--lite-big-stone);
-  opacity: 0;
-  transition: var(--timing-2) var(--transition);
-}
-
-article.card .infos .details {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  margin: 10px 0;
-  padding: 20px 24px;
-  letter-spacing: 1px;
-  color: var(--smalt-blue);
-  font-family: var(--grotesque-black);
-  font-size: .9rem;
-  text-transform: uppercase;
-  cursor: pointer;
-  opacity: 0;
-  transition: var(--timing-2) var(--transition);
-}
-
-article.card:hover .infos {
-  transform: translateY(-var(--thumb-height));
-}
-
-article.card:hover .infos .seats,
-article.card:hover .infos .txt,
-article.card:hover .infos .details {
-  opacity: 1;
 }

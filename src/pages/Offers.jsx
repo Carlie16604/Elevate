@@ -2,16 +2,16 @@ import React from "react";
 import '../index.css';
 import imgPl from '../assets/Offers/ImgPlaceholder.png';
 import Rock from '../assets/Offers/rock.png';
-
+import PinkPilates from '../assets/Offers/PinkPilates.png';
 
 const Offers = () => {
 
     // https://github.com/michalsnik/aos for card animation
 
     return (
-        <section id='offers' className='mt-80'>
+        <section id='offers' className='mt-60 z-10'>
             <div className='container'>
-                <div className='flex-wrap pt-8 px-14 relative'>
+                <div className='flex-wrap pt-8 mb-20 px-14 relative'>
                     <h1 className='text-[65px] flex flex-col stroke-black'>What we Offer</h1>
                     <span className='absolute w-[5.5rem] h-[4px] my-[-15px] bg-[#949978]'></span>
                 </div>
@@ -19,7 +19,7 @@ const Offers = () => {
                 <div className='cardContainer'>
                     <div className='card-deck'>
                         <div className='card'>
-                            <img className='imgWrapper' src={imgPl} alt='Img Placeholder' />
+                            <img className='imgWrapper' src={PinkPilates} alt='Img Placeholder' />
                             {/* Change Here */}
                             <div className='book'>                                
                                 <p>Book</p>
@@ -33,7 +33,7 @@ const Offers = () => {
                             <h3 className='classType'>Foundations</h3>
                         </div>
                     </div>
-                    <div className='card-deck pt-40'>
+                    <div className='card-deck pt-32'>
                         <div className='card'>
                             <img className='imgWrapper' src={imgPl} alt='Img Placeholder' />
                             {/* Change Here */}
@@ -65,7 +65,7 @@ const Offers = () => {
                             <h3 className='classType'>Fire</h3>
                         </div>
                     </div>
-                    <div className='card-deck pt-40'>
+                    <div className='card-deck pt-32'>
                         <div className='card'>
                             <img className='imgWrapper' src={imgPl} alt='Img Placeholder' />
                             {/* Change Here */}
