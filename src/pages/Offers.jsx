@@ -3,6 +3,7 @@ import '../index.css';
 import imgPl from '../assets/Offers/ImgPlaceholder.png';
 import Rock from '../assets/Offers/rock.png';
 
+
 const Offers = () => {
 
     // https://github.com/michalsnik/aos for card animation
@@ -10,7 +11,7 @@ const Offers = () => {
     return (
         <section id='offers' className='mt-80'>
             <div className='container'>
-                <div className='flex-wrap pt-8 relative'>
+                <div className='flex-wrap pt-8 px-14 relative'>
                     <h1 className='text-[65px] flex flex-col stroke-black'>What we Offer</h1>
                     <span className='absolute w-[5.5rem] h-[4px] my-[-15px] bg-[#949978]'></span>
                 </div>
