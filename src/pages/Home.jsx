@@ -2,9 +2,9 @@ import React from "react";
 import Rock1 from '../assets/Home/Ellipse 1.png'
 import Rock2 from '../assets/Home/Ellipse 2.png'
 import Rock3 from '../assets/Home/Ellipse 3.png'
-import Logo from '../assets/Home/Logo Placeholder.png'
+import Logo from '../assets/Home/Logo.png'
 import Photo from '../assets/Home/Photo.png'
-import ScaryPilates from '../assets/Home/ScaryPilates.png';
+import PilatesBall from '../assets/Home/PilatesBall.jpg'
 
 
 const Home = () => {
@@ -21,6 +21,7 @@ const Home = () => {
                         <img className='rock3' src={Rock3} alt='Rocks'></img>
                             <div className='flex h-[650.88px]'>
                                 <img className='h-[250px] w-auto pl-[175px] pr-[145px] flex self-center' src={Logo} alt='Logo'></img>
+                                {/*Map through API for Logo  */}
                                     <h1 className='text-[80px] flex flex-wrap content-center text-center'>
                                         Welcome to Pilates!
                                     </h1>
@@ -36,7 +37,7 @@ const Home = () => {
                                         </p>
                                 </div>
                                 <div className='flex justify-end flex-row'>
-                                    <img className='w-min-[350.5px] h-min-[295.39]' src={Photo} alt='Photo'/>
+                                    <img className='w-min-[350.5px] h-min-[295.39]' src={PilatesBall} alt='Photo'/>
                                 </div>
                             </div>
                         </div>

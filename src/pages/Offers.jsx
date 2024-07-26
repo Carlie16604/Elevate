@@ -2,8 +2,10 @@ import React from "react";
 import '../index.css';
 import imgPl from '../assets/Offers/ImgPlaceholder.png';
 import Rock from '../assets/Offers/rock.png';
-import PinkPilates from '../assets/Offers/PinkPilates.png';
-
+import Foundations from '../assets/Offers/Foundations.png';
+import Water from '../assets/Offers/Water.png';
+import Fire from '../assets/Offers/Fire.png';
+import Air from '../assets/Offers/Air.png';
 const Offers = () => {
 
     // https://github.com/michalsnik/aos for card animation
@@ -19,8 +21,7 @@ const Offers = () => {
                 <div className='cardContainer'>
                     <div className='card-deck'>
                         <div className='card'>
-                            <img className='imgWrapper' src={PinkPilates} alt='Img Placeholder' />
-                            {/* Change Here */}
+                            <img className='imgWrapper' src={Foundations} alt='Img Placeholder' />
                             <div className='book'>                                
                                 <p>Book</p>
                             </div>
@@ -35,8 +36,7 @@ const Offers = () => {
                     </div>
                     <div className='card-deck pt-32'>
                         <div className='card'>
-                            <img className='imgWrapper' src={imgPl} alt='Img Placeholder' />
-                            {/* Change Here */}
+                            <img className='imgWrapper' src={Water} alt='Img Placeholder' />
                             <div className='book'>                               
                                 <p>Book</p>
                             </div>
@@ -51,8 +51,7 @@ const Offers = () => {
                     </div>
                     <div className='card-deck mt-[-160px]'>
                         <div className='card'>
-                            <img className='imgWrapper' src={imgPl} alt='Img Placeholder' />
-                            {/* Change Here */}
+                            <img className='imgWrapper' src={Fire} alt='Img Placeholder' />
                             <div className='book'>                               
                                 <p>Book</p>
                             </div>
@@ -67,8 +66,7 @@ const Offers = () => {
                     </div>
                     <div className='card-deck pt-32'>
                         <div className='card'>
-                            <img className='imgWrapper' src={imgPl} alt='Img Placeholder' />
-                            {/* Change Here */}
+                            <img className='imgWrapper' src={Air} alt='Img Placeholder' />
                             <div className='book'>
                                 <p>Book</p>
                             </div>
