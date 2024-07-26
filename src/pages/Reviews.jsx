@@ -5,15 +5,17 @@ import Rock from '../assets/Reviews/Rock.png';
 const Reviews = () => {
     return (
         <>
-            <div id='reviws'>
+            <div id='reviws' className='mt-40'>
                 <div className='container'>
-                    <div>
-                        <img src={Rock} alt='Rock' />
-                        <div className='portalsContainer'>
+                    <div className='flex flex-col relative '>
+                        <div>
+                            { <img className='flex mt-20 z-[-1] absolute' src={Rock} alt='Rock' />}
+                        </div>
+                        <div className='flex flex-row justify-center gap-32 relative'>
                             <div className='portals'>
-                                <h3>Booking</h3>
-                                <h3>Meet The Team</h3>
-                                <h3>Contact</h3>
+                                <p className='text-[40px]'>Booking</p> 
+                                <p className='text-center text-[37px] px-[20px] leading-8'>Meet The Team</p>
+                                <p className='text-[40px]'>Contact</p>
                             </div>
                         </div>
                     </div>

@@ -189,16 +189,43 @@ ul:hover li:hover ~ li:before {
 }
 
 /* Reviews ------------------------------------------------------------------ */
- 
-.portalsContainer {
-  display:flex;
-  flex-wrap: wrap;
-
-}
 
 .portals {
   display: flex;
-  justify-content: space-between;
-  text-align: center;
-  /* border-radius: 50%; */
- }
+  /* flex-wrap: wrap; */
+  align-content: center;
+  /* background-color: #3E5C47; */
+  /* border-top-left-radius: 400px;
+  border-top-right-radius: 400px;
+  border-bottom-right-radius: 400px;
+  border-bottom-left-radius: 400px; */
+  /* border-radius: 400px; */
+  /* max-width: 50px; */
+  cursor: pointer;
+  
+}
+
+.portals p {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 3rem;
+  background-color: #3E5C47;
+  /* padding: 6rem 4.5rem; */
+  border-radius: 400px;
+  transition: all .4s ease-in-out;
+  cursor: pointer;
+  align-content: center;
+  justify-content: center;
+  min-width: 258px;
+  min-height: 320px;
+}
+
+.portals p:hover {
+  transform: translateY(-3rem);
+  opacity: 75%;
+  color: white;
+}
+
+/* .reviews {
+  border-start-end-radius: 45%;
+} */

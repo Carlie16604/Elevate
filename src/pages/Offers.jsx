@@ -9,7 +9,7 @@ const Offers = () => {
     // https://github.com/michalsnik/aos for card animation
 
     return (
-        <section id='offers' className='mt-60 z-10'>
+        <section id='offers' className='mt-60'>
             <div className='container'>
                 <div className='flex-wrap pt-8 mb-20 px-14 relative'>
                     <h1 className='text-[65px] flex flex-col stroke-black'>What we Offer</h1>
