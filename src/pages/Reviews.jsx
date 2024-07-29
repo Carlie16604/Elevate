@@ -40,10 +40,12 @@ const Reviews = () => {
                             <p>Studio Policies</p>
                             <p>FAQ</p>
                             <div className='flex justify-end'>
-                                <img className='social-icon' src={Mail} alt='Mail Icon'/>
-                                <img className='social-icon' src={LN} alt='Linkedin Icon'/>
-                                <img className='social-icon' src={Insta} alt='Instagram Icon'/>
-                                <img className='social-icon' src={FB} alt='Facebook Icon'/>
+                                <div className='w-8 h-8 flex flex-row gap-5 mr-[188.5px]'>
+                                    <img className='social-icon' src={Mail} alt='Mail Icon'/>
+                                    <img className='social-icon' src={LN} alt='Linkedin Icon'/>
+                                    <img className='social-icon' src={Insta} alt='Instagram Icon'/>
+                                    <img className='social-icon' src={FB} alt='Facebook Icon'/>
+                                </div>
                             </div>
                         </div>
                     </div>
