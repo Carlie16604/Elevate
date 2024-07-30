@@ -2,16 +2,27 @@ import React from "react";
 
 const NavBar = () => {
 
+    const handleScroll = () => {
+        if (window.scrollY > 10) {
+            setSticky(true);
+            } else {
+            setSticky(false);
+        }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
     return (
         <>
             <div className='p-0 w-screen fixed'>
                 <div className='flex flex-row-reverse'>
                     <div className='NavBar'> 
                         <ul className='font-bold cursor-pointer text-2xl'>                
-                            <li>Home</li>
-                            <li>About Us</li>
-                            <li>Classes</li>
-                            <li>Contact</li>
+                            <a href='#Home'>Home</a>
+                            <a>About Us</a>
+                            <a href='#offers'>Classes</a>
+                            <a>Contact</a>
+                            {/* Link for Conatct */}
                         </ul>
                     </div>
                 </div>

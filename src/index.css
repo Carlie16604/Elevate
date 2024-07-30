@@ -35,18 +35,18 @@ ul {
   flex-wrap: wrap;
 }
 
-ul li {
+ul a {
   padding: 20px 30px 10px;
   cursor: pointer;
   position: relative;
   overflow: hidden;
   transition: .3s;
 }
-ul li:hover {
+ul a:hover {
   color: #fff;
   transition: .6s;
 }
-ul li:before {
+ul a:before {
   content: "";
   position: absolute;
   inset: calc(100% - 3px) 0 0 0;
@@ -55,18 +55,18 @@ ul li:before {
   scale: 0 1;
   transition: .3s, translate 0s .3s;
 }
-ul:hover li:before {
+ul:hover a:before {
   scale: 1;
 }
-ul li:hover:before {
+ul a:hover:before {
   translate: 0;
   transition: .3s;
 }
-ul:hover li:has(~ li:hover):before {
+ul:hover a:has(~ a:hover):before {
   translate: 100% 0;
   transition: .2s .2s,scale 0s .4s;
 }
-ul:hover li:hover ~ li:before {
+ul:hover a:hover ~ a:before {
   translate: -100% 0;
   transition: .2s .2s,scale 0s .4s;
 }
