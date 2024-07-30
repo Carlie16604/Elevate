@@ -12,12 +12,12 @@ import Contact from './Contact.jsx';
 const Reviews = () => {
     return (
         <>
-            <div id='reviews' className='mt-40'>
+            <div id='reviws' className='mt-40'>
+                <div className='rockContainer'>
+                    <img className='reviewsRock' src={Rock} alt='Rock' />
+                </div>
                 <div className='container'>
                     <div className='flex flex-col relative '>
-                        <div>
-                            { <img className='flex mt-20 z-[-1] absolute' src={Rock} alt='Rock' />}
-                        </div>
                         <div className='flex flex-row justify-center gap-32 relative'>
                             <div className='portals'>
                                 {/* <p className='pButton text-[40px]'>Booking</p>  */}
