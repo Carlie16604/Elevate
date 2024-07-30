@@ -11,7 +11,7 @@ import Mail from '../assets/Reviews/Mail.png';
 const Reviews = () => {
     return (
         <>
-            <div id='reviws' className='mt-40'>
+            <div id='reviews' className='mt-40'>
                 <div className='rockContainer'>
                     <img className='reviewsRock' src={Rock} alt='Rock' />
                 </div>
