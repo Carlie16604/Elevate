@@ -207,7 +207,7 @@ ul:hover a:hover ~ a:before {
   cursor: pointer;
 }
 
-.portals p {
+.portals .pButton{
   display: flex;
   flex-wrap: wrap;
   margin: 0 3rem;
@@ -221,7 +221,7 @@ ul:hover a:hover ~ a:before {
   min-height: 320px;
 }
 
-.portals p:hover {
+.portals .pButton:hover {
   transform: translateY(-3rem);
   opacity: 75%;
   color: white;

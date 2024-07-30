@@ -1,4 +1,5 @@
 import React from "react";
+import { Route, Routes, Link } from 'react-router-dom';
 import '../index.css';
 import Rock from '../assets/Reviews/Rock.png';
 import Logo from '../assets/Home/Logo.png';
@@ -6,6 +7,7 @@ import FB from '../assets/Reviews/Facebook.png';
 import Insta from '../assets/Reviews/Instagram.png';
 import LN from '../assets/Reviews/Linkedin.png';
 import Mail from '../assets/Reviews/Mail.png';
+import Contact from './Contact.jsx';
 
 const Reviews = () => {
     return (
@@ -18,9 +20,9 @@ const Reviews = () => {
                     <div className='flex flex-col relative '>
                         <div className='flex flex-row justify-center gap-32 relative'>
                             <div className='portals'>
-                                <p className='text-[40px]'>Booking</p> 
-                                <p className='text-center text-[30px] px-[25px] leading-8'>Meet The Team</p>
-                                <p className='text-[40px]'>Contact</p>
+                                {/* <p className='pButton text-[40px]'>Booking</p>  */}
+                                {/* <p className='pButton text-center text-[30px] px-[25px] leading-8'>Meet The Team</p> */}
+                                <div className='pButton text-[40px]' path='contact' element={<Contact />} />
                             </div>
                         </div>
                         <div className='reviews'>
