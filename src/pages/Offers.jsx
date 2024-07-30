@@ -12,12 +12,14 @@ const Offers = () => {
 
     return (
         <section id='offers' className='mt-60'>
+            <div className='rockContainer'>
+                <img className='offersRock' src={Rock} alt='rock' />
+            </div>
             <div className='container'>
                 <div className='flex-wrap pt-8 mb-20 px-14 relative'>
                     <h1 className='text-[65px] flex flex-col stroke-black'>What we Offer</h1>
                     <span className='absolute w-[5.5rem] h-[4px] my-[-15px] bg-[#949978]'></span>
                 </div>
-                <img className='pg2rock' src={Rock} alt='rock' />
                 <div className='cardContainer'>
                     <div className='card-deck'>
                         <div className='card'>

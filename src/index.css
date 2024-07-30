@@ -15,6 +15,11 @@
 
 /* Format for all pages -------------------------------------------------------------*/
 
+.rockContainer {
+  margin: 0 auto;
+  max-width: 85rem;
+}
+
 .container {
   margin: 0 auto;
   max-width: 72rem;
@@ -113,14 +118,13 @@ ul:hover a:hover ~ a:before {
 
 /* Offers -------------------------------------------------------------------------- */
 
-.pg2rock {
+.offersRock {
   display: flex;
   z-index: -1;
-  width: 1160px;
-  height: 1140px;
+  width: 1260px;
+  height: 1240px;
   position: absolute;
-  align-self: center;
-  margin-top: 6rem;
+  margin-top: 18rem;
 }
 
 .cardContainer {
@@ -151,8 +155,6 @@ ul:hover a:hover ~ a:before {
   position: relative;
   margin: 0 2rem;
 }
-
-
 
 .imgWrapper {
   height: 100%;
@@ -189,6 +191,15 @@ ul:hover a:hover ~ a:before {
 }
 
 /* Reviews ------------------------------------------------------------------ */
+
+.reviewsRock {
+  display: flex;
+  z-index: -1;
+  width: 1160px;
+  height: 840px;
+  position: absolute;
+  margin: 5rem 0 0 12rem;
+}
 
 .portals {
   display: flex;
@@ -234,5 +245,4 @@ ul:hover a:hover ~ a:before {
 .social-icon {
   background-color: #D4CFC9;
   border-radius: 50%;
-  /* padding: 1.5rem;  */
 }
