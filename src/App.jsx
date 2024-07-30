@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Offers from './pages/Offers';
 import Reviews from './pages/Reviews';
 import Contact from './pages/Contact';
+import Contact from './pages/Contact'
 
 const App = () => {
 
@@ -20,6 +21,7 @@ const App = () => {
             <Route path='/Contact' element={<Contact />}/>
         </Routes>
     </Router>
+      <Contact />
     </>
   );
 }

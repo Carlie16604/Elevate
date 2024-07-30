@@ -14,8 +14,8 @@ const NavBar = () => {
 
     return (
         <>
-            <div className='p-0 w-screen fixed'>
-                <div className='flex flex-row-reverse'>
+            <div className='p-0 w-screen fixed z-50'>
+                <div className='container flex flex-row-reverse'>
                     <div className='NavBar'> 
                         <ul className='font-bold cursor-pointer text-2xl'>                
                             <a href='#Home'>Home</a>
