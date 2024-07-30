@@ -36,9 +36,9 @@ const Reviews = () => {
                         </div>
                     </div>
                 </div>
-                <div className='bg-[#949978] h-60 content-center w-screen text-[20px]'>
+                <div className='bg-[#949978] h-60 content-center w-screen text-[20px] opacity-75'>
                     <div className='container'>
-                        <div className=' flex justify-between flex-col px-8'>
+                        <div className=' flex justify-between flex-col px-8 opacity-100'>
                             <p>Studio Policies</p>
                             <p>FAQ</p>
                             <div className='flex justify-end'>

@@ -4,6 +4,7 @@ import NavBar from "./pages/NavBar"
 import Home from "./pages/Home"
 import Offers from './pages/Offers'
 import Reviews from './pages/Reviews'
+import Contact from './pages/Contact'
 
 const App = () => {
 
@@ -13,6 +14,7 @@ const App = () => {
       <Home/>
       <Offers />
       <Reviews />
+      <Contact />
     </>
   )
 }
