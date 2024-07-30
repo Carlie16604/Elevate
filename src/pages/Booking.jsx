@@ -1,16 +1,15 @@
 import React from "react";
 import '../index.css';
-import GreenBackground from '../assets/Contact/Background.png'
 import FB from '../assets/Reviews/Facebook.png';
 import Insta from '../assets/Reviews/Instagram.png';
 import LN from '../assets/Reviews/Linkedin.png';
 import Mail from '../assets/Reviews/Mail.png';
 
-const Contact = () => {
+const Booking = () => {
 
     return (
         <>
-            <div id='contact'>
+            <div id='Booking'>
                 <div className='mt-32'>
                     <div className='container bg-[#949978] h-[1300px] rounded-t-[4000px]'>
                         <div className='text-[70px] flex justify-center'>
@@ -41,4 +40,4 @@ const Contact = () => {
     )
 }
 
-export default Contact;
+export default Booking;

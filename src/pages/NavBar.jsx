@@ -2,15 +2,15 @@ import React from "react";
 
 const NavBar = () => {
 
-    const handleScroll = () => {
-        if (window.scrollY > 10) {
-            setSticky(true);
-            } else {
-            setSticky(false);
-        }
-    };
+    // const handleScroll = () => {
+    //     if (window.scrollY > 10) {
+    //         setSticky(true);
+    //         } else {
+    //         setSticky(false);
+    //     }
+    // };
 
-    window.addEventListener("scroll", handleScroll);
+    // window.addEventListener("scroll", handleScroll);
 
     return (
         <>
@@ -21,7 +21,7 @@ const NavBar = () => {
                             <a href='#Home'>Home</a>
                             <a>About Us</a>
                             <a href='#offers'>Classes</a>
-                            <a>Contact</a>
+                            <a>Booking</a>
                             {/* Link for Conatct */}
                         </ul>
                     </div>
