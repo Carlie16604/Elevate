@@ -19,11 +19,11 @@ const Reviews = () => {
                             { <img className='flex mt-20 z-[-1] absolute' src={Rock} alt='Rock' />}
                         </div>
                         <div className='flex flex-row justify-center gap-32 relative'>
-                            <Routes className='portals'>
+                            <div className='portals'>
                                 {/* <p className='pButton text-[40px]'>Booking</p>  */}
                                 {/* <p className='pButton text-center text-[30px] px-[25px] leading-8'>Meet The Team</p> */}
-                                <Route className='pButton text-[40px]' path='contact' element={<Contact />} />
-                            </Routes>
+                                <div className='pButton text-[40px]' path='contact' element={<Contact />} />
+                            </div>
                         </div>
                         <div className='reviews'>
                             <div className='bg-[#DFDCD8] relative flex flex-col'>
