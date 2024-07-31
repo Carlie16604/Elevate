@@ -4,17 +4,22 @@ import FB from '../assets/Reviews/Facebook.png';
 import Insta from '../assets/Reviews/Instagram.png';
 import LN from '../assets/Reviews/Linkedin.png';
 import Mail from '../assets/Reviews/Mail.png';
+import NavBar from '../pages/NavBar.jsx';
 
 const Booking = () => {
 
     return (
         <>
+        <NavBar />
             <div id='Booking'>
-                <div className='mt-32'>
-                    <div className='container bg-[#949978] h-[1300px] rounded-t-[4000px]'>
+                <div className='container'>
+                    <div className='bg-[#949978] h-[1300px] rounded-t-[4000px]'>
                         <div className='text-[70px] flex justify-center'>
                             <div className='mt-32'>
                                 <h1>Schedule</h1>
+                            </div>
+                            <div>
+                                
                             </div>
                         </div>
                     </div>

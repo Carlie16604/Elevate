@@ -8,7 +8,6 @@ import FB from '../assets/Reviews/Facebook.png';
 import Insta from '../assets/Reviews/Instagram.png';
 import LN from '../assets/Reviews/Linkedin.png';
 import Mail from '../assets/Reviews/Mail.png';
-import Booking from './Booking.jsx';
 
 const Reviews = () => {
     return (
@@ -25,8 +24,8 @@ const Reviews = () => {
                                     <Link to='/Booking'>
                                         <div className='pButton text-[40px]'>Booking</div>
                                     </Link>
-                                    <p className='pButton text-center text-[30px] px-[25px] leading-8'>Meet The Team</p>
-                                    <p className='pButton text-[40px]'>Contact</p>
+                                    <div className='pButton text-center text-[30px] px-[25px] leading-8'>Meet The Team</div>
+                                    <div className='pButton text-[40px]'>Contact</div>
                                 </div>
                             </div>
                             <div className='reviews'>

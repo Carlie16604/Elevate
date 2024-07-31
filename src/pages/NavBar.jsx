@@ -1,16 +1,24 @@
 import React from "react";
+import { Link, useNavigate } from 'react-router-dom'
 
 const NavBar = () => {
+    const navigate = useNavigate()
 
-    // const handleScroll = () => {
-    //     if (window.scrollY > 10) {
-    //         setSticky(true);
-    //         } else {
-    //         setSticky(false);
-    //     }
-    // };
+    const handleScroll = () => {
+        if (window.scrollY > 10) {
+            setSticky(true);
+            } else {
+            setSticky(false);
+        }
+    };
 
-    // window.addEventListener("scroll", handleScroll);
+    const goTop = () => {
+        window.scrollTo({
+          top: 0,
+        });
+      };
+
+    window.addEventListener("scroll", handleScroll);
 
     return (
         <>
@@ -18,11 +26,15 @@ const NavBar = () => {
                 <div className='container flex flex-row-reverse'>
                     <div className='NavBar'> 
                         <ul className='font-bold cursor-pointer text-2xl'>                
-                            <a href='#Home'>Home</a>
+                            <Link to='/' onClick={ goTop }>
+                                <div>Home</div>
+                            </Link>
+                            {/* Add scroll to top here ^^ */}
                             <a>About Us</a>
                             <a href='#offers'>Classes</a>
-                            <a>Booking</a>
-                            {/* Link for Conatct */}
+                            <Link to='/Booking' onClick={ goTop }>
+                                <div>Booking</div>
+                            </Link>
                         </ul>
                     </div>
                 </div>
