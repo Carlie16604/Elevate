@@ -176,7 +176,14 @@ ul:hover a:hover ~ a:before {
   padding: .5rem 1rem;
   bottom: 5%;
   left: 5%;
+  cursor: pointer;
 }
+
+.book :hover {
+  transition-delay: 250ms;
+  transition-property: all ease-in-out;
+}
+/* come back to this */
 
 .adjectives {
   display: flex;
