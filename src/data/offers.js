@@ -3,7 +3,7 @@ import Water from '../assets/Offers/Water.png';
 import Fire from '../assets/Offers/Fire.png';
 import Air from '../assets/Offers/Air.png';
 
-export const offers = [
+export const classes = [
     {
       id: 1,
       name: "Foundations",

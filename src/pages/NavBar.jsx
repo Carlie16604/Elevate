@@ -31,7 +31,7 @@ const NavBar = () => {
                             </Link>
                             {/* Add scroll to top here ^^ */}
                             <a>About Us</a>
-                            <a href='#offers'>Classes</a>
+                            <a href='#classes'>Classes</a>
                             <Link to='/Booking' onClick={ goTop }>
                                 <div>Booking</div>
                             </Link>

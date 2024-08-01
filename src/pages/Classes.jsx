@@ -8,16 +8,15 @@ import Water from '../assets/Offers/Water.png';
 import Fire from '../assets/Offers/Fire.png';
 import Air from '../assets/Offers/Air.png';
 // https://github.com/michalsnik/aos for card animation
-const Offers = () => {
+const Classes = () => {
 
 
 
     return (
-        <section id='offers' className='mt-60'>
+        <section id='classes' className='mt-60'>
             <div className='rockContainer'>
-                <img className='offersRock' src={Rock} alt='rock' />
+                <img className='classesRock' src={Rock} alt='rock' />
             </div>
-            {/* Update Offers to be Classes instead */}
             {/* Add Card Flip here */}
             <div className='container'>
                 <div className='flex-wrap pt-8 mb-20 px-14 relative'>
@@ -91,4 +90,4 @@ const Offers = () => {
     )
 }
 
-export default Offers;
+export default Classes;

@@ -116,9 +116,9 @@ ul:hover a:hover ~ a:before {
   background-color: rgba(84, 48, 25, 25%)
 }
 
-/* Offers -------------------------------------------------------------------------- */
+/* Classes -------------------------------------------------------------------------- */
 
-.offersRock {
+.classesRock {
   display: flex;
   z-index: -1;
   width: 1260px;
