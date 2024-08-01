@@ -1,4 +1,5 @@
 import  React, { useEffect, useState } from "react";
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import '../index.css';
 import imgPl from '../assets/Offers/ImgPlaceholder.png';
@@ -10,7 +11,11 @@ import Air from '../assets/Offers/Air.png';
 // https://github.com/michalsnik/aos for card animation
 const Classes = () => {
 
-
+    const goTop = () => {
+        window.scrollTo({
+          top: 0,
+        });
+      };
 
     return (
         <section id='classes' className='mt-60'>
@@ -26,9 +31,18 @@ const Classes = () => {
                 <div className='cardContainer'>
                     <div className='card-deck'>
                         <div className='card'>
-                            <img className='imgWrapper' src={Foundations} alt='Img Placeholder' />
-                            <div className='book'>                                
-                                <p>Book</p>
+                            <div className='card-inner'>
+                                <div className='card-front'>
+                                    <img className='imgWrap' src={Foundations} alt='Img Placeholder' />
+                                    <div className='book'>
+                                        <Link to='/Booking' onClick={ goTop }>
+                                            <p>Book</p>
+                                        </Link>                                
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='card-back'>
+                                <h3>pee pee poo poo</h3>
                             </div>
                             <div className='adjectives'>
                                 <p>Fundamentals</p>
@@ -41,9 +55,18 @@ const Classes = () => {
                     </div>
                     <div className='card-deck pt-32'>
                         <div className='card'>
-                            <img className='imgWrapper' src={Water} alt='Img Placeholder' />
-                            <div className='book'>                               
-                                <p>Book</p>
+                            <div className='card-inner'>
+                                <div className='card-front'>
+                                    <img className='imgWrap' src={Water} alt='Img Placeholder' />
+                                    <div className='book'>  
+                                        <Link to='/Booking' onClick={ goTop }>
+                                            <p>Book</p>
+                                        </Link>                             
+                                    </div>
+                                </div>
+                                <div className='card-back'>
+                                    <h3>pee pee poo poo</h3>
+                                </div>
                             </div>
                             <div className='adjectives'>
                                 <p>Core Focused</p>
@@ -56,9 +79,18 @@ const Classes = () => {
                     </div>
                     <div className='card-deck mt-[-160px]'>
                         <div className='card'>
-                            <img className='imgWrapper' src={Fire} alt='Img Placeholder' />
-                            <div className='book'>                               
-                                <p>Book</p>
+                            <div className='card-inner'>
+                                <div className='card-front'>
+                                    <img className='imgWrapper' src={Fire} alt='Img Placeholder' />
+                                    <div className='book'>
+                                        <Link to='/Booking' onClick={ goTop }>
+                                            <p>Book</p>
+                                        </Link>                             
+                                    </div>
+                                </div>
+                                <div className='card-back'>
+                                    <h3>pee pee poo poo</h3>
+                                </div>
                             </div>
                             <div className='adjectives'>
                                 <p>Next Level</p>
@@ -71,9 +103,18 @@ const Classes = () => {
                     </div>
                     <div className='card-deck pt-32'>
                         <div className='card'>
-                            <img className='imgWrapper' src={Air} alt='Img Placeholder' />
-                            <div className='book'>
-                                <p>Book</p>
+                            <div className='card-inner'>
+                                <div className='card-front'>
+                                    <img className='imgWrapper' src={Air} alt='Img Placeholder' />
+                                    <div className='book'>
+                                        <Link to='/booking' onClick={ goTop }>
+                                            <p>Book</p>
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='card-back'>
+                                <h3>pee pee poo poo</h3>
                             </div>
                             <div className='adjectives'>
                                 <p>Cardio</p>

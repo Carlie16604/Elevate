@@ -133,7 +133,6 @@ ul:hover a:hover ~ a:before {
   gap: 2rem 11.2rem;
   justify-content: center;
   margin: 20px 0;
-  position: relative;
 }
 
 .card-deck {
@@ -142,32 +141,55 @@ ul:hover a:hover ~ a:before {
   max-width: 100%;
   display: flex;
   flex-flow: row wrap;
-  transition: all .2s ease-in-out;
+  /* transition: all .2s ease-in-out; */
 }
 
-.card-deck:hover {
-  transform: scale(1.1);
+.card:hover .card-inner{
+  transform: rotateY(-180deg)
 }
 
 .card {
   width: 398px;
   height: 450px;
-  position: relative;
+  /* position: relative; */
   margin: 0 2rem;
+  perspective: 1000px;
 }
 
-.imgWrapper {
+.card-inner {
+  position: relative;
   height: 100%;
-  transform: scale(1);
-  transition: all .5 ease;
-  width: 100;
-  filter: grayscale(50%);
-  transition: all .2s ease-in-out;
+  width: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
 
-.imgWrapper:hover {
-  filter: grayscale(0%);
+.imgWrap {
+  height: 100%;
+  width: 100%;
+
+  /* transform: scale(1); */
+  /* transition: all .5 ease; */
+  /* filter: grayscale(50%); */
+  /* position: absolute; */
 }
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-back {
+  color: #fff;
+  background-color: #949978;
+  transform: rotateY(180deg);
+}
+
+/* .imgWrap:hover {
+  filter: grayscale(0%);
+} */
 
 .book {
   background-color: white;
