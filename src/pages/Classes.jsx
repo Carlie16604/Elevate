@@ -40,9 +40,9 @@ const Classes = () => {
                                         </Link>                                
                                     </div>
                                 </div>
-                            </div>
-                            <div className='card-back'>
-                                <h3>pee pee poo poo</h3>
+                                <div className='card-back'>
+                                    <h3>pee pee poo poo</h3>
+                                </div>
                             </div>
                             <div className='adjectives'>
                                 <p>Fundamentals</p>
@@ -112,9 +112,9 @@ const Classes = () => {
                                         </Link>
                                     </div>
                                 </div>
-                            </div>
-                            <div className='card-back'>
-                                <h3>pee pee poo poo</h3>
+                                <div className='card-back'>
+                                    <h3>pee pee poo poo</h3>
+                                </div>
                             </div>
                             <div className='adjectives'>
                                 <p>Cardio</p>
