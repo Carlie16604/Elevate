@@ -34,14 +34,14 @@ const Classes = () => {
                             <div className='card-inner'>
                                 <div className='card-front'>
                                     <img className='imgWrap' src={Foundations} alt='Img Placeholder' />
-                                    <div className='book'>
-                                        <Link to='/Booking' onClick={ goTop }>
-                                            <p>Book</p>
-                                        </Link>                                
-                                    </div>
                                 </div>
                                 <div className='card-back'>
                                     <h3>pee pee poo poo</h3>
+                                    <div className='book'>
+                                        <Link to='/Booking' onClick={ goTop }>
+                                            <p className='color-[#0000]'>Book</p>
+                                        </Link>                                
+                                    </div>
                                 </div>
                             </div>
                             <div className='adjectives'>
@@ -58,14 +58,14 @@ const Classes = () => {
                             <div className='card-inner'>
                                 <div className='card-front'>
                                     <img className='imgWrap' src={Water} alt='Img Placeholder' />
+                                </div>
+                                <div className='card-back'>
+                                    <h3>pee pee poo poo</h3>
                                     <div className='book'>  
                                         <Link to='/Booking' onClick={ goTop }>
                                             <p>Book</p>
                                         </Link>                             
                                     </div>
-                                </div>
-                                <div className='card-back'>
-                                    <h3>pee pee poo poo</h3>
                                 </div>
                             </div>
                             <div className='adjectives'>
@@ -81,15 +81,15 @@ const Classes = () => {
                         <div className='card'>
                             <div className='card-inner'>
                                 <div className='card-front'>
-                                    <img className='imgWrapper' src={Fire} alt='Img Placeholder' />
+                                    <img className='imgWrap' src={Fire} alt='Img Placeholder' />
+                                </div>
+                                <div className='card-back'>
+                                    <h3>pee pee poo poo</h3>
                                     <div className='book'>
                                         <Link to='/Booking' onClick={ goTop }>
                                             <p>Book</p>
                                         </Link>                             
                                     </div>
-                                </div>
-                                <div className='card-back'>
-                                    <h3>pee pee poo poo</h3>
                                 </div>
                             </div>
                             <div className='adjectives'>
@@ -105,15 +105,15 @@ const Classes = () => {
                         <div className='card'>
                             <div className='card-inner'>
                                 <div className='card-front'>
-                                    <img className='imgWrapper' src={Air} alt='Img Placeholder' />
+                                    <img className='imgWrap' src={Air} alt='Img Placeholder' />
+                                </div>
+                                <div className='card-back'>
+                                    <h3>pee pee poo poo</h3>
                                     <div className='book'>
                                         <Link to='/booking' onClick={ goTop }>
                                             <p>Book</p>
                                         </Link>
                                     </div>
-                                </div>
-                                <div className='card-back'>
-                                    <h3>pee pee poo poo</h3>
                                 </div>
                             </div>
                             <div className='adjectives'>

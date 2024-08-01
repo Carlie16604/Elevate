@@ -137,22 +137,15 @@ ul:hover a:hover ~ a:before {
 
 .card-deck {
   margin: 0 0 7rem;
-  position: relative;
-  max-width: 100%;
-  max-height: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  /* transition: all .2s ease-in-out; */
 }
 
-.card:hover .card-inner{
+.card-inner:hover {
   transform: rotateY(-180deg)
 }
 
 .card {
   width: 398px;
   height: 450px;
-  /* position: relative; */
   margin: 0 2rem;
   perspective: 1000px;
 }
@@ -168,10 +161,6 @@ ul:hover a:hover ~ a:before {
 .imgWrap {
   height: 100%;
   width: 100%;
-  /* transform: scale(1); */
-  /* transition: all .5 ease; */
-  /* filter: grayscale(50%); */
-  /* position: absolute; */
 }
 
 .card-front, .card-back {
@@ -182,14 +171,9 @@ ul:hover a:hover ~ a:before {
 }
 
 .card-back {
-  color: #fff;
   background-color: #949978;
   transform: rotateY(180deg);
 }
-
-/* .imgWrap:hover {
-  filter: grayscale(0%);
-} */
 
 .book {
   background-color: white;
