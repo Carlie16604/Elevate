@@ -4,13 +4,13 @@ import { Link, useNavigate } from 'react-router-dom'
 const NavBar = () => {
     const navigate = useNavigate()
 
-    const handleScroll = () => {
-        if (window.scrollY > 10) {
-            setSticky(true);
-            } else {
-            setSticky(false);
-        }
-    };
+    // const handleScroll = () => {
+    //     if (window.scrollY > 10) {
+    //         setSticky(true);
+    //         } else {
+    //         setSticky(false);
+    //     }
+    // };
 
     const goTop = () => {
         window.scrollTo({
@@ -18,7 +18,7 @@ const NavBar = () => {
         });
       };
 
-    window.addEventListener("scroll", handleScroll);
+    // window.addEventListener("scroll", handleScroll);
 
     return (
         <>

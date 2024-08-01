@@ -4,6 +4,7 @@ import './index.css'
 import NavBar from "./pages/NavBar"
 import Main from './pages/Main'
 import Booking from './pages/Booking'
+import Contact from './pages/Contact'
 
 const App = () => {
 
@@ -13,6 +14,7 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Main />}/>
           <Route path='/Booking' element={<Booking />}/>
+          <Route path='/Contact' element={<Contact />}/>
         </Routes>
       </>
     </Router>

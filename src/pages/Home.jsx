@@ -5,6 +5,7 @@ import Rock3 from '../assets/Home/Ellipse 3.png'
 import Logo from '../assets/Home/Logo.png'
 import Photo from '../assets/Home/Photo.png'
 import PilatesBall from '../assets/Home/PilatesBall.jpg'
+import NavBar from '../pages/NavBar';
 
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
 
     return (
         <>
+        <NavBar />
             <section id='Home'>
                 <div className='container'>
                     <div className='flex flex-wrap'>
