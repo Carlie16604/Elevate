@@ -1,4 +1,5 @@
-import React from "react";
+import  React, { useEffect, useState } from "react";
+import axios from 'axios';
 import '../index.css';
 import imgPl from '../assets/Offers/ImgPlaceholder.png';
 import Rock from '../assets/Offers/rock.png';
@@ -6,9 +7,10 @@ import Foundations from '../assets/Offers/Foundations.png';
 import Water from '../assets/Offers/Water.png';
 import Fire from '../assets/Offers/Fire.png';
 import Air from '../assets/Offers/Air.png';
+// https://github.com/michalsnik/aos for card animation
 const Offers = () => {
 
-    // https://github.com/michalsnik/aos for card animation
+
 
     return (
         <section id='offers' className='mt-60'>
