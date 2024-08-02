@@ -8,6 +8,7 @@ import FB from '../assets/Reviews/Facebook.png';
 import Insta from '../assets/Reviews/Instagram.png';
 import LN from '../assets/Reviews/Linkedin.png';
 import Mail from '../assets/Reviews/Mail.png';
+import Footer from '../pages/Components/Footer.jsx';
 
 const Reviews = () => {
 
@@ -47,7 +48,7 @@ const Reviews = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='bg-[#949978] h-60 content-center w-screen text-[20px] opacity-75'>
+                    {/* <div className='bg-[#949978] h-60 content-center w-screen text-[20px] opacity-75'>
                         <div className='container'>
                             <div className=' flex justify-between flex-col px-8 opacity-100'>
                                 <p>Studio Policies</p>
@@ -62,7 +63,8 @@ const Reviews = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
+                    <Footer />
                 </div>
                 {/* <Routes>
                     <Route path='/Booking' element={<Booking />}/>
