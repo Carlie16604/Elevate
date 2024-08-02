@@ -18,16 +18,16 @@ const Footer = () => {
                             Take your health and body to the next level with our comprehensive program designed to help you reach your fitness goals.
                             </p>
                             <div className='flex flex-wrap justify-between'>
-                                <div className='flex text-[20px] pt-2 w-[65px] h-[65px] justify-center  rounded-full bg-[#D4CFC9]'>
+                                <div className='flex text-[20px] pt-2 w-[65px] h-[65px] justify-center  rounded-full bg-[#D4CFC9] hover:bg-[#fff] transition-colors delay-[25ms]'>
                                     <img className='w-[50px] h-[50px] justify-center align-center' src={Mail} alt='mail'/>
                                 </div>
-                                <div className='flex text-[20px] pt-[9px] w-[65px] h-[65px] justify-center  rounded-full bg-[#D4CFC9]'>
+                                <div className='flex text-[20px] pt-[9px] w-[65px] h-[65px] justify-center  rounded-full bg-[#D4CFC9] hover:bg-[#fff] transition-colors delay-[25ms]'>
                                     <img className='w-[45px] h-[45px] justify-center align-center' src={LN} alt='Linkedin'/>
                                 </div>
-                                <div className='flex text-[20px] pt-[9px] w-[65px] h-[65px] justify-center  rounded-full bg-[#D4CFC9]'>
+                                <div className='flex text-[20px] pt-[9px] w-[65px] h-[65px] justify-center  rounded-full bg-[#D4CFC9] hover:bg-[#fff] transition-colors delay-[25ms]'>
                                     <img className='w-[45px] h-[45px] justify-center align-center' src={Insta} alt='Instagram'/>
                                 </div>
-                                <div className='flex text-[20px] pt-2 w-[65px] h-[65px] justify-center  rounded-full bg-[#D4CFC9]'>
+                                <div className='flex text-[20px] pt-2 w-[65px] h-[65px] justify-center  rounded-full bg-[#D4CFC9] hover:bg-[#fff] transition-colors delay-[25ms]'>
                                     <img className='w-[50px] h-[50px] justify-center align-center' src={FB} alt='Facebook'/>
                                 </div>
                             </div>
