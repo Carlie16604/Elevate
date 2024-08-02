@@ -1,20 +1,20 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import '../../index.css';
 
-const Calendar = () => {
-    // Initialize state
+const Calendar = ({ schedule }) => {
     const [date, setDate] = useState(new Date());
     const [year, setYear] = useState(date.getFullYear());
     const [month, setMonth] = useState(date.getMonth());
+    const [selectedDay, setSelectedDay] = useState(null);
 
-    // Array of month names
     const months = [
         "January", "February", "March", "April", "May",
         "June", "July", "August", "September", "October",
         "November", "December"
     ];
 
-    // Function to generate the calendar
+    const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
     const manipulate = () => {
         let dayone = new Date(year, month, 1).getDay();
         let lastdate = new Date(year, month + 1, 0).getDate();
@@ -23,28 +23,36 @@ const Calendar = () => {
 
         let lit = [];
 
-        // Add the last dates of the previous month
         for (let i = dayone; i > 0; i--) {
-            lit.push(<li key={`prev-${i}`} className="inactive">{monthlastdate - i + 1}</li>);
+            lit.push(
+                <li key={`prev-${i}`} className="inactive">
+                    {monthlastdate - i + 1}
+                </li>
+            );
         }
 
-        // Add the dates of the current month
         for (let i = 1; i <= lastdate; i++) {
             let isToday = i === date.getDate() &&
                 month === new Date().getMonth() &&
                 year === new Date().getFullYear() ? "active" : "";
-            lit.push(<li key={`curr-${i}`} className={isToday}>{i}</li>);
+            lit.push(
+                <li key={`curr-${i}`} className={isToday}>
+                    {i}
+                </li>
+            );
         }
 
-        // Add the first dates of the next month
         for (let i = dayend; i < 6; i++) {
-            lit.push(<li key={`next-${i}`} className="inactive">{i - dayend + 1}</li>);
+            lit.push(
+                <li key={`next-${i}`} className="inactive">
+                    {i - dayend + 1}
+                </li>
+            );
         }
 
         return lit;
     };
 
-    // Event handler for navigation
     const handleNavigation = (direction) => {
         let newMonth = month + direction;
         let newYear = year;
@@ -60,6 +68,16 @@ const Calendar = () => {
         setYear(newYear);
         setMonth(newMonth);
         setDate(new Date(newYear, newMonth, date.getDate()));
+        setSelectedDay(null);
+    };
+
+    const getClassesForSelectedDay = () => {
+    if (selectedDay === null) return null;
+
+        const dayName = daysOfWeek[new Date(year, month, selectedDay).getDay()].toLowerCase();
+        const scheduleForDay = schedule.find(item => item.day === dayName);
+
+        return scheduleForDay ? scheduleForDay.classes : null;
     };
 
     return (
@@ -82,18 +100,33 @@ const Calendar = () => {
 
             <div className="calendar-body">
                 <ul className="calendar-weekdays">
-                    <li>Sun</li>
-                    <li>Mon</li>
-                    <li>Tue</li>
-                    <li>Wed</li>
-                    <li>Thu</li>
-                    <li>Fri</li>
-                    <li>Sat</li>
+                    {daysOfWeek.map(day => (
+                        <li key={day}>{day}</li>
+                    ))}
                 </ul>
                 <ul className="calendar-dates">
                     {manipulate()}
                 </ul>
             </div>
+
+            {selectedDay && (
+                <div className="schedule-details">
+                    <h2>Schedule for {`${months[month]} ${selectedDay}, ${year}`}</h2>
+                    <ul>
+                        {getClassesForSelectedDay() ? (
+                        getClassesForSelectedDay().map((cls) => (
+                            <li key={cls.id}>
+                            <strong>Type:</strong> {cls.type} <br />
+                            <strong>Time:</strong> {cls.time} <br />
+                            <strong>Instructor:</strong> {cls.instructor}
+                            </li>
+                        ))
+                    ) : (
+                        <p>No classes scheduled for this day.</p>
+                        )}
+                    </ul>
+                </div>
+            )}
         </div>
     );
 }

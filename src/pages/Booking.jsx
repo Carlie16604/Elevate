@@ -2,6 +2,7 @@ import React from "react";
 import '../index.css';
 import NavBar from '../pages/NavBar.jsx';
 import Calendar from './Components/Calendar.jsx';
+import { schedule } from '../data/schedule.js';
 
 const Booking = () => {
 
@@ -20,7 +21,7 @@ const Booking = () => {
                             </div>
                         </div>
                         <div className='flex justify-center'>
-                            <Calendar />
+                            <Calendar schedule={schedule} />
                         </div>
                     </div>
                 </div>
