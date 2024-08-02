@@ -1,6 +1,7 @@
 import React from "react";
 import '../index.css';
 import NavBar from '../pages/NavBar.jsx';
+import Calendar from './Components/Calendar.jsx';
 
 const Booking = () => {
 
@@ -17,6 +18,9 @@ const Booking = () => {
                             <div>
                                 
                             </div>
+                        </div>
+                        <div className='flex justify-center'>
+                            <Calendar />
                         </div>
                     </div>
                 </div>
