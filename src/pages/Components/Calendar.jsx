@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import '../../index.css';
+import AR from '../../assets/Calendar/Arrow right.png';
+import AL from '../../assets/Calendar/Arrow Left.png';
 
 const Calendar = ({ schedule }) => {
     const [date, setDate] = useState(new Date());
@@ -71,30 +73,32 @@ const Calendar = ({ schedule }) => {
         setSelectedDay(null);
     };
 
-    const getClassesForSelectedDay = () => {
-    if (selectedDay === null) return null;
-
-        const dayName = daysOfWeek[new Date(year, month, selectedDay).getDay()].toLowerCase();
+    const handleDateClick = (day) => {
+        setSelectedDay(day);
+        const dayName = daysOfWeek[new Date(year, month, day).getDay()].toLowerCase();
         const scheduleForDay = schedule.find(item => item.day === dayName);
-
-        return scheduleForDay ? scheduleForDay.classes : null;
+    
+        const dateStr = `${months[month]} ${day}, ${year}`;
+        onDateSelect(dateStr, scheduleForDay ? scheduleForDay.classes : null);
     };
 
     return (
         <div className="calendar-container">
             <header className="calendar-header">
-                <p className="calendar-current-date">{`${months[month]} ${year}`}</p>
+                <p className="calendar-current-date">{`${months[month]} ${year}`}</p>     
                 <div className="calendar-navigation">
-                    <span id="calendar-prev"
-                        className="material-symbols-rounded"
-                        onClick={() => handleNavigation(-1)}>
-                        ←
-                    </span>
-                    <span id="calendar-next"
-                        className="material-symbols-rounded"
-                        onClick={() => handleNavigation(1)}>
-                        →
-                    </span>
+                    <div className='button-space hover:opacity-75'>
+                        <span id="calendar-prev"
+                            onClick={() => handleNavigation(-1)}>
+                            <img src={AL} alt='arrow left' className='w-[20px] h-[20px]'/>
+                        </span>
+                    </div>
+                    <div className='button-space hover:opacity-75'>
+                        <span id="calendar-next"
+                            onClick={() => handleNavigation(1)}>
+                            <img src={AR} alt='arrow right' className='w-[20px] h-[20px]'/>
+                        </span>
+                    </div>
                 </div>
             </header>
 
@@ -107,28 +111,9 @@ const Calendar = ({ schedule }) => {
                 <ul className="calendar-dates">
                     {manipulate()}
                 </ul>
-            </div>
-
-            {selectedDay && (
-                <div className="schedule-details">
-                    <h2>Schedule for {`${months[month]} ${selectedDay}, ${year}`}</h2>
-                    <ul>
-                        {getClassesForSelectedDay() ? (
-                        getClassesForSelectedDay().map((cls) => (
-                            <li key={cls.id}>
-                            <strong>Type:</strong> {cls.type} <br />
-                            <strong>Time:</strong> {cls.time} <br />
-                            <strong>Instructor:</strong> {cls.instructor}
-                            </li>
-                        ))
-                    ) : (
-                        <p>No classes scheduled for this day.</p>
-                        )}
-                    </ul>
-                </div>
-            )}
+            </div>  
         </div>
     );
-}
+};
 
 export default Calendar;

@@ -262,11 +262,13 @@ ul:hover a:hover ~ a:before {
 
 /* Booking ------------------------------------------------------------------------------------------------------ */
 
+/* Calendar */
 .calendar-container {
   background: #fff;
-  width: 450px;
+  width: 650px;
   border-radius: 10px;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  margin-top: 30rem;
 }
 
 .calendar-container header {
@@ -274,32 +276,40 @@ ul:hover a:hover ~ a:before {
   align-items: center;
   padding: 25px 30px 10px;
   justify-content: space-between;
+  background: #D4CFC9;
 }
 
 header .calendar-navigation {
   display: flex;
 }
 
+header .button-space {
+  background:#3E5C47;
+  line-height: 2rem;
+  border-radius: 400px;
+  margin: 0 10px;
+  width: 60px;
+}
+
 header .calendar-navigation span {
-  height: 38px;
-  width: 38px;
-  margin: 0 1px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 30px;
+  align-content: center;
+  justify-content: center;
   cursor: pointer;
   text-align: center;
-  line-height: 38px;
-  border-radius: 50%;
   user-select: none;
-  color: #aeabab;
   font-size: 1.9rem;
 }
 
-.calendar-navigation span:last-child {
+/* .calendar-navigation span:last-child {
   margin-right: -10px;
-}
+} */
 
-header .calendar-navigation span:hover {
-  background: #f2f2f2;
-}
+/* header .calendar-navigation span:hover {
+  opacity: 75%;
+} */
 
 header .calendar-current-date {
   font-weight: 500;
@@ -308,6 +318,7 @@ header .calendar-current-date {
 
 .calendar-body {
   padding: 20px;
+  background: #D4CFC9;
 }
 
 .calendar-body ul {
@@ -360,9 +371,17 @@ header .calendar-current-date {
 }
 
 .calendar-dates li.active::before {
-  background: #6332c5;
+  background: #3E5C47;
 }
 
 .calendar-dates li:not(.active):hover::before {
   background: #e4e1e1;
+}
+
+/* Booking Body */
+
+.schedule-details {
+  background-color: #fff;
+  color: #000;
+  bottom: 0;
 }

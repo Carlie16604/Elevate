@@ -1,8 +1,8 @@
 import React from "react";
-import FB from '../../assets/Reviews/Facebook.png'
-import Insta from '../../assets/Reviews/Instagram.png';
-import LN from '../../assets/Reviews/Linkedin.png';
-import Mail from '../../assets/Reviews/Mail.png';
+import FB from '../../assets/Footer/Facebook.png'
+import Insta from '../../assets/Footer/Instagram.png';
+import LN from '../../assets/Footer/Linkedin.png';
+import Mail from '../../assets/Footer/Mail.png';
 
 const Footer = () => {
     return (
