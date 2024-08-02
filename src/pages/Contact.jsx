@@ -1,10 +1,5 @@
 import React from "react";
 import NavBar from '../pages/NavBar';
-import FB from '../assets/Reviews/Facebook.png';
-import Insta from '../assets/Reviews/Instagram.png';
-import LN from '../assets/Reviews/Linkedin.png';
-import Mail from '../assets/Reviews/Mail.png';
-import Footer from './Components/Footer.jsx';
 const Contact = () => {
 
     return (
@@ -28,7 +23,6 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <Footer />
             </div>
         </>
     )

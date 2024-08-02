@@ -1,10 +1,10 @@
 import React from "react"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import './index.css'
-import NavBar from "./pages/NavBar"
 import Main from './pages/Main'
 import Booking from './pages/Booking'
 import Contact from './pages/Contact'
+import Footer from './pages/Components/Footer'
 
 const App = () => {
 
@@ -16,6 +16,7 @@ const App = () => {
           <Route path='/Booking' element={<Booking />}/>
           <Route path='/Contact' element={<Contact />}/>
         </Routes>
+        <Footer />
       </>
     </Router>
   )

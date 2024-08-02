@@ -18,7 +18,7 @@ const Home = () => {
             <section id='Home'>
                 <div className='container'>
                     <div className='flex flex-wrap'>
-                        <img className='rock1' src={Rock1} alt='Rocks' />
+                        <img id='about' className='rock1' src={Rock1} alt='Rocks' />
                         <img className='rock2' src={Rock2} alt='Rocks' />
                         <img className='rock3' src={Rock3} alt='Rocks' />
                             <div className='flex h-[650.88px]'>
