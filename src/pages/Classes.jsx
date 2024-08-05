@@ -35,7 +35,7 @@ const Classes = () => {
                                 </div>
                                 <div className='card-back'>
                                     <img className='imgWrap flex scale-x-[-1] brightness-50' src={item.img} alt={item.name} />
-                                        <div>
+                                        <div className='overlay'>
                                             <p className='flex' >{item.description}</p>
                                             <p>{item.recommendation}</p>
                                         </div>
