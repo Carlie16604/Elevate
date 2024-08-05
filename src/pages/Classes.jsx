@@ -26,18 +26,35 @@ const Classes = () => {
                     <span className='absolute w-[5.5rem] h-[4px] my-[-15px] bg-[#949978]'></span>
                 </div>
                 <div className='cardContainer'>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+                {classes.map((item) => (
+                    <div key={item.id} className='card-deck'>
+                        <div className='card'>
+                            <div className='card-inner'>
+                                <div className='card-front'>
+                                    <img className='imgWrap' src={item.img} alt={item.name} />
+                                </div>
+                                <div className='card-back'>
+                                    <img className='imgWrap flex scale-x-[-1] brightness-50' src={item.img} alt={item.name} />
+                                        <div>
+                                            <p className='flex' >{item.description}</p>
+                                            <p>{item.recommendation}</p>
+                                        </div>
+                                <div className='book'>
+                                    <Link to='/Booking' onClick={goTop}>
+                                        <p>Book</p>
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='adjectives'>
+                            {item.adjectives.map((adj, index) => (
+                                <p key={index}>{adj}</p>
+                            ))}
+                        </div>
+                            <h3 className='classType'>{item.name}</h3>
+                        </div>
+                    </div> 
+                ))}
                     {/* <div className='card-deck'>
                         <div className='card'>
                             <div className='card-inner'>
@@ -62,7 +79,7 @@ const Classes = () => {
                             </div>
                             <h3 className='classType'>Foundations</h3>
                         </div>
-                    </div> */}
+                    </div>
                     <div className='card-deck pt-32'>
                         <div className='card'>
                             <div className='card-inner'>
@@ -137,7 +154,7 @@ const Classes = () => {
                             </div>
                             <h3 className='classType'>Air</h3>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>

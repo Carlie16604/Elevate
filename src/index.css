@@ -171,9 +171,19 @@ ul:hover a:hover ~ a:before {
 }
 
 .card-back {
-  background-color: #949978;
   transform: rotateY(180deg);
   background: rgba(0, 0, 0, 0.5);
+}
+
+.overlay {
+  display:flex;
+  flex-direction: column;
+  position: absolute;
+  color: white;
+  padding: 5.5rem 1rem;
+  text-align: center;
+  justify-content: center;
+  top: 0;
 }
 
 .book {
