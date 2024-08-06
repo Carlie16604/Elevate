@@ -130,7 +130,7 @@ ul:hover a:hover ~ a:before {
 .cardContainer {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem 11.2rem;
+  gap: 2rem 6.2rem;
   justify-content: center;
   margin: 20px 0;
 }

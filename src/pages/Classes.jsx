@@ -17,8 +17,8 @@ const Classes = () => {
                 <img className='classesRock' src={Rock} alt='rock' />
             </div>
             <div className='container'>
-                <div className='flex-wrap pt-8 mb-20 px-14 relative'>
-                    <h1 className='text-[65px] flex flex-col stroke-black'>What we Offer</h1>
+                <div className='flex-wrap pt-8 mb-14 px-24 relative'>
+                    <h1 className='text-[65px] flex flex-col stroke-black font-medium'>What we Offer</h1>
                     <span className='absolute w-[5.5rem] h-[4px] my-[-15px] bg-[#949978]'></span>
                 </div>
                 <div className='cardContainer'>
