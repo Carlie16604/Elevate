@@ -43,7 +43,7 @@ const Reviews = () => {
                 <div className='container'>
                     <div className='mt-[20rem] bg-[#94997833] p-[30px]'>
                         <div className='bg-[#DFDCD8] overflow-x-clip w-full h-[23rem] relative'>
-                            <img src={ReviewPhoto} alt='Pilates Woman' className='absolute bottom-0 -left-10 z-20 h-[36rem] rounded-tr-[200px]'/>
+                            <img src={ReviewPhoto} alt='Pilates Woman' className='absolute bottom-0 z-20 h-[36rem] rounded-tr-[200px]'/>
                         <div className='flex'>
                             <div className='absolute flex flex-col bg-[#DFDCD8] top-0 right-0 w-[60%] h-full py-[40px] px-[50px]'>
                                 <img className='w-[4rem] rotate-180' src={Quote} alt='quote'/>
