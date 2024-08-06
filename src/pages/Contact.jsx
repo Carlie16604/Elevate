@@ -3,6 +3,7 @@ import NavBar from '../pages/NavBar';
 import Facebook from '../assets/Contact/Facebook.svg';
 import Instagram from '../assets/Contact/Instagram.svg';
 import Linkedin from '../assets/Contact/LinkedIn.svg';
+import Pintrest from '../assets/Contact/Pintrest.svg';
 const Contact = () => {
 
     // https://www.npmjs.com/package/react-calendar
@@ -70,10 +71,11 @@ const Contact = () => {
                                             Follow Us
                                         </h3>
                                         <span className='bg-[#D4CFC9] w-[50px] h-[4px] absolute top-[43px]'/>
-                                        <div className='text-[18px] font-medium flex gap-5'>
+                                        <div className='text-[18px] font-medium flex gap-3'>
                                             <img className='w-[2.80rem] h-[2.80rem] rounded-full cursor-pointer hover:bg-[#fff] ease-in duration-200 hover:text-white hover:border-white hover:border-[3px]' src={Instagram} alt='Instagram'/>
-                                            <img className='w-[2.80rem] h-[2.80rem] rounded-full cursor-pointer hover:bg-[#fff] ease-in duration-200 hover:text-white hover:border-white hover:border-[3px]' src={Facebook} alt='Instagram'/>
-                                            <img className='w-[2.80rem] h-[2.80rem] rounded-full cursor-pointer hover:bg-[#fff] ease-in duration-200 hover:text-white hover:border-white hover:border-[3px]' src={Linkedin} alt='Instagram'/>
+                                            <img className='w-[2.80rem] h-[2.80rem] rounded-full cursor-pointer hover:bg-[#fff] ease-in duration-200 hover:text-white hover:border-white hover:border-[3px]' src={Facebook} alt='Facebook'/>
+                                            <img className='w-[2.80rem] h-[2.80rem] rounded-full cursor-pointer hover:bg-[#fff] ease-in duration-200 hover:text-white hover:border-white hover:border-[3px]' src={Linkedin} alt='Linkedin'/>
+                                            <img className='w-[2.80rem] h-[2.80rem] rounded-full cursor-pointer hover:bg-[#fff] ease-in duration-200 hover:text-white hover:border-white hover:border-[3px]' src={Pintrest} alt='Pintrest'/>
                                         </div>
                                     </div>
                                 </div>
