@@ -26,135 +26,35 @@ const Classes = () => {
                     <span className='absolute w-[5.5rem] h-[4px] my-[-15px] bg-[#949978]'></span>
                 </div>
                 <div className='cardContainer'>
-                {classes.map((info) => (
-                    <div key={info.id} className={info.id % 2 !== 0 ? 'card-deck' : 'card-deck pt-32'}>
-                        <div className='card'>
-                            <div className='card-inner'>
-                                <div className='card-front'>
-                                    <img className='imgWrap' src={info.img} alt={info.name} />
-                                </div>
-                                <div className='card-back'>
-                                    <img className='imgWrap flex scale-x-[-1] brightness-50' src={info.img} alt={info.name} />
-                                        <div className='overlay pt-[6.5rem] px-[1rem]'>
-                                            <p>{info.description}</p><br/>
-                                            <p>{info.recommendation}</p>
-                                        </div>
-                                <div className='book'>
-                                    <Link to='/Booking' onClick={goTop}>
-                                        <p>Book</p>
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='adjectives'>
-                            {info.adjectives.map((adj, index) => (
-                                <p key={index}>{adj}</p>
-                            ))}
-                        </div>
-                            <h3 className='classType'>{info.name}</h3>
-                        </div>
-                    </div> 
-                ))}
-                    {/* <div className='card-deck'>
-                        <div className='card'>
-                            <div className='card-inner'>
-                                <div className='card-front'>
-                                    <img className='imgWrap' src={Foundations} alt='Img Placeholder' />
-                                </div>
-                                <div className='card-back'>
-                                    <img className='imgWrap scale-x-[-1] brightness-50' src={Foundations} alt='Img Placeholder' />
-                                    <p>Use Description and Recommendation here</p>
-                                    <div className='book'>
-                                        <Link to='/Booking' onClick={ goTop }>
-                                            <p className='color-[#0000]'>Book</p>
-                                        </Link>                                
+                    {classes.map((info) => (
+                        <div key={info.id} className={info.id % 2 !== 0 ? 'card-deck' : 'card-deck pt-32'}>
+                            <div className='card'>
+                                <div className='card-inner'>
+                                    <div className='card-front'>
+                                        <img className='imgWrap' src={info.img} alt={info.name} />
                                     </div>
-                                </div>
-                            </div>
-                            <div className='adjectives'>
-                                <p>Fundamentals</p>
-                                <p>Learning</p>
-                                <p></p>
-                                <p></p>
-                            </div>
-                            <h3 className='classType'>Foundations</h3>
-                        </div>
-                    </div>
-                    <div className='card-deck pt-32'>
-                        <div className='card'>
-                            <div className='card-inner'>
-                                <div className='card-front'>
-                                    <img className='imgWrap' src={Water} alt='Img Placeholder' />
-                                </div>
-                                <div className='card-back'>
-                                <img className='imgWrap scale-x-[-1] brightness-50' src={Water} alt='Img Placeholder' />
-                                <p>Use Description and Recommendation here</p>
-                                    <div className='book'>  
-                                        <Link to='/Booking' onClick={ goTop }>
-                                            <p>Book</p>
-                                        </Link>                             
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='adjectives'>
-                                <p>Core Focused</p>
-                                <p>Full-Body</p>
-                                <p></p>
-                                <p></p>
-                            </div>
-                            <h3 className='classType'>Water</h3>
-                        </div>
-                    </div>
-                    <div className='card-deck mt-[-160px]'>
-                        <div className='card'>
-                            <div className='card-inner'>
-                                <div className='card-front'>
-                                    <img className='imgWrap' src={Fire} alt='Img Placeholder' />
-                                </div>
-                                <div className='card-back'>
-                                <img className='imgWrap scale-x-[-1] brightness-50' src={Fire} alt='Img Placeholder' />
-                                <p>Use Description and Recommendation here</p>
+                                    <div className='card-back'>
+                                        <img className='imgWrap flex scale-x-[-1] brightness-50' src={info.img} alt={info.name} />
+                                            <div className='overlay pt-[6.5rem] px-[1rem]'>
+                                                <p>{info.description}</p><br/>
+                                                <p>{info.recommendation}</p>
+                                            </div>
                                     <div className='book'>
-                                        <Link to='/Booking' onClick={ goTop }>
-                                            <p>Book</p>
-                                        </Link>                             
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='adjectives'>
-                                <p>Next Level</p>
-                                <p>Full-Body</p>
-                                <p>Strength</p>
-                                <p></p>
-                            </div>
-                            <h3 className='classType'>Fire</h3>
-                        </div>
-                    </div>
-                    <div className='card-deck pt-32'>
-                        <div className='card'>
-                            <div className='card-inner'>
-                                <div className='card-front'>
-                                    <img className='imgWrap' src={Air} alt='Img Placeholder' />
-                                </div>
-                                <div className='card-back'>
-                                <img className='imgWrap scale-x-[-1] brightness-50' src={Air} alt='Img Placeholder' />
-                                    <p>Use Description and Recommendation here</p>
-                                    <div className='book'>
-                                        <Link to='/booking' onClick={ goTop }>
+                                        <Link to='/Booking' onClick={goTop}>
                                             <p>Book</p>
                                         </Link>
                                     </div>
                                 </div>
                             </div>
                             <div className='adjectives'>
-                                <p>Cardio</p>
-                                <p>Stamina Building</p>
-                                <p></p>
-                                <p></p>
+                                {info.adjectives.map((adj, index) => (
+                                    <p key={index}>{adj}</p>
+                                ))}
                             </div>
-                            <h3 className='classType'>Air</h3>
-                        </div>
-                    </div> */}
+                                <h3 className='classType'>{info.name}</h3>
+                            </div>
+                        </div> 
+                    ))}
                 </div>
             </div>
         </section>
