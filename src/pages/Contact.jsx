@@ -20,9 +20,9 @@ const Contact = () => {
                                 <h1>Contact</h1>
                             </div>
                         </div>
-                        <div className='py-[6rem] pl-[5rem] grid grid-cols-2 items-center'>
+                        <div className='py-[6rem] px-[7rem] grid grid-cols-2 items-center'>
                             <div>
-                                <h2 className='text-black text-[40px] font-medium leading-[1.2]'>
+                                <h2 className='text-black text-[40px] font-bold leading-[1.2]'>
                                     We're here to help!
                                 </h2>
                                 <p className='text-[16px] w-[95%] font-medium my-[30px]'>
@@ -31,7 +31,7 @@ const Contact = () => {
                                 <div className='grid grid-cols-2 grid-rows-2 gap-y-10'>
                                     <div className='flex flex-col relative'>
                                         <h3 className='text-[2rem] font-medium mb-10'>
-                                            Boulder, CO <br/> USA
+                                            Boulder, CO
                                         </h3>
                                         <span className='bg-[#D4CFC9] w-[50px] h-[4px] absolute top-[43px]'/>
                                         <p className='text-[15px] font-medium'> 
@@ -78,7 +78,7 @@ const Contact = () => {
                                     </div>
                                 </div>
                             </div>
-                        <form className='flex flex-col pt-[30px] pr-[5rem] pb-[50px] pl-[45px] relative'>
+                        <form className='flex flex-col pt-[30px] pb-[50px] pl-[45px] relative'>
                             <h3 className='text-[28px] font-bold mb-14'>
                                 Get In Touch!
                             </h3>
@@ -93,7 +93,7 @@ const Contact = () => {
                                 <option>Air</option>
                             </select>
                             <textarea className='w-full max-h-[12rem] py-[12px] px-[20px] h-[140px] text-[14px] bg-[#D4CFC9] outline-none mb-8 rounded-xl' placeholder='Comments'/>
-                            <button className='py-3 px-5 bg-[#3E5C47] text-white hover:translate-y-[-5px] hover:bg-opacity-55 ease-in duration-200 rounded-[400px] w-fit self-center'>Submit</button>
+                            <button className='py-3 px-5 bg-[#3E5C47] text-white rounded-[400px] w-fit self-center hover:translate-y-[-5px] hover:bg-opacity-55 ease-in duration-200'>Submit</button>
                         </form>
                         </div>
                     </div>
