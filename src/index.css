@@ -139,10 +139,6 @@ ul:hover a:hover ~ a:before {
   margin: 0 0 7rem;
 }
 
-.card-inner:hover {
-  transform: rotateY(-180deg)
-}
-
 .card {
   width: 398px;
   height: 450px;
@@ -156,6 +152,10 @@ ul:hover a:hover ~ a:before {
   width: 100%;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+}
+
+.card-inner:hover {
+  transform: rotateY(-180deg)
 }
 
 .imgWrap {
