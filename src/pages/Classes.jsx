@@ -2,10 +2,6 @@ import  React from "react";
 import { Link } from 'react-router-dom';
 import '../index.css';
 import Rock from '../assets/Offers/rock.png';
-import Foundations from '../assets/Offers/Foundations.png';
-import Water from '../assets/Offers/Water.png';
-import Fire from '../assets/Offers/Fire.png';
-import Air from '../assets/Offers/Air.png';
 import { classes } from '../data/classes.js';
 const Classes = () => {
 
