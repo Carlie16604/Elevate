@@ -50,7 +50,7 @@ const Reviews = () => {
                                     <p className='text-[17px] italic text-[#000] my-4 z-10'>“This Pilates studio offers an exceptional experience with knowledgeable instructors who tailor workouts to individual needs, ensuring both beginners and advanced practitioners feel challenged and supported. The serene atmosphere and state-of-the-art equipment create a welcoming environment that inspires a deep connection to the practice.”</p>
                                     <h3 className='text-[#000] text-[21px] mb-1 font-bold'>Harry Potter</h3>
                                     <p className='text-[14px] font-medium text-[#000]'>CEO of Hogwarts</p> 
-                                    <svg className='w-[13rem] mt-[10.5rem] absolute right-[11.5rem] brightness-90' src={Machine} alt='Pilates Machine'/>
+                                    <img className='w-[13rem] mt-[10.5rem] right-[3.5rem] absolute brightness-90' src={Machine} alt='Pilates Machine'/>
                             </div>
                         </div>
                         {/* <div className='flex gap-3 absolute bottom-[25px] right-[35px] z-20'>
