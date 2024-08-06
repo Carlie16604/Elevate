@@ -219,10 +219,10 @@ ul:hover a:hover ~ a:before {
 .reviewsRock {
   display: flex;
   z-index: -1;
-  width: 1060px;
-  height: 740px;
+  width: 1360px;
+  height: 1040px;
   position: absolute;
-  margin: 15rem 0 0 12rem;
+  margin: 4rem 0 0 5rem;
 }
 
 .portals {
@@ -241,8 +241,8 @@ ul:hover a:hover ~ a:before {
   cursor: pointer;
   align-content: center;
   justify-content: center;
-  min-width: 258px;
-  min-height: 320px;
+  min-width: 228px;
+  min-height: 290px;
 }
 
 .portals .pButton:hover {
