@@ -13,7 +13,7 @@ const Contact = () => {
         <>
         <NavBar />
             <section id='Contact'>
-                <div className='container pt-32'>
+                <div className='container pt-28'>
                     <div className='bg-[#949978] h-screen rounded-t-[4000px] z-[-1]'>
                         <div className='text-[70px] text-center pt-1'>
                             <div className='mt-32'>
