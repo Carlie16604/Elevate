@@ -180,9 +180,8 @@ ul:hover a:hover ~ a:before {
   flex-direction: column;
   position: absolute;
   color: white;
-  /* padding: 7.5rem 1rem; */
   text-align: center;
-  justify-content: center;
+  /* justify-content: center; */
   justify-content: space-evenly;
   top: 0;
 }

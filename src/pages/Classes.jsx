@@ -26,18 +26,18 @@ const Classes = () => {
                     <span className='absolute w-[5.5rem] h-[4px] my-[-15px] bg-[#949978]'></span>
                 </div>
                 <div className='cardContainer'>
-                {classes.map((item) => (
-                    <div key={item.id} className='card-deck'>
+                {classes.map((info) => (
+                    <div key={info.id} className={info.id % 2 !== 0 ? 'card-deck' : 'card-deck pt-32'}>
                         <div className='card'>
                             <div className='card-inner'>
                                 <div className='card-front'>
-                                    <img className='imgWrap' src={item.img} alt={item.name} />
+                                    <img className='imgWrap' src={info.img} alt={info.name} />
                                 </div>
                                 <div className='card-back'>
-                                    <img className='imgWrap flex scale-x-[-1] brightness-50' src={item.img} alt={item.name} />
-                                        <div className='overlay'>
-                                            <p>{item.description}</p><br/>
-                                            <p>{item.recommendation}</p>
+                                    <img className='imgWrap flex scale-x-[-1] brightness-50' src={info.img} alt={info.name} />
+                                        <div className='overlay pt-[6.5rem] px-[1rem]'>
+                                            <p>{info.description}</p><br/>
+                                            <p>{info.recommendation}</p>
                                         </div>
                                 <div className='book'>
                                     <Link to='/Booking' onClick={goTop}>
@@ -47,11 +47,11 @@ const Classes = () => {
                             </div>
                         </div>
                         <div className='adjectives'>
-                            {item.adjectives.map((adj, index) => (
+                            {info.adjectives.map((adj, index) => (
                                 <p key={index}>{adj}</p>
                             ))}
                         </div>
-                            <h3 className='classType'>{item.name}</h3>
+                            <h3 className='classType'>{info.name}</h3>
                         </div>
                     </div> 
                 ))}
