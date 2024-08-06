@@ -93,7 +93,7 @@ const Contact = () => {
                                 <option>Air</option>
                             </select>
                             <textarea className='w-full max-h-[12rem] py-[12px] px-[20px] h-[140px] text-[14px] bg-[#D4CFC9] outline-none mb-8 rounded-xl' placeholder='Comments'/>
-                            <button className='text-white bg-[#ff0336] w-fit py-[15px] px-[30px] font-bold text-[14px] uppercase self-center mt-6'>Submit</button>
+                            <button className='py-3 px-5 bg-[#3E5C47] text-white hover:translate-y-[-5px] hover:bg-opacity-55 ease-in duration-200 rounded-[400px] w-fit self-center'>Submit</button>
                         </form>
                         </div>
                     </div>

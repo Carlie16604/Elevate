@@ -54,10 +54,10 @@ const Reviews = () => {
                             </div>
                         </div>
                         <div className='flex gap-3 absolute bottom-[25px] right-[35px] z-20'>
-                            <button title='left' className='py-3 px-5 bg-[#3E5C47] hover:opacity-55 transition-all rounded-[400px]'>
+                            <button title='left' className='py-3 px-5 bg-[#3E5C47] hover:opacity-55 ease-in duration-200 rounded-[400px]'>
                                 <img className='h-[30px] w-[30px] text-[#000] fa-solid fa-arrow-left' src={LeftArrow} alt='Left Arrow Button'/>
                             </button>
-                            <button title='left' className='py-3 px-5 bg-[#3E5C47]  hover:opacity-55 transition-all rounded-[400px]'>
+                            <button title='left' className='py-3 px-5 bg-[#3E5C47]  hover:opacity-55 ease-in duration-200 rounded-[400px]'>
                                 <img className='h-[30px] w-[30px] text-[#000] fa-solid fa-arrow-left' src={RightArrow} alt='Left Arrow Button'/>
                             </button>
                         </div>
