@@ -9,15 +9,15 @@ export const classes = [
       name: "Foundations",
       img: Foundations,
       description: "This class is a great way to find out what pilates is all about. You will be learning about all the pilates fundamentals during a safe yet challenging workout.", 
-      recommendation: "Start with 5-10 Foundations classes before moving on to next level classes.",
+      recommendation: "Start with 5-10 Foundations classes before moving on to next level classes. This approach ensures that you build a strong, safe foundation, preventing injuries and maximizing the benefits of your practice.",
       adjectives: ['Fundamentals', 'Learning', '', ''],
     },
     {
       id: 2,
       name: "Water",
       img: Water,
-      description: "Take 50 minutes out of your day to reconnect with a strong yet elongated body. Reset how your body feels.", 
-      recommendation: "A great continuation after 5-10 Foundations level classes",
+      description: "Take 50 minutes out of your day to reconnect with a strong yet elongated body. Reset how your body feels with a perfect balance of intensity and relaxation.", 
+      recommendation: "A great continuation after 5-10 Foundations level classes. This class provides a seamless transition to more dynamic Pilates exercises, helping you deepen your practice and build on the core principles.",
       adjectives: ['Core Focused', 'Full-Body', '', ''],
     },
     {
@@ -25,7 +25,7 @@ export const classes = [
       name: "Fire",
       img: Fire,
       description: "Take your pilates practice to the next level. Challenge yourself with this full body workout that focuses on building strength, flexibility, coordination and balance. Bring on the fire!",
-      recommendation: "A great continuation to Water.",
+      recommendation: "A great continuation to Water. This class is ideal for those ready to intensify their workout and explore the full potential of their Pilates journey.",
       adjectives: ['Next Level', 'Full-Body', 'Strength'],
     },
     {
