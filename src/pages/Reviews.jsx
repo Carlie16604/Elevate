@@ -28,11 +28,11 @@ const Reviews = () => {
                             <div className='flex flex-row justify-center gap-32 relative'>
                                 <div className='portals'>
                                     <Link to='/Booking' onClick={ goTop }>
-                                        <div className='pButton text-[40px]'>Booking</div>
+                                        <div className='pButton text-[35px]'>Booking</div>
                                     </Link>
-                                        <div className='pButton text-center text-[35px] px-[25px] leading-8'>Meet The <br/>Team</div>
+                                        <div className='pButton text-center text-[30px] px-[25px] leading-8'>Meet The <br/>Team</div>
                                     <Link to='/Contact' onClick={ goTop }>
-                                        <div className='pButton text-[40px]'>Contact</div>
+                                        <div className='pButton text-[35px]'>Contact</div>
                                     </Link>
                                 </div>
                             </div>
