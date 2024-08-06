@@ -219,10 +219,10 @@ ul:hover a:hover ~ a:before {
 .reviewsRock {
   display: flex;
   z-index: -1;
-  width: 1160px;
-  height: 840px;
+  width: 1060px;
+  height: 740px;
   position: absolute;
-  margin: 5rem 0 0 12rem;
+  margin: 15rem 0 0 12rem;
 }
 
 .portals {

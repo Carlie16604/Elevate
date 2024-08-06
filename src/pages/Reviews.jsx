@@ -39,7 +39,7 @@ const Reviews = () => {
                         </div>
                     </div>
             </section>
-            <section className='my-[10rem] mx-auto'>
+            <section className='mt-[10rem] mb-[4rem] mx-auto'>
                 <div className='container'>
                     <div className='mt-[20rem] bg-[#94997833] p-[30px]'>
                         <div className='bg-[#DFDCD8] overflow-x-clip w-full h-[23rem] relative'>
