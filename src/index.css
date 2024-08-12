@@ -78,6 +78,55 @@ ul:hover a:hover ~ a:before {
 
 /* Home Page --------------------------------------------------------------------------*/
 
+/* Title */
+
+.glitch {
+	font-size: 8.125em;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	text-decoration: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+	color: #fff;
+	letter-spacing: 5px;
+}
+
+.glitch:before,
+.glitch:after {
+	display: block;
+	content: attr(data-glitch);
+	text-transform: uppercase;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: .8;
+}
+
+.glitch:after {
+	color: #949978;
+	z-index: -2;
+}
+
+.glitch:before {
+	color: #3E5C47;
+	z-index: -1;
+}
+
+.glitch:hover:before {
+	animation: glitch 2s cubic-bezier(.25, .46, .45, .94) both 5;
+}
+
+.glitch:hover:after {
+	animation: glitch 2s cubic-bezier(.25, .46, .45,)
+}
+
+
 /* Background */
 
 .rock1 {
@@ -86,7 +135,7 @@ ul:hover a:hover ~ a:before {
   height: 720px;
   z-index: -2;
   position: absolute;
-  margin: 550px 0;
+  margin: 450px 0;
 }
 
 .rock2{
@@ -95,7 +144,7 @@ ul:hover a:hover ~ a:before {
   height: 422px;
   z-index: -1;
   position: absolute;
-  margin: 300px 100px;
+  margin: 200px 100px;
 }
 
 .rock3 {
@@ -104,7 +153,7 @@ ul:hover a:hover ~ a:before {
   height: 255px;
   z-index: -1;
   position: absolute;
-  margin: 1080px 775px;
+  margin: 980px 775px;
 }
 
 /* Home Content */
