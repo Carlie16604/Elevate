@@ -5,6 +5,7 @@ import Rock3 from '../assets/Home/Ellipse 3.png'
 import Logo from '../assets/logo.svg'
 import Photo from '../assets/Home/Photo.png'
 import PilatesBall from '../assets/Home/PilatesBall.jpg'
+import Stretch from '../assets/Home/Stretch.png'
 import NavBar from '../pages/NavBar';
 
 
@@ -41,6 +42,9 @@ const Home = () => {
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                                     </p>
                                 </div>
+                            </div>
+                            <div className='flex flex-col'>
+                                <img className='w-[10rem]' src={Stretch} alt='img'/> 
                             </div>
                         {/* <div className='whyUs mt-24 mx-[115.5px]'>
                             <div className='p-8 flex'>
