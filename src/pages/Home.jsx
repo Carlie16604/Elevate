@@ -32,7 +32,7 @@ const Home = () => {
                                     <h3 className='text-[20px] text-black font-medium uppercase'>
                                         Award Winning Pilates Instructors
                                     </h3>
-                                    <h1 className='text-white text-[120px] font-bold leading-[1.2]'>
+                                    <h1 className='text-white text-[120px] font-bold leading-[1.2] '>
                                         Pilates
                                     </h1>
                                     <h3 className='text-[30px] text-black font-medium animate-slide-up'>

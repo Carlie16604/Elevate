@@ -14,7 +14,7 @@ export default {
         },
       },
       animation: {
-        'slide-up': 'slide-up 2s forwards'
+        'slide-up': 'slide-up 2s forwards 1s'
       }
     },
   },
