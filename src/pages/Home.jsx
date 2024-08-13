@@ -6,6 +6,7 @@ import Rock3 from '../assets/Home/Ellipse 3.png'
 import Logo from '../assets/logo.svg'
 import Photo from '../assets/Home/Photo.png'
 import PilatesBall from '../assets/Home/PilatesBall.jpg'
+import bruh from '../assets/Home/bruh.png'
 import Stretch from '../assets/Home/Stretch.png'
 import NavBar from '../pages/NavBar';
 
@@ -33,9 +34,11 @@ const Home = () => {
                                     <h3 className='text-[20px] text-black font-medium uppercase'>
                                         Award Winning Pilates Instructors
                                     </h3>
-                                    <h1 className='glitch text-white text-[120px] font-bold leading-[1.2]' data-glitch="Pilates">
-                                        Pilates
-                                    </h1>
+                                    <div className='artist-card'>
+                                        {/* <h1 className='glitch text-white text-[120px] font-bold leading-[1.2]' data-glitch="Pilates"> */}
+                                        <h1 className='artist-card__title'>Pilates</h1>
+                                        {/* <img className='artist-card__img' src='bruh' alt='bruh'/> */}
+                                    </div>
                                     <h3 className='text-[30px] text-black font-medium animate-slide-up'>
                                         A healthy way to workout
                                     </h3>
