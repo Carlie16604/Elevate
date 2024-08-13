@@ -92,6 +92,12 @@ ul:hover a:hover ~ a:before {
     -1.8rem -2rem 0 #949978;
 }
 
+.artist-card h1 {
+  position: absolute;
+  margin-left: 5rem;
+  /* color: #000; */
+}
+
 .artist-card__title {
   margin: 0;
   grid-column: 1 / 5;
@@ -195,10 +201,10 @@ ul:hover a:hover ~ a:before {
   }
 }
 
-@supports (-webkit-text-stroke: 1px black) {
+@supports (-webkit-text-stroke: 1px white) {
   .artist-card__title {
-    -webkit-text-stroke: 0.035em #001;
-    color: transparent;
+    -webkit-text-stroke: 0.035em #d0d0d0;
+    color: white;
     text-shadow: 0.075em 0.075em #949978;
   }
 }
@@ -231,29 +237,29 @@ ul:hover a:hover ~ a:before {
 
 .rock1 {
   object-position: center;
-  width: 955px;
-  height: 720px;
+  width: 655px;
+  height: 520px;
   z-index: -15;
   position: absolute;
-  margin: 450px 0;
+  margin: 450px 500px;
 }
 
 .rock2{
   object-position: center;
-  width: 465px;
-  height: 422px;
+  width: 315px;
+  height: 272px;
   z-index: -10;
   position: absolute;
-  margin: 200px 100px;
+  margin: 250px 800px;
 }
 
 .rock3 {
   object-position: center; 
-  width: 300px;
-  height: 255px;
+  width: 200px;
+  height: 175px;
   z-index: -10;
   position: absolute;
-  margin: 980px 775px;
+  margin: 820px 445px;
 }
 
 /* Home Content */

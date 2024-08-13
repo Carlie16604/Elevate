@@ -1,12 +1,11 @@
 import React from "react";
 import'../index.css';
-import Rock1 from '../assets/Home/Ellipse 1.png'
-import Rock2 from '../assets/Home/Ellipse 2.png'
-import Rock3 from '../assets/Home/Ellipse 3.png'
+import Rock1 from '../assets/Home/Rock1.png'
+import Rock2 from '../assets/Home/Rock2.png'
+import Rock3 from '../assets/Home/Rock3.png'
 import Logo from '../assets/logo.svg'
 import Photo from '../assets/Home/Photo.png'
 import PilatesBall from '../assets/Home/PilatesBall.jpg'
-import bruh from '../assets/Home/bruh.png'
 import Stretch from '../assets/Home/Stretch.png'
 import NavBar from '../pages/NavBar';
 
@@ -37,7 +36,6 @@ const Home = () => {
                                     <div className='artist-card'>
                                         {/* <h1 className='glitch text-white text-[120px] font-bold leading-[1.2]' data-glitch="Pilates"> */}
                                         <h1 className='artist-card__title'>Pilates</h1>
-                                        {/* <img className='artist-card__img' src='bruh' alt='bruh'/> */}
                                     </div>
                                     <h3 className='pt-32 text-[30px] text-black font-medium animate-slide-up'>
                                         A healthy way to workout
@@ -47,9 +45,9 @@ const Home = () => {
                                     </p>
                                     <button className='px-4 py-2 bg-[#949978] rounded-[400px]'>Let's Talk About Your Health!</button>
                                 </div>
-                                <div className='flex flex-col'>
+                                {/* <div className='flex flex-col'>
                                     <img className='w-[40rem]' src={Stretch} alt='img'/> 
-                                </div>
+                                </div> */}
                             </div>
                         {/* <div className='whyUs mt-24 mx-[115.5px]'>
                             <div className='p-8 flex'>
