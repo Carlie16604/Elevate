@@ -19,7 +19,7 @@ const Home = () => {
         <>
         <NavBar />
             <section id='Home'>
-                <div className='container'>
+                <div className='container h-screen'>
                     <div className='flex flex-wrap'>
                         <img id='about' className='rock1' src={Rock1} alt='Rocks' />
                         <img className='rock2' src={Rock2} alt='Rocks' />
@@ -29,20 +29,20 @@ const Home = () => {
                                     {/* <h1 className='text-[80px] flex flex-wrap content-center text-center'> 
                                 <a href="#" className="glitch" data-glitch="Pilates">Pilates</a>
                             </div> */}
-                            <div className='grid grid-cols-2 items-center pt-[250px] px-24 relative'>
+                            <div className='grid grid-cols-2 items-center pt-[250px] pl-24 relative'>
                                 <div>
-                                    <h3 className='text-[20px] text-black font-medium uppercase'>
+                                    {/* <h3 className='text-[20px] text-black font-medium uppercase'>
                                         Award Winning Pilates Instructors
-                                    </h3>
+                                    </h3> */}
                                     <div className='artist-card'>
                                         {/* <h1 className='glitch text-white text-[120px] font-bold leading-[1.2]' data-glitch="Pilates"> */}
                                         <h1 className='artist-card__title'>Pilates</h1>
                                         {/* <img className='artist-card__img' src='bruh' alt='bruh'/> */}
                                     </div>
-                                    <h3 className='text-[30px] text-black font-medium animate-slide-up'>
+                                    <h3 className='pt-32 text-[30px] text-black font-medium animate-slide-up'>
                                         A healthy way to workout
                                     </h3>
-                                    <p className='animation-slide-up'>
+                                    <p className=''>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                                     </p>
                                     <button className='px-4 py-2 bg-[#949978] rounded-[400px]'>Let's Talk About Your Health!</button>
