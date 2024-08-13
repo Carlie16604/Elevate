@@ -10,7 +10,7 @@ export default {
       keyframes: {
         'slide-up': {
           '0%': { marginTop: '50%', height: '50%', opacity: '0'},
-          '100%': {marginTop: '0%', height: '50%', opacity: '1'},
+          '80%': {marginTop: '0%', height: '50%', opacity: '1'},
         },
       },
       animation: {
