@@ -27,10 +27,10 @@ const Classes = () => {
                             <div className='card'>
                                 <div className='card-inner'>
                                     <div className='card-front'>
-                                        <img className='imgWrap' src={info.img} alt={info.name} />
+                                        <img className='imgWrap rounded-tl-[100px]' src={info.img} alt={info.name} />
                                     </div>
-                                    <div className='card-back'>
-                                        <img className='imgWrap flex scale-x-[-1] brightness-50' src={info.img} alt={info.name} />
+                                    <div className='card-back rounded-tr-[100px]'>
+                                        <img className='imgWrap flex scale-x-[-1] brightness-50 rounded-tl-[100px]' src={info.img} alt={info.name} />
                                             <div className='overlay pt-[6.5rem] px-[1rem]'>
                                                 <p>{info.description}</p><br/>
                                                 <p>{info.recommendation}</p>
