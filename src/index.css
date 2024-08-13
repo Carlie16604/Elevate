@@ -94,8 +94,8 @@ ul:hover a:hover ~ a:before {
 
 .artist-card h1 {
   position: absolute;
-  margin-left: 5rem;
-  /* color: #000; */
+  margin-left: 2rem;
+  color: #fff;
 }
 
 .artist-card__title {
@@ -162,7 +162,7 @@ ul:hover a:hover ~ a:before {
   .artist-card {
     background-image: linear-gradient(
         to top right,
-        #fff 25%,
+        #d3cfca 25%,
         transparent
       ),
       radial-gradient(
@@ -203,8 +203,8 @@ ul:hover a:hover ~ a:before {
 
 @supports (-webkit-text-stroke: 1px white) {
   .artist-card__title {
-    -webkit-text-stroke: 0.035em #d0d0d0;
-    color: white;
+    -webkit-text-stroke: 0.035em;
+    /* color: white; */
     text-shadow: 0.075em 0.075em #949978;
   }
 }
