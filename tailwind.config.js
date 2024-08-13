@@ -7,14 +7,15 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        primary: '#DFDCD8',
-        secondary: '#D9D9D9',
-        green: {
-          light: '#949978',
-          dark: '3E5C47',
-        }
+      keyframes: {
+        'slide-up': {
+          '0%': { marginTop: '50%', height: '50%', opacity: '0'},
+          '100%': {marginTop: '0%', height: '50%', opacity: '1'},
+        },
       },
+      animation: {
+        'slide-up': 'slide-up 2s forwards'
+      }
     },
   },
   plugins: [],

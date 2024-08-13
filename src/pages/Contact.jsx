@@ -80,23 +80,23 @@ const Contact = () => {
                                     </div>
                                 </div>
                             </div>
-                        <form className='flex flex-col pt-[30px] pb-[50px] pl-[45px] relative'>
-                            <h3 className='text-[28px] font-bold mb-14'>
-                                Get In Touch!
-                            </h3>
-                            <span className='bg-[#D4CFC9] w-[50px] h-[4px] absolute top-[67.5px]'/>
-                            <input className='w-full py-[12px] px-[20px] h-[51px] text-[14px] bg-[#D4CFC9] outline-none mb-8 rounded-xl' placeholder="Full Name" type='text'/> 
-                            <input className='w-full py-[12px] px-[20px] h-[51px] text-[14px] bg-[#D4CFC9] outline-none mb-8 rounded-xl' placeholder="Email Address" type='email'/>
-                            <select className='w-full py-[12px] px-[20px] h-[51px] text-[14px] bg-[#D4CFC9] outline-none mb-8 rounded-xl'>
-                                <option>Select Class</option>
-                                <option>Foundations</option>
-                                <option>Water</option>
-                                <option>Fire</option>
-                                <option>Air</option>
-                            </select>
-                            <textarea className='w-full max-h-[12rem] py-[12px] px-[20px] h-[140px] text-[14px] bg-[#D4CFC9] outline-none mb-8 rounded-xl' placeholder='Comments'/>
-                            <button className='py-3 px-5 bg-[#3E5C47] text-white rounded-[400px] w-fit self-center hover:translate-y-[-5px] hover:bg-opacity-55 ease-in duration-200'>Submit</button>
-                        </form>
+                            <form className='flex flex-col pt-[30px] pb-[50px] pl-[45px] relative'>
+                                <h3 className='text-[28px] font-bold mb-14'>
+                                    Get In Touch!
+                                </h3>
+                                <span className='bg-[#D4CFC9] w-[50px] h-[4px] absolute top-[67.5px]'/>
+                                <input className='w-full py-[12px] px-[20px] h-[51px] text-[14px] bg-[#D4CFC9] outline-none mb-8 rounded-xl' placeholder="Full Name" type='text'/> 
+                                <input className='w-full py-[12px] px-[20px] h-[51px] text-[14px] bg-[#D4CFC9] outline-none mb-8 rounded-xl' placeholder="Email Address" type='email'/>
+                                <select className='w-full py-[12px] px-[20px] h-[51px] text-[14px] bg-[#D4CFC9] outline-none mb-8 rounded-xl'>
+                                    <option>Select Class</option>
+                                    <option>Foundations</option>
+                                    <option>Water</option>
+                                    <option>Fire</option>
+                                    <option>Air</option>
+                                </select>
+                                <textarea className='w-full max-h-[12rem] py-[12px] px-[20px] h-[140px] text-[14px] bg-[#D4CFC9] outline-none mb-8 rounded-xl' placeholder='Comments'/>
+                                <button className='py-3 px-5 bg-[#3E5C47] text-white rounded-[400px] w-fit self-center hover:translate-y-[-5px] hover:bg-opacity-55 ease-in duration-200'>Submit</button>
+                            </form>
                         </div>
                     </div>
                 </div>

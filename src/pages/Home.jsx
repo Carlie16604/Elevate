@@ -27,24 +27,24 @@ const Home = () => {
                                     {/* <h1 className='text-[80px] flex flex-wrap content-center text-center'> 
                                 <a href="#" className="glitch" data-glitch="Pilates">Pilates</a>
                             </div> */}
-                            <div className='grid grid-cols-2 items-center pt-[250px]'>
+                            <div className='grid grid-cols-2 items-center pt-[250px] px-24 relative'>
                                 <div>
-                                    <h3 className='text-[20px] text-black font-medium'>
+                                    <h3 className='text-[20px] text-black font-medium uppercase'>
                                         Award Winning Pilates Instructors
                                     </h3>
-                                    <h1 className='text-white text-[100px] font-bold leading-[1.2]'>
+                                    <h1 className='text-white text-[120px] font-bold leading-[1.2]'>
                                         Pilates
                                     </h1>
-                                    <h3 className='text-[30px] text-black font-medium'>
+                                    <h3 className='text-[30px] text-black font-medium animate-slide-up'>
                                         A healthy way to workout
                                     </h3>
-                                    <p>
+                                    <p className='animation-slide-up'>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                                     </p>
                                 </div>
-                            </div>
-                            <div className='flex flex-col'>
-                                <img className='w-[10rem]' src={Stretch} alt='img'/> 
+                                <div className='flex flex-col'>
+                                    <img className='w-[40rem]' src={Stretch} alt='img'/> 
+                                </div>
                             </div>
                         {/* <div className='whyUs mt-24 mx-[115.5px]'>
                             <div className='p-8 flex'>
