@@ -40,25 +40,7 @@ const Home = () => {
                                     </p>
                                     <Link to='/Contact' className='text-black border-2 rounded-[400px] border-[#949978] px-9 py-4 inline-block text-[14px] tracking-[1px] cursor-pointer shadow-[inset_0_0_0_0_#949978] transition-[box-shadow] ease-out duration-1000 hover:shadow-[inset_400px_0_0_0_#949978] hover:text-white'>Let's Talk About Your Health!</Link>
                                 </div>
-                                {/* <div className='flex flex-col'>
-                                    <img className='w-[40rem]' src={Stretch} alt='img'/> 
-                                </div> */}
                             </div>
-                        {/* <div className='whyUs mt-24 mx-[115.5px]'>
-                            <div className='p-8 flex'>
-                                <div className='text-center pr-8'>
-                                    <h3 className='text-5xl items-center flex-col text-black'>
-                                        Why Us?
-                                    </h3>
-                                        <p className='flex text-center content-center flex-wrap leading-8 mt-12'>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                                        </p>
-                                </div>
-                                <div className='flex justify-end flex-row'>
-                                    <img className='w-min-[350.5px] h-min-[295.39]' src={PilatesBall} alt='Photo'/>
-                                </div>
-                            </div>
-                        </div> */}
                     </div>
                 </div>
             </section>
