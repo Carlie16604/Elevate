@@ -3,7 +3,7 @@ import '../../index.css';
 import AR from '../../assets/Calendar/Arrow right.png';
 import AL from '../../assets/Calendar/Arrow Left.png';
 
-const Calendar = ({ schedule }) => {
+const Calendar = ({ schedule, onDateSelect }) => {
     const [date, setDate] = useState(new Date());
     const [year, setYear] = useState(date.getFullYear());
     const [month, setMonth] = useState(date.getMonth());
@@ -38,7 +38,11 @@ const Calendar = ({ schedule }) => {
                 month === new Date().getMonth() &&
                 year === new Date().getFullYear() ? "active" : "";
             lit.push(
-                <li key={`curr-${i}`} className={isToday}>
+                <li
+                    key={`curr-${i}`}
+                    className={isToday}
+                    onClick={() => handleDateClick(i)}
+                >
                     {i}
                 </li>
             );
@@ -77,7 +81,7 @@ const Calendar = ({ schedule }) => {
         setSelectedDay(day);
         const dayName = daysOfWeek[new Date(year, month, day).getDay()].toLowerCase();
         const scheduleForDay = schedule.find(item => item.day === dayName);
-    
+
         const dateStr = `${months[month]} ${day}, ${year}`;
         onDateSelect(dateStr, scheduleForDay ? scheduleForDay.classes : null);
     };

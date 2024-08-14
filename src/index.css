@@ -431,7 +431,6 @@ ul:hover a:hover ~ a:before {
   width: 650px;
   border-radius: 10px;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
-  margin-top: 30rem;
 }
 
 .calendar-container header {
