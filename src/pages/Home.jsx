@@ -3,7 +3,7 @@ import'../index.css';
 import Rock1 from '../assets/Home/Rock1.png'
 import Rock2 from '../assets/Home/Rock2.png'
 import Rock3 from '../assets/Home/Rock3.png'
-import Logo from '../assets/logo.svg'
+import Meditate from '../assets/Home/meditate.svg'
 import Photo from '../assets/Home/Photo.png'
 import PilatesBall from '../assets/Home/PilatesBall.jpg'
 import Stretch from '../assets/Home/Stretch.png'
@@ -24,6 +24,7 @@ const Home = () => {
                         <img id='about' className='rock1' src={Rock1} alt='Rocks' />
                         <img className='rock2' src={Rock2} alt='Rocks' />
                         <img className='rock3' src={Rock3} alt='Rocks' />
+                        <img className='w-[300px] h-[300px] absolute my-[400px] ml-[700px]' src={Meditate} alt='Logo' />
                             <div className='grid grid-cols-2 items-center pt-[250px] pl-24 relative'>
                                 <div>
                                     <div className='artist-card top-32'>

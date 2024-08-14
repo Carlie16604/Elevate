@@ -108,7 +108,6 @@ ul:hover a:hover ~ a:before {
   z-index: 1;
   font-size: 100px;
   text-align: center;
-  /* line-height: 1.2; */
 }
 
 .artist-card__img {
@@ -241,7 +240,7 @@ ul:hover a:hover ~ a:before {
   height: 520px;
   z-index: -15;
   position: absolute;
-  margin: 450px 500px;
+  margin: 350px 500px;
 }
 
 .rock2{
@@ -250,7 +249,7 @@ ul:hover a:hover ~ a:before {
   height: 272px;
   z-index: -10;
   position: absolute;
-  margin: 250px 800px;
+  margin: 150px 800px;
 }
 
 .rock3 {
@@ -259,7 +258,7 @@ ul:hover a:hover ~ a:before {
   height: 175px;
   z-index: -10;
   position: absolute;
-  margin: 820px 445px;
+  margin: 720px 445px;
 }
 
 /* Home Content */
