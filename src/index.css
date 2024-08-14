@@ -565,16 +565,16 @@ ul:hover a:hover ~ a:before {
 
 /* Calendar */
 .calendar-container {
-  background: #fff;
-  width: 650px;
-  border-radius: 10px;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  width: 800px;
+  /* border-radius: 10px; */
+  /* box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12); */
 }
 
 .calendar-container header {
   display: flex;
   align-items: center;
   padding: 25px 30px 10px;
+  border-radius: 40px 40px 0 0;
   justify-content: space-between;
   background: #D4CFC9;
 }
@@ -619,6 +619,7 @@ header .calendar-current-date {
 .calendar-body {
   padding: 20px;
   background: #D4CFC9;
+  border-radius: 0 0 40px 40px;
 }
 
 .calendar-body ul {
@@ -641,6 +642,8 @@ header .calendar-current-date {
 .calendar-body .calendar-weekdays li {
   cursor: default;
   font-weight: 500;
+  background-color: #fff;
+  border-radius: 40px;
 }
 
 .calendar-body .calendar-dates li {
