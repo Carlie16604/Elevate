@@ -35,7 +35,7 @@ const Classes = () => {
                                                 <p>{info.description}</p><br/>
                                                 <p>{info.recommendation}</p>
                                             </div>
-                                    <div className='book text-black border-2 rounded-[400px] border-[#fff] px-9 py-4 inline-block text-[14px] tracking-[1px] cursor-pointer shadow-[inset_0_0_0_0_#949978] transition-[box-shadow] ease-out duration-1000 hover:shadow-[inset_400px_0_0_0_#949978] hover:text-white'>
+                                    <div className='book py-3 px-5 w-fit self-center text-black bg-[#D4CFC9] border-2 rounded-[400px] border-[#fff] inline-block text-[14px] tracking-[1px] cursor-pointer shadow-[inset_0_0_0_0_#DFDCD8] transition-[box-shadow] ease-out duration-1000 hover:shadow-[inset_400px_0_0_0_#D4CFC9] hover:text-white'>
                                         <Link to='/Booking' onClick={goTop}>
                                             <p>Book</p>
                                         </Link>
