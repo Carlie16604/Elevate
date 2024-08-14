@@ -21,7 +21,7 @@ const Contact = () => {
                                 <h1>Contact</h1>
                             </div>
                         </div>
-                        <div className='py-[6rem] px-[7rem] grid grid-cols-2 items-center'>
+                        <div className='py-[5rem] px-[7rem] grid grid-cols-2 items-center'>
                             <div>
                                 <h2 className='text-black text-[40px] font-bold leading-[1.2]'>
                                     We're here to help!
@@ -95,7 +95,7 @@ const Contact = () => {
                                     <option>Air</option>
                                 </select>
                                 <textarea className='w-full max-h-[12rem] py-[12px] px-[20px] h-[140px] text-[14px] bg-[#D4CFC9] outline-none mb-8 rounded-xl' placeholder='Comments'/>
-                                <button className='py-3 px-5 bg-[#3E5C47] text-white rounded-[400px] w-fit self-center hover:translate-y-[-5px] hover:bg-opacity-55 ease-in duration-200'>Submit</button>
+                                <button className='py-3 px-5 w-fit self-center text-black bg-[#D4CFC9] border-2 rounded-[400px] border-[#fff] inline-block text-[14px] tracking-[1px] cursor-pointer shadow-[inset_0_0_0_0_#DFDCD8] transition-[box-shadow] ease-out duration-1000 hover:shadow-[inset_400px_0_0_0_#D4CFC9] hover:text-white'>Submit</button>
                             </form>
                         </div>
                     </div>
