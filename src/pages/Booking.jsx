@@ -22,8 +22,6 @@ const Booking = () => {
                                 <h1>Schedule</h1>
                             </div>
                         </div>
-
-                        {/* Day Selection */}
                         <div className='flex flex-wrap gap-4 justify-center mt-8'>
                             {schedule.map((daySchedule) => (
                                 <a
@@ -35,8 +33,6 @@ const Booking = () => {
                                 </a>
                             ))}
                         </div>
-
-                        {/* Class Details */}
                         <div className='my-5'>
                             {selectedDateInfo.date ? (
                                 <>
