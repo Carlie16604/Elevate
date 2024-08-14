@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import '../../index.css';
-import AR from '../../assets/Calendar/Arrow right.png';
-import AL from '../../assets/Calendar/Arrow Left.png';
+import '../index.css';
+import AR from '../assets/Calendar/Arrow right.png';
+import AL from '../assets/Calendar/Arrow Left.png';
 
 const Calendar = ({ schedule, onDateSelect }) => {
     const [date, setDate] = useState(new Date());

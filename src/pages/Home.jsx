@@ -7,7 +7,7 @@ import Meditate from '../assets/Home/meditate.svg'
 import Photo from '../assets/Home/Photo.png'
 import PilatesBall from '../assets/Home/PilatesBall.jpg'
 import Stretch from '../assets/Home/Stretch.png'
-import NavBar from '../pages/NavBar';
+import NavBar from '../pages/Components/NavBar.jsx';
 import { Link } from "react-router-dom";
 
 
