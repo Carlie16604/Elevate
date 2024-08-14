@@ -8,6 +8,7 @@ import Photo from '../assets/Home/Photo.png'
 import PilatesBall from '../assets/Home/PilatesBall.jpg'
 import Stretch from '../assets/Home/Stretch.png'
 import NavBar from '../pages/NavBar';
+import { Link } from "react-router-dom";
 
 
 const Home = () => {
@@ -31,13 +32,13 @@ const Home = () => {
                                     <h3 className='text-[20px] text-black font-medium uppercase animate-slide-up'>
                                         Award Winning Pilates Instructors
                                     </h3>
-                                    <h3 className='pt-32 text-[30px] text-black font-medium animate-slide-up'>
+                                    <h3 className='pt-[8.5rem] text-[30px] text-black font-medium animate-slide-up'>
                                         A healthy way to workout
                                     </h3>
-                                    <p className=''>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                    <p className='pt-2 pb-5'>
+                                        Pilates is a renowned Pilates studio dedicated to helping individuals achieve their fitness goals based in Boulder, CO. We host expertly crafted training along with empowering instructors. 
                                     </p>
-                                    <button className='px-4 py-2 bg-[#949978] rounded-[400px]'>Let's Talk About Your Health!</button>
+                                    <Link to='/Contact' className='text-black border-2 rounded-[400px] border-[#949978] px-9 py-4 inline-block text-[14px] tracking-[1px] cursor-pointer shadow-[inset_0_0_0_0_#949978] transition-[box-shadow] ease-out duration-1000 hover:shadow-[inset_400px_0_0_0_#949978] hover:text-white'>Let's Talk About Your Health!</Link>
                                 </div>
                                 {/* <div className='flex flex-col'>
                                     <img className='w-[40rem]' src={Stretch} alt='img'/> 
