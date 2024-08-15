@@ -2,6 +2,8 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+/* https://github.com/ArashkKH/Iphone13?tab=readme-ov-file */
+
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +11,9 @@
 }
 
 :root {
-  background-color: #DFDCD8;
+  /* background-color: #e3ded7; */
+  background-color: #dbd8d5;
+  /* background-color: #eeeeee; */
   font-family: kanit;
 }
 
@@ -23,6 +27,140 @@
 .container {
   margin: 0 auto;
   max-width: 72rem;
+}
+
+.sun { 
+  position: fixed;
+  top: 15rem;
+  left: 22rem;
+  margin: auto;  
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;  
+  background: white;
+  opacity: 0.9;      
+  box-shadow: 0px 0px 40px 15px white;  
+  z-index: -1;
+}
+
+.ray_box {
+  position: absolute;
+  margin: auto;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0;  
+  width: 70px;  
+  -webkit-animation: ray_anim 120s linear infinite;
+  animation: ray_anim 120s linear infinite;
+}
+
+.ray {  
+  background: linear-gradient(to top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);
+  margin-left: 10px;
+  border-radius: 80% 80% 0 0;
+  position: absolute;
+  opacity: 0.1;
+}
+
+.ray1 {    
+  height: 170px;
+  width: 30px;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  top: -175px;
+  left: 15px;
+}
+
+.ray2 {
+  height: 100px;
+  width: 8px;
+  -webkit-transform: rotate(220deg);
+  transform: rotate(220deg);
+  top: -90px;
+  left: 75px;
+}
+
+.ray3 {
+  height: 170px;
+  width: 50px;
+  -webkit-transform: rotate(250deg);
+  transform: rotate(250deg);
+  top: -80px;
+  left: 100px;
+}
+
+.ray4 {
+  height: 120px;
+  width: 14px;
+  -webkit-transform: rotate(305deg);
+  transform: rotate(305deg);
+  top: 30px;
+  left: 100px;
+}
+
+.ray5 {
+  height: 140px;
+  width: 30px;
+  -webkit-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+  top: 60px;
+  left: 40px;
+}
+
+.ray6 {
+  height: 90px;
+  width: 50px;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+  top: 60px;
+  left: -40px;
+}
+
+.ray7 {
+  height: 180px;
+  width: 10px;
+  -webkit-transform: rotate(70deg);
+  transform: rotate(70deg);
+  top: -35px;
+  left: -40px;
+}
+
+.ray8 {
+  height: 120px;
+  width: 30px;
+  -webkit-transform: rotate(100deg);
+  transform: rotate(100deg);
+  top: -45px;
+  left: -90px;
+}
+
+.ray9 {
+  height: 80px;
+  width: 10px;
+  -webkit-transform: rotate(120deg);
+  transform: rotate(120deg);
+  top: -65px;
+  left: -60px;
+}
+
+.ray10 {
+  height: 190px;
+  width: 23px;
+  -webkit-transform: rotate(150deg);
+  transform: rotate(150deg);
+  top: -185px;
+  left: -60px;
+}
+
+@-webkit-keyframes ray_anim { 
+  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }    
+  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@keyframes ray_anim { 
+  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }    
+  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
 }
 
 /* Nav Bar --------------------------------------------------------------------------*/
@@ -80,7 +218,7 @@ ul:hover a:hover ~ a:before {
 
 /* Title */
 
-.artist-card {
+.elevate-card {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr 3rem auto;
@@ -92,13 +230,13 @@ ul:hover a:hover ~ a:before {
     -1.8rem -2rem 0 #949978;
 }
 
-.artist-card h1 {
+.elevate-card h1 {
   position: absolute;
   margin-left: 2rem;
   color: #fff;
 }
 
-.artist-card__title {
+.elevate-card__title {
   margin: 0;
   grid-column: 1 / 5;
   grid-row: 2 / span 1;
@@ -110,7 +248,7 @@ ul:hover a:hover ~ a:before {
   text-align: center;
 }
 
-.artist-card__img {
+.elevate-card__img {
   max-width: 100%;
   display: block;
   grid-column: 1 / -1;
@@ -119,16 +257,16 @@ ul:hover a:hover ~ a:before {
 }
 
 @supports (clip-path: circle(25%)) {
-  .artist-card {
+  .elevate-card {
     clip-path: circle(0%);
     animation: circle-grow 2000ms 450ms forwards;
 
-    &:hover .artist-card__img {
+    &:hover .elevate-card__img {
       clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 100% 100%, 0% 100%);
     }
   }
 
-  .artist-card__img {
+  .elevate-card__img {
     clip-path: polygon(
       18.11% 16.5%,
       50% 0%,
@@ -139,7 +277,7 @@ ul:hover a:hover ~ a:before {
     transition: clip-path 400ms ease-in-out;
   }
 
-  .artist-card__title {
+  .elevate-card__title {
     clip-path: inset(50% 50%);
     animation: heading-in 400ms 1000ms forwards;
   }
@@ -158,7 +296,7 @@ ul:hover a:hover ~ a:before {
 }
 
 @supports (mix-blend-mode: darken) {
-  .artist-card {
+  .elevate-card {
     background-image: linear-gradient(
         to top right,
         #d3cfca 25%,
@@ -194,14 +332,14 @@ ul:hover a:hover ~ a:before {
     }
   }
 
-  .artist-card__img {
+  .elevate-card__img {
     mix-blend-mode: multiply;
     filter: grayscale(1) contrast(1.5) brightness(0.9);
   }
 }
 
 @supports (-webkit-text-stroke: 1px white) {
-  .artist-card__title {
+  .elevate-card__title {
     -webkit-text-stroke: 0.035em;
     /* color: white; */
     text-shadow: 0.075em 0.075em #949978;
@@ -209,7 +347,7 @@ ul:hover a:hover ~ a:before {
 }
 
 @media screen and (min-width: 25rem) {
-  .artist-card__title::before {
+  .elevate-card__title::before {
     content: "";
     position: absolute;
     left: 0;
@@ -226,7 +364,7 @@ ul:hover a:hover ~ a:before {
     z-index: -1;
     transition: clip-path 400ms ease-in-out;
 
-    .artist-card:hover & {
+    .elevate-card:hover & {
       clip-path: circle(100%);
     }
   }
@@ -427,16 +565,16 @@ ul:hover a:hover ~ a:before {
 
 /* Calendar */
 .calendar-container {
-  background: #fff;
-  width: 650px;
-  border-radius: 10px;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  width: 800px;
+  /* border-radius: 10px; */
+  /* box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12); */
 }
 
 .calendar-container header {
   display: flex;
   align-items: center;
   padding: 25px 30px 10px;
+  border-radius: 40px 40px 0 0;
   justify-content: space-between;
   background: #D4CFC9;
 }
@@ -481,6 +619,7 @@ header .calendar-current-date {
 .calendar-body {
   padding: 20px;
   background: #D4CFC9;
+  border-radius: 0 0 40px 40px;
 }
 
 .calendar-body ul {
@@ -503,6 +642,8 @@ header .calendar-current-date {
 .calendar-body .calendar-weekdays li {
   cursor: default;
   font-weight: 500;
+  background-color: #fff;
+  border-radius: 40px;
 }
 
 .calendar-body .calendar-dates li {

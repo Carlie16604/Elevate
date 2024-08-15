@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import '../index.css';
-import NavBar from '../pages/NavBar.jsx';
-import Calendar from './Components/Calendar.jsx';
+import NavBar from './Components/NavBar.jsx';
+import Calendar from './Calendar.jsx';
 import { schedule } from '../data/schedule.js';
 
 const Booking = () => {
@@ -37,18 +37,27 @@ const Booking = () => {
                             {selectedDateInfo.date ? (
                                 <>
                                         <h2 className='text-center text-white text-[30px] mb-6'>
-                                            Schedule for {selectedDateInfo.date.charAt(0).toUpperCase() + selectedDateInfo.date.slice(1)}
+                                            Classes Available on {selectedDateInfo.date.charAt(0).toUpperCase() + selectedDateInfo.date.slice(1)}
                                         </h2>
                                     <div className='mt-5'>
                                         <div className='flex flex-col gap-3'>
                                             {selectedDateInfo.classes.length > 0 ? (
                                                 <ul className='flex flex-col gap-4 items-center'>
                                                     {selectedDateInfo.classes.map((cls) => (
-                                                        <li key={cls.id} className='py-[25px] px-[55px] bg-[#f2f2f2] w-full max-w-[800px] rounded-[15px] text-center'>
-                                                            <p className='text-[18px] font-bold text-[#333] mb-2'>{cls.type}</p>
-                                                            <p className='text-[16px] font-medium text-[#666]'>Time: {cls.time}</p>
-                                                            <p className='text-[16px] font-medium text-[#666]'>Instructor: {cls.instructor}</p>
-                                                        </li>
+                                                        <div key={cls.id} className='flex justify-between py-[15px] px-[55px] bg-[#D4CFC9] w-full max-w-[800px] rounded-[40px]'>
+                                                            <li className=''>
+                                                                <p className='text-[#543019] opacity-[.4] text-[15px] min-w-[140px]'>Class Type:</p>
+                                                                <p className='text-[25px] font-medium'>{cls.type}</p>
+                                                            </li>
+                                                            <li>
+                                                                <p className='text-[#543019] opacity-[.4] text-[15px] text-center min-w-[205.98px]'>Time</p>
+                                                                <p className='text-[25px] font-medium'>{cls.time}</p>
+                                                            </li>
+                                                            <li className='text-center'>
+                                                                <p className='text-[#543019] opacity-[.4] text-[15px] min-w-[148px]'>Instructor</p>
+                                                                <p className='text-[25px] font-medium'>{cls.instructor}</p>
+                                                            </li>
+                                                        </div>
                                                     ))}
                                                 </ul>
                                             ) : (
@@ -61,9 +70,9 @@ const Booking = () => {
                                 <p className='text-center text-white text-[20px] mt-6'>Please select a day to view the schedule.</p>
                             )}
                         </div>
-                        <div className='flex justify-center py-12'>
+                        <div className='flex justify-center py-6'>
                             <Calendar schedule={schedule} />
-                            {/* Come back to Calendar */}
+                            {/* Connect these */}
                         </div>
                     </div>
                 </div>

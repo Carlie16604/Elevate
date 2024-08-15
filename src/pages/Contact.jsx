@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from '../pages/NavBar';
+import NavBar from '../pages/Components/NavBar';
 import Facebook from '../assets/Contact/Facebook.svg';
 import Instagram from '../assets/Contact/Instagram.svg';
 import Linkedin from '../assets/Contact/LinkedIn.svg';

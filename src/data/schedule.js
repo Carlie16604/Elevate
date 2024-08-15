@@ -41,7 +41,7 @@ export const schedule = [
     classes: [
       {id: 13, type: 'Fire', time: "10:00am - 11:00am", instructor: 'Sam Flynn'},
       {id: 14, type: 'Air', time: "12:00pm - 1:00pm", instructor: 'Harry Potter'},
-      {id: 15, type: 'Water', time: '3:00pm - 4:00pm', instructor: 'Hermione Granger'}
+      {id: 15, type: 'Water', time: '3:00pm - 4:00pm', instructor: 'Dumbledore'}
     ]
   },
   {
