@@ -218,7 +218,7 @@ ul:hover a:hover ~ a:before {
 
 /* Title */
 
-.artist-card {
+.elevate-card {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr 3rem auto;
@@ -230,13 +230,13 @@ ul:hover a:hover ~ a:before {
     -1.8rem -2rem 0 #949978;
 }
 
-.artist-card h1 {
+.elevate-card h1 {
   position: absolute;
   margin-left: 2rem;
   color: #fff;
 }
 
-.artist-card__title {
+.elevate-card__title {
   margin: 0;
   grid-column: 1 / 5;
   grid-row: 2 / span 1;
@@ -248,7 +248,7 @@ ul:hover a:hover ~ a:before {
   text-align: center;
 }
 
-.artist-card__img {
+.elevate-card__img {
   max-width: 100%;
   display: block;
   grid-column: 1 / -1;
@@ -257,16 +257,16 @@ ul:hover a:hover ~ a:before {
 }
 
 @supports (clip-path: circle(25%)) {
-  .artist-card {
+  .elevate-card {
     clip-path: circle(0%);
     animation: circle-grow 2000ms 450ms forwards;
 
-    &:hover .artist-card__img {
+    &:hover .elevate-card__img {
       clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 100% 100%, 0% 100%);
     }
   }
 
-  .artist-card__img {
+  .elevate-card__img {
     clip-path: polygon(
       18.11% 16.5%,
       50% 0%,
@@ -277,7 +277,7 @@ ul:hover a:hover ~ a:before {
     transition: clip-path 400ms ease-in-out;
   }
 
-  .artist-card__title {
+  .elevate-card__title {
     clip-path: inset(50% 50%);
     animation: heading-in 400ms 1000ms forwards;
   }
@@ -296,7 +296,7 @@ ul:hover a:hover ~ a:before {
 }
 
 @supports (mix-blend-mode: darken) {
-  .artist-card {
+  .elevate-card {
     background-image: linear-gradient(
         to top right,
         #d3cfca 25%,
@@ -332,14 +332,14 @@ ul:hover a:hover ~ a:before {
     }
   }
 
-  .artist-card__img {
+  .elevate-card__img {
     mix-blend-mode: multiply;
     filter: grayscale(1) contrast(1.5) brightness(0.9);
   }
 }
 
 @supports (-webkit-text-stroke: 1px white) {
-  .artist-card__title {
+  .elevate-card__title {
     -webkit-text-stroke: 0.035em;
     /* color: white; */
     text-shadow: 0.075em 0.075em #949978;
@@ -347,7 +347,7 @@ ul:hover a:hover ~ a:before {
 }
 
 @media screen and (min-width: 25rem) {
-  .artist-card__title::before {
+  .elevate-card__title::before {
     content: "";
     position: absolute;
     left: 0;
@@ -364,7 +364,7 @@ ul:hover a:hover ~ a:before {
     z-index: -1;
     transition: clip-path 400ms ease-in-out;
 
-    .artist-card:hover & {
+    .elevate-card:hover & {
       clip-path: circle(100%);
     }
   }

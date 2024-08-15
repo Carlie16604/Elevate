@@ -27,8 +27,8 @@ const Home = () => {
                         <img className='w-[300px] h-[300px] absolute my-[400px] ml-[700px]' src={Meditate} alt='Logo' />
                             <div className='grid grid-cols-2 items-center pt-[250px] pl-24 relative'>
                                 <div>
-                                    <div className='artist-card top-32'>
-                                        <h1 className='artist-card__title'>Elevate</h1>
+                                    <div className='elevate-card top-32'>
+                                        <h1 className='elevate-card__title'>Elevate</h1>
                                     </div>
                                     <h3 className='text-[20px] text-black font-medium uppercase animate-slide-up'>
                                         Award Winning Pilates Instructors
