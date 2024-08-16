@@ -9,7 +9,7 @@ const Main = () => {
 
   return (
     <>
-      <Sunrays />
+      {/* <Sunrays /> */}
       <Home />
       <Classes />
       <Reviews />

@@ -20,7 +20,9 @@ const NavBar = () => {
                             <Link to='/' onClick={ goTop }>
                                 <div>Home</div>
                             </Link>
-                            <a>About Us</a>
+                            <Link to='/About' onClick={ goTop }>
+                                <div>About Us</div>
+                            </Link>
                             <Link to='/Booking' onClick={ goTop }>
                                 <div>Booking</div>
                             </Link>
