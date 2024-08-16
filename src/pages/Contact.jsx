@@ -18,12 +18,12 @@ const Contact = () => {
                     <div className='bg-[#949978] h-screen rounded-t-[4000px] z-[-1]'>
                         <div className='text-[70px] text-center pt-1'>
                             <div className='mt-32'>
-                                <h1>Contact</h1>
+                                <h1 className='text-white'>Contact</h1>
                             </div>
                         </div>
                         <div className='py-[5rem] px-[7rem] grid grid-cols-2 items-center'>
                             <div>
-                                <h2 className='text-black text-[40px] font-bold leading-[1.2]'>
+                                <h2 className='text-[white] text-[40px] font-bold leading-[1.2]'>
                                     We're here to help!
                                 </h2>
                                 <p className='text-[16px] w-[95%] font-medium my-[30px]'>
@@ -31,7 +31,7 @@ const Contact = () => {
                                 </p>
                                 <div className='grid grid-cols-2 grid-rows-2 gap-y-10'>
                                     <div className='flex flex-col relative'>
-                                        <h3 className='text-[2rem] font-medium mb-10'>
+                                        <h3 className='text-[#2f4636] text-[2rem] font-medium mb-10'>
                                             Boulder, CO
                                         </h3>
                                         <span className='bg-[#D4CFC9] w-[50px] h-[4px] absolute top-[43px]'/>
@@ -40,7 +40,7 @@ const Contact = () => {
                                         </p>
                                     </div>
                                     <div className='flex flex-col relative'>
-                                        <h3 className='text-[2rem] font-medium mb-10'>
+                                        <h3 className='text-[#2f4636] text-[2rem] font-medium mb-10'>
                                             Opening Hours
                                         </h3>
                                         <span className='bg-[#D4CFC9] w-[50px] h-[4px] absolute top-[43px]'/>
@@ -55,7 +55,7 @@ const Contact = () => {
                                         </p>
                                     </div>
                                     <div className='flex flex-col relative'>
-                                        <h3 className='text-[2rem] font-medium mb-10'>
+                                        <h3 className='text-[#2f4636] text-[2rem] font-medium mb-10'>
                                             Our Info
                                         </h3>
                                         <span className='bg-[#D4CFC9] w-[50px] h-[4px] absolute top-[43px]'/>
@@ -67,7 +67,7 @@ const Contact = () => {
                                         </p>
                                     </div>
                                     <div className='flex flex-col relative'>
-                                        <h3 className='text-[2rem] font-medium mb-10'>
+                                        <h3 className='text-[#2f4636] text-[2rem] font-medium mb-10'>
                                             Follow Us
                                         </h3>
                                         <span className='bg-[#D4CFC9] w-[50px] h-[4px] absolute top-[43px]'/>
@@ -81,7 +81,7 @@ const Contact = () => {
                                 </div>
                             </div>
                             <form className='flex flex-col pt-[30px] pb-[50px] pl-[45px] relative'>
-                                <h3 className='text-[28px] font-bold mb-14'>
+                                <h3 className='text-white text-[28px] font-bold mb-14'>
                                     Get In Touch!
                                 </h3>
                                 <span className='bg-[#D4CFC9] w-[50px] h-[4px] absolute top-[67.5px]'/>

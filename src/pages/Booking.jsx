@@ -19,7 +19,7 @@ const Booking = () => {
                     <div className='bg-[#949978] h-fit rounded-t-[4000px]'>
                         <div className='text-[70px] flex justify-center'>
                             <div className='mt-32'>
-                                <h1>Schedule</h1>
+                                <h1 className='text-white'>Schedule</h1>
                             </div>
                         </div>
                         <div className='flex flex-wrap gap-4 justify-center mt-8'>
@@ -36,7 +36,7 @@ const Booking = () => {
                         <div className='my-5'>
                             {selectedDateInfo.date ? (
                                 <>
-                                        <h2 className='text-center text-white text-[30px] mb-6'>
+                                        <h2 className='text-center text-[#2f4636] text-[30px] mb-6'>
                                             Classes Available on {selectedDateInfo.date.charAt(0).toUpperCase() + selectedDateInfo.date.slice(1)}
                                         </h2>
                                     <div className='mt-5'>

@@ -18,7 +18,7 @@ const Classes = () => {
             </div>
             <div className='container'>
                 <div className='flex-wrap mb-14 px-24 relative'>
-                    <h1 className='text-[65px] flex flex-col stroke-black font-medium'>What we Offer</h1>
+                    <h1 className='text-[#2f4636] text-[65px] flex flex-col stroke-black font-medium'>What we Offer</h1>
                     <span className='absolute w-[5.5rem] h-[4px] my-[-15px] bg-[#949978]'></span>
                 </div>
                 <div className='cardContainer'>
