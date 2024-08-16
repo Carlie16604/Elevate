@@ -30,7 +30,9 @@ const Reviews = () => {
                                     <Link to='/Booking' onClick={ goTop }>
                                         <div className='pButton text-[35px]'>Booking</div>
                                     </Link>
+                                    <Link to='/About' onClick={ goTop }>
                                         <div className='pButton text-center text-[30px] px-[25px] leading-8'>Meet The <br/>Team</div>
+                                    </Link>
                                     <Link to='/Contact' onClick={ goTop }>
                                         <div className='pButton text-[35px]'>Contact</div>
                                     </Link>
