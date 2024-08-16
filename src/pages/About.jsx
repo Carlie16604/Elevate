@@ -19,26 +19,28 @@ const About = () => {
                                 <h1 className='text-white pb-[5rem]'>The Team</h1>
                             </div>
                         </div>
-                        <div className='grid grid-cols-2 grid-rows-2 w-full min620:grid-cols-1'>
-                            <div className='w-full h-[43rem] flex flex-col justify-center items-center text-center px-[100px] min800:px-[10px]'>
-                                <img className='w-20' src={icon} alt='icon'/>
-                                <h2 className='text-[30px]'>About Us</h2>
-                                <p className='text-[16px] font-medium text-[#F1EFF2] mt-5'>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                </p>
-                            </div>
-                            <div className='w-full h-[43rem]'>
-                                <img className='w-full h-full object-cover bg-center' src={woman1} alt='woman stretching'/>
-                            </div>
-                            <div className='w-full h-[43rem]'>
-                                <img className='w-full h-full object-cover bg-center' src={women2} alt='women stretching'/>
-                            </div>
-                            <div className='w-full h-[43rem] flex flex-col justify-center items-center text-center px-[100px] min800:px-[10px]'>
-                                <img className='w-20' src={trophy} alt='icon'/>
-                                <h2 className='text-[30px]'>Our Instructors</h2>
-                                <p className='text-[16px] font-medium text-[#F1EFF2] mt-5'>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                </p>
+                        <div className='px-20 pb-20'>
+                            <div className='grid grid-cols-2 grid-rows-2 w-full min620:grid-cols-1'>
+                                <div className='w-full h-[43rem] flex flex-col justify-center items-center text-center px-[100px] min800:px-[10px]'>
+                                    <img className='w-20' src={icon} alt='icon'/>
+                                    <h2 className='text-[30px]'>About Us</h2>
+                                    <p className='text-[16px] font-medium text-[#F1EFF2] mt-5'>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </p>
+                                </div>
+                                <div className='w-full h-[43rem]'>
+                                    <img className='w-full h-full object-cover bg-center rounded-[200px]' src={woman1} alt='woman stretching'/>
+                                </div>
+                                <div className='w-full h-[43rem]'>
+                                    <img className='w-full h-full object-cover bg-center rounded-[200px]' src={women2} alt='women stretching'/>
+                                </div>
+                                <div className='w-full h-[43rem] flex flex-col justify-center items-center text-center px-[100px] min800:px-[10px]'>
+                                    <img className='w-20' src={trophy} alt='icon'/>
+                                    <h2 className='text-[30px]'>Our Instructors</h2>
+                                    <p className='text-[16px] font-medium text-[#F1EFF2] mt-5'>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
