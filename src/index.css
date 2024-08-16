@@ -642,12 +642,10 @@ header .calendar-current-date {
 .calendar-body .calendar-weekdays li {
   cursor: default;
   font-weight: 500;
-  background-color: #fff;
-  border-radius: 40px;
 }
 
 .calendar-body .calendar-dates li {
-  margin-top: 30px;
+  padding: 15px 0;
   position: relative;
   z-index: 1;
   cursor: pointer;
