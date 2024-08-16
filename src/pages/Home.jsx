@@ -39,7 +39,9 @@ const Home = () => {
                                     <p className='pt-2 pb-10'>
                                         Pilates is a renowned Pilates studio dedicated to helping individuals achieve their fitness goals based in Boulder, CO. We host expertly crafted training along with empowering instructors. 
                                     </p>
-                                    <Link to='/Contact' className='text-black border-2 rounded-[400px] border-[#949978] px-10 py-5 inline-block text-[19px] tracking-[1px] cursor-pointer shadow-[inset_0_0_0_0_#949978] transition-[box-shadow] ease-out duration-1000 hover:shadow-[inset_400px_0_0_0_#949978] hover:text-white'>Let's Talk About Your Health!</Link>
+                                    <Link to='/Contact' className='text-black border-2 rounded-[400px] border-[#949978] px-10 py-5 inline-block text-[19px] tracking-[1px] cursor-pointer shadow-[inset_0_0_0_0_#949978] transition-[box-shadow] ease-out duration-1000 hover:shadow-[inset_400px_0_0_0_#949978] hover:text-white'>
+                                        Let's Talk About Your Health!
+                                    </Link>
                                 </div>
                             </div>
                     </div>
