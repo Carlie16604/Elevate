@@ -43,14 +43,14 @@ const Home = () => {
                                     <Link to='/Contact' className='text-black border-2 rounded-[400px] border-[#949978] px-10 py-5 inline-block text-[19px] tracking-[1px] cursor-pointer shadow-[inset_0_0_0_0_#949978] transition-[box-shadow] ease-out duration-1000 hover:shadow-[inset_400px_0_0_0_#949978] hover:text-white'>
                                         Let's Talk About Your Health!
                                     </Link>
-                                    <div className='h-40 w-40 z-30'>
-                                        <IPad />
-                                    </div>
                                 </div>
                             </div>
                     </div>
                 </div>
             </section>
+            <div>
+                <IPad />
+            </div>
         </>
     )
 }
