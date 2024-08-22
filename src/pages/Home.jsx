@@ -4,11 +4,12 @@ import Rock1 from '../assets/Home/Rock1.png'
 import Rock2 from '../assets/Home/Rock2.png'
 import Rock3 from '../assets/Home/Rock3.png'
 import Meditate from '../assets/Home/meditate.svg'
-import Photo from '../assets/Home/Photo.png'
-import PilatesBall from '../assets/Home/PilatesBall.jpg'
-import Stretch from '../assets/Home/Stretch.png'
+// import Photo from '../assets/Home/Photo.png'
+// import PilatesBall from '../assets/Home/PilatesBall.jpg'
+// import Stretch from '../assets/Home/Stretch.png'
 import NavBar from '../pages/Components/NavBar.jsx';
 import { Link } from "react-router-dom";
+import IPad from './Components/iPad/iPad.jsx';
 
 
 const Home = () => {
@@ -42,6 +43,9 @@ const Home = () => {
                                     <Link to='/Contact' className='text-black border-2 rounded-[400px] border-[#949978] px-10 py-5 inline-block text-[19px] tracking-[1px] cursor-pointer shadow-[inset_0_0_0_0_#949978] transition-[box-shadow] ease-out duration-1000 hover:shadow-[inset_400px_0_0_0_#949978] hover:text-white'>
                                         Let's Talk About Your Health!
                                     </Link>
+                                    <div className='h-40 w-40 z-30'>
+                                        <IPad />
+                                    </div>
                                 </div>
                             </div>
                     </div>
