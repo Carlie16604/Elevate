@@ -13,7 +13,7 @@ i {
     display: none;
   }
   
-  .df, .container .Phone .PhoneFront .topBar .camera, .container .Phone .PhoneFront .topBar {
+  .df, .iPadContainer .Phone .PhoneFront .topBar .camera, .iPadContainer .Phone .PhoneFront .topBar {
     display: flex;
     align-items: center;
   }
@@ -110,12 +110,12 @@ i {
             animation: intro ease 10s;
   }
   
-  .container {
+  .iPadContainer {
     width: 100%;
     height: 100vh;
     perspective: 2000px;
   }
-  .container .viewcontrols {
+  .iPadContainer .viewcontrols {
     border-radius: 25px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.178);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.178);
@@ -125,7 +125,7 @@ i {
     position: absolute;
     transition: 0.4s;
   }
-  .container .viewcontrols > label {
+  .iPadContainer .viewcontrols > label {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,11 +136,11 @@ i {
     transition: 0.4s;
     border: rgba(0, 0, 0, 0) 1px solid;
   }
-  .container .viewcontrols > label:hover {
+  .iPadContainer .viewcontrols > label:hover {
     border: #000 1px solid;
   }
   @media screen and (max-width: 540px) {
-    .container .viewcontrols {
+    .iPadContainer .viewcontrols {
       width: 300px;
       height: 50px;
       top: 1%;
@@ -152,7 +152,7 @@ i {
     }
   }
   @media screen and (min-width: 540px) {
-    .container .viewcontrols {
+    .iPadContainer .viewcontrols {
       width: 50px;
       height: 300px;
       left: 5%;
@@ -162,7 +162,7 @@ i {
       justify-content: space-evenly;
     }
   }
-  .container .Phone {
+  .iPadContainer .Phone {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -170,30 +170,30 @@ i {
     transform: translate(-50%, -50%) translateZ(-800px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateY(0px);
   }
   @media screen and (max-width: 768px) {
-    .container .Phone {
+    .iPadContainer .Phone {
       width: 400px;
       height: 800px;
     }
   }
   @media screen and (min-width: 768px) {
-    .container .Phone {
+    .iPadContainer .Phone {
       width: 90vw;
       height: 55vw;
     }
   }
-  .container .Phone .phoneSide {
+  .iPadContainer .Phone .phoneSide {
     position: absolute;
   }
-  .container .Phone .PhoneFront, .container .Phone .PhoneBack {
+  .iPadContainer .Phone .PhoneFront, .iPadContainer .Phone .PhoneBack {
     width: 100%;
     height: 100%;
     border-radius: 40px;
   }
-  .container .Phone .PhoneFront {
+  .iPadContainer .Phone .PhoneFront {
     transform: translatez(20px);
     background: rgb(20, 20, 20);
   }
-  .container .Phone .PhoneFront .screen {
+  .iPadContainer .Phone .PhoneFront .screen {
     width: 93%;
     height: 96%;
     border-radius: 30px;
@@ -203,7 +203,7 @@ i {
     transform: translate(-50%, -50%);
     background: rgb(143, 143, 143);
   }
-  .container .Phone .PhoneFront .topBar {
+  .iPadContainer .Phone .PhoneFront .topBar {
     width: 45%;
     height: 6%;
     background: rgb(20, 20, 20);
@@ -215,45 +215,45 @@ i {
     justify-content: space-evenly;
   }
   @media screen and (min-width: 768px) {
-    .container .Phone .PhoneFront .topBar {
+    .iPadContainer .Phone .PhoneFront .topBar {
       display: none;
     }
   }
-  .container .Phone .PhoneFront .topBar .camera {
+  .iPadContainer .Phone .PhoneFront .topBar .camera {
     width: 12px;
     height: 12px;
     background: rgb(43, 43, 43);
     border-radius: 50%;
     justify-content: center;
   }
-  .container .Phone .PhoneFront .topBar .camera .lenz {
+  .iPadContainer .Phone .PhoneFront .topBar .camera .lenz {
     width: 70%;
     height: 70%;
     border-radius: 50%;
     background: rgb(0, 0, 63);
   }
-  .container .Phone .PhoneFront .topBar .speaker {
+  .iPadContainer .Phone .PhoneFront .topBar .speaker {
     width: 50%;
     height: 6px;
     border-radius: 10px;
     background: rgb(36, 36, 36);
   }
-  .container .Phone .PhoneBack {
+  .iPadContainer .Phone .PhoneBack {
     transform: translateZ(-40px) rotateY(180deg);
   }
   @media screen and (max-width: 768px) {
-    .container .Phone .PhoneBack {
+    .iPadContainer .Phone .PhoneBack {
       background: rgb(51, 51, 51);
       background: linear-gradient(338deg, rgb(51, 51, 51) 0%, rgb(97, 97, 97) 100%);
     }
   }
   @media screen and (min-width: 768px) {
-    .container .Phone .PhoneBack {
+    .iPadContainer .Phone .PhoneBack {
       background: rgb(60, 60, 60);
       background: linear-gradient(338deg, rgb(60, 60, 60) 0%, rgb(0, 0, 0) 100%);
     }
   }
-  .container .Phone .PhoneBack .Applelogo {
+  .iPadContainer .Phone .PhoneBack .Applelogo {
     width: 100px;
     height: 100px;
     position: absolute;
@@ -266,7 +266,7 @@ i {
     justify-content: center;
     font-size: 70px;
   }
-  .container .Phone .PhoneBack .cameraSection {
+  .iPadContainer .Phone .PhoneBack .cameraSection {
     width: 180px;
     height: 180px;
     position: absolute;
@@ -277,22 +277,22 @@ i {
     transform: translateZ(5px);
   }
   @media screen and (min-width: 768px) {
-    .container .Phone .PhoneBack .cameraSection {
+    .iPadContainer .Phone .PhoneBack .cameraSection {
       display: none;
     }
   }
-  .container .Phone .PhoneBack .cameraSection .cameraSides {
+  .iPadContainer .Phone .PhoneBack .cameraSection .cameraSides {
     position: absolute;
     background: rgb(53, 53, 53);
     border: solid 2px rgb(49, 49, 49);
   }
-  .container .Phone .PhoneBack .cameraSection .frontside {
+  .iPadContainer .Phone .PhoneBack .cameraSection .frontside {
     width: 100%;
     height: 100%;
     transform: translateZ(5px);
     border-radius: 40px;
   }
-  .container .Phone .PhoneBack .cameraSection .frontside .lens1, .container .Phone .PhoneBack .cameraSection .frontside .lens2, .container .Phone .PhoneBack .cameraSection .frontside .lens3 {
+  .iPadContainer .Phone .PhoneBack .cameraSection .frontside .lens1, .iPadContainer .Phone .PhoneBack .cameraSection .frontside .lens2, .iPadContainer .Phone .PhoneBack .cameraSection .frontside .lens3 {
     width: 78px;
     height: 78px;
     border-radius: 50%;
@@ -302,7 +302,7 @@ i {
     justify-content: center;
     align-items: center;
   }
-  .container .Phone .PhoneBack .cameraSection .frontside .lens1 .outer, .container .Phone .PhoneBack .cameraSection .frontside .lens2 .outer, .container .Phone .PhoneBack .cameraSection .frontside .lens3 .outer {
+  .iPadContainer .Phone .PhoneBack .cameraSection .frontside .lens1 .outer, .iPadContainer .Phone .PhoneBack .cameraSection .frontside .lens2 .outer, .iPadContainer .Phone .PhoneBack .cameraSection .frontside .lens3 .outer {
     width: 80%;
     height: 80%;
     border-radius: 50%;
@@ -311,197 +311,197 @@ i {
     justify-content: center;
     align-items: center;
   }
-  .container .Phone .PhoneBack .cameraSection .frontside .lens1 .outer .inner, .container .Phone .PhoneBack .cameraSection .frontside .lens2 .outer .inner, .container .Phone .PhoneBack .cameraSection .frontside .lens3 .outer .inner {
+  .iPadContainer .Phone .PhoneBack .cameraSection .frontside .lens1 .outer .inner, .iPadContainer .Phone .PhoneBack .cameraSection .frontside .lens2 .outer .inner, .iPadContainer .Phone .PhoneBack .cameraSection .frontside .lens3 .outer .inner {
     width: 80%;
     height: 80%;
     border-radius: 50%;
     background: rgb(19, 19, 19);
   }
-  .container .Phone .PhoneBack .cameraSection .frontside .lens1 {
+  .iPadContainer .Phone .PhoneBack .cameraSection .frontside .lens1 {
     top: 10px;
     left: 10px;
   }
-  .container .Phone .PhoneBack .cameraSection .frontside .lens2 {
+  .iPadContainer .Phone .PhoneBack .cameraSection .frontside .lens2 {
     bottom: 10px;
     left: 10px;
   }
-  .container .Phone .PhoneBack .cameraSection .frontside .lens3 {
+  .iPadContainer .Phone .PhoneBack .cameraSection .frontside .lens3 {
     top: 50%;
     right: 10px;
     transform: translateY(-50%);
   }
-  .container .Phone .PhoneBack .cameraSection .leftside, .container .Phone .PhoneBack .cameraSection .rightside {
+  .iPadContainer .Phone .PhoneBack .cameraSection .leftside, .iPadContainer .Phone .PhoneBack .cameraSection .rightside {
     width: 10px;
     height: 100%;
     display: none;
   }
-  .container .Phone .PhoneBack .cameraSection .topside, .container .Phone .PhoneBack .cameraSection .bottomside {
+  .iPadContainer .Phone .PhoneBack .cameraSection .topside, .iPadContainer .Phone .PhoneBack .cameraSection .bottomside {
     width: 100%;
     height: 10px;
     display: none;
   }
-  .container .Phone .PhoneBack .cameraSection .bottomside {
+  .iPadContainer .Phone .PhoneBack .cameraSection .bottomside {
     transform: rotateX(-90deg) translateZ(172.5px);
   }
-  .container .Phone .PhoneBack .cameraSection .leftside {
+  .iPadContainer .Phone .PhoneBack .cameraSection .leftside {
     transform: rotateY(-90deg) translateZ(5px);
   }
-  .container .Phone .PhoneBack .cameraSection .rightside {
+  .iPadContainer .Phone .PhoneBack .cameraSection .rightside {
     transform: rotateY(90deg) translateZ(172.5px);
   }
-  .container .Phone .PhoneBack .cameraSection .topside {
+  .iPadContainer .Phone .PhoneBack .cameraSection .topside {
     transform: rotateX(90deg) translateZ(5px);
   }
-  .container .Phone .PhoneTop, .container .Phone .PhoneBottom {
+  .iPadContainer .Phone .PhoneTop, .iPadContainer .Phone .PhoneBottom {
     width: calc(100% - 80px);
     height: 40px;
     background: rgb(170, 170, 170);
   }
-  .container .Phone .PhoneTop .leftCorner, .container .Phone .PhoneBottom .leftCorner {
+  .iPadContainer .Phone .PhoneTop .leftCorner, .iPadContainer .Phone .PhoneBottom .leftCorner {
     transform: translateX(50%) rotateY(-90deg) translateX(-40px) translateZ(-80px);
   }
-  .container .Phone .PhoneTop .rightCorner, .container .Phone .PhoneBottom .rightCorner {
+  .iPadContainer .Phone .PhoneTop .rightCorner, .iPadContainer .Phone .PhoneBottom .rightCorner {
     transform: translateX(50%) rotateY(0deg) translateX(0px) translateZ(-40px);
   }
-  .container .Phone .PhoneTop {
+  .iPadContainer .Phone .PhoneTop {
     transform: translateY(-20px) rotateX(90deg) translate(40px) rotateZ(180deg);
   }
-  .container .Phone .leftCorner {
+  .iPadContainer .Phone .leftCorner {
     left: -80px;
   }
-  .container .Phone .rightCorner {
+  .iPadContainer .Phone .rightCorner {
     right: 0px;
   }
-  .container .Phone .corner {
+  .iPadContainer .Phone .corner {
     position: absolute;
     width: 2.5px;
     height: 40px;
   }
-  .container .Phone .corner div {
+  .iPadContainer .Phone .corner div {
     background: rgb(109, 109, 109);
     width: 100%;
     height: 100%;
     position: absolute;
   }
-  .container .Phone .corner div:nth-child(0) {
+  .iPadContainer .Phone .corner div:nth-child(0) {
     transform: rotateY(0deg) translatez(40px);
   }
-  .container .Phone .corner div:nth-child(1) {
+  .iPadContainer .Phone .corner div:nth-child(1) {
     transform: rotateY(3deg) translatez(40px);
   }
-  .container .Phone .corner div:nth-child(2) {
+  .iPadContainer .Phone .corner div:nth-child(2) {
     transform: rotateY(6deg) translatez(40px);
   }
-  .container .Phone .corner div:nth-child(3) {
+  .iPadContainer .Phone .corner div:nth-child(3) {
     transform: rotateY(9deg) translatez(40px);
   }
-  .container .Phone .corner div:nth-child(4) {
+  .iPadContainer .Phone .corner div:nth-child(4) {
     transform: rotateY(12deg) translatez(40px);
   }
-  .container .Phone .corner div:nth-child(5) {
+  .iPadContainer .Phone .corner div:nth-child(5) {
     transform: rotateY(15deg) translatez(40px);
   }
-  .container .Phone .corner div:nth-child(6) {
+  .iPadContainer .Phone .corner div:nth-child(6) {
     transform: rotateY(18deg) translatez(40px);
   }
-  .container .Phone .corner div:nth-child(7) {
+  .iPadContainer .Phone .corner div:nth-child(7) {
     transform: rotateY(21deg) translatez(40px);
   }
-  .container .Phone .corner div:nth-child(8) {
+  .iPadContainer .Phone .corner div:nth-child(8) {
     transform: rotateY(24deg) translatez(40px);
   }
-  .container .Phone .corner div:nth-child(9) {
+  .iPadContainer .Phone .corner div:nth-child(9) {
     transform: rotateY(27deg) translatez(40px);
   }
-  .container .Phone .corner div:nth-child(10) {
+  .iPadContainer .Phone .corner div:nth-child(10) {
     transform: rotateY(30deg) translatez(40px);
   }
-  .container .Phone .corner div:nth-child(11) {
+  .iPadContainer .Phone .corner div:nth-child(11) {
     transform: rotateY(33deg) translatez(40px);
   }
-  .container .Phone .corner div:nth-child(12) {
+  .iPadContainer .Phone .corner div:nth-child(12) {
     transform: rotateY(36deg) translatez(40px);
   }
-  .container .Phone .corner div:nth-child(13) {
+  .iPadContainer .Phone .corner div:nth-child(13) {
     transform: rotateY(39deg) translatez(40px);
   }
-  .container .Phone .corner div:nth-child(14) {
+  .iPadContainer .Phone .corner div:nth-child(14) {
     transform: rotateY(42deg) translatez(40px);
   }
-  .container .Phone .corner div:nth-child(15) {
+  .iPadContainer .Phone .corner div:nth-child(15) {
     transform: rotateY(45deg) translatez(40px);
   }
-  .container .Phone .corner div:nth-child(16) {
+  .iPadContainer .Phone .corner div:nth-child(16) {
     transform: rotateY(48deg) translatez(40px);
   }
-  .container .Phone .corner div:nth-child(17) {
+  .iPadContainer .Phone .corner div:nth-child(17) {
     transform: rotateY(51deg) translatez(40px);
   }
-  .container .Phone .corner div:nth-child(18) {
+  .iPadContainer .Phone .corner div:nth-child(18) {
     transform: rotateY(54deg) translatez(40px);
   }
-  .container .Phone .corner div:nth-child(19) {
+  .iPadContainer .Phone .corner div:nth-child(19) {
     transform: rotateY(57deg) translatez(40px);
   }
-  .container .Phone .corner div:nth-child(20) {
+  .iPadContainer .Phone .corner div:nth-child(20) {
     transform: rotateY(60deg) translatez(40px);
   }
-  .container .Phone .corner div:nth-child(21) {
+  .iPadContainer .Phone .corner div:nth-child(21) {
     transform: rotateY(63deg) translatez(40px);
   }
-  .container .Phone .corner div:nth-child(22) {
+  .iPadContainer .Phone .corner div:nth-child(22) {
     transform: rotateY(66deg) translatez(40px);
   }
-  .container .Phone .corner div:nth-child(23) {
+  .iPadContainer .Phone .corner div:nth-child(23) {
     transform: rotateY(69deg) translatez(40px);
   }
-  .container .Phone .corner div:nth-child(24) {
+  .iPadContainer .Phone .corner div:nth-child(24) {
     transform: rotateY(72deg) translatez(40px);
   }
-  .container .Phone .corner div:nth-child(25) {
+  .iPadContainer .Phone .corner div:nth-child(25) {
     transform: rotateY(75deg) translatez(40px);
   }
-  .container .Phone .corner div:nth-child(26) {
+  .iPadContainer .Phone .corner div:nth-child(26) {
     transform: rotateY(78deg) translatez(40px);
   }
-  .container .Phone .corner div:nth-child(27) {
+  .iPadContainer .Phone .corner div:nth-child(27) {
     transform: rotateY(81deg) translatez(40px);
   }
-  .container .Phone .corner div:nth-child(28) {
+  .iPadContainer .Phone .corner div:nth-child(28) {
     transform: rotateY(84deg) translatez(40px);
   }
-  .container .Phone .corner div:nth-child(29) {
+  .iPadContainer .Phone .corner div:nth-child(29) {
     transform: rotateY(87deg) translatez(40px);
   }
-  .container .Phone .corner div:nth-child(30) {
+  .iPadContainer .Phone .corner div:nth-child(30) {
     transform: rotateY(90deg) translatez(40px);
   }
-  .container .Phone .PhoneBottom {
+  .iPadContainer .Phone .PhoneBottom {
     bottom: 0;
     transform: translateY(20px) rotateX(-90deg) translate(40px);
   }
-  .container .Phone .PhoneRight, .container .Phone .PhoneLeft {
+  .iPadContainer .Phone .PhoneRight, .iPadContainer .Phone .PhoneLeft {
     width: 40px;
     height: calc(100% - 80px);
     background: rgb(170, 170, 170);
   }
-  .container .Phone .PhoneRight {
+  .iPadContainer .Phone .PhoneRight {
     transform: translateX(-20px) rotateY(-90deg) translateY(40px);
     left: 0;
   }
-  .container .Phone .PhoneRight .powerbtn, .container .Phone .PhoneRight .volumbtn {
+  .iPadContainer .Phone .PhoneRight .powerbtn, .iPadContainer .Phone .PhoneRight .volumbtn {
     position: absolute;
     left: 50%;
     width: 20px;
     transform: translateX(-50%) translateZ(5px) rotateX(0deg);
     transition: 0.3s;
   }
-  .container .Phone .PhoneRight .powerbtn > div, .container .Phone .PhoneRight .volumbtn > div {
+  .iPadContainer .Phone .PhoneRight .powerbtn > div, .iPadContainer .Phone .PhoneRight .volumbtn > div {
     position: absolute;
     background: rgb(70, 70, 70);
     transform-style: flat;
   }
-  .container .Phone .PhoneRight .powerbtn > div label, .container .Phone .PhoneRight .volumbtn > div label {
+  .iPadContainer .Phone .PhoneRight .powerbtn > div label, .iPadContainer .Phone .PhoneRight .volumbtn > div label {
     display: block;
     width: 100%;
     height: 100%;
@@ -509,70 +509,70 @@ i {
     background: rgb(0, 10, 41);
     cursor: pointer;
   }
-  .container .Phone .PhoneRight .powerbtn .volumesideRight, .container .Phone .PhoneRight .powerbtn .volumesideLeft, .container .Phone .PhoneRight .powerbtn .volumesideFront, .container .Phone .PhoneRight .volumbtn .volumesideRight, .container .Phone .PhoneRight .volumbtn .volumesideLeft, .container .Phone .PhoneRight .volumbtn .volumesideFront {
+  .iPadContainer .Phone .PhoneRight .powerbtn .volumesideRight, .iPadContainer .Phone .PhoneRight .powerbtn .volumesideLeft, .iPadContainer .Phone .PhoneRight .powerbtn .volumesideFront, .iPadContainer .Phone .PhoneRight .volumbtn .volumesideRight, .iPadContainer .Phone .PhoneRight .volumbtn .volumesideLeft, .iPadContainer .Phone .PhoneRight .volumbtn .volumesideFront {
     display: flex;
     flex-direction: column;
   }
-  .container .Phone .PhoneRight .powerbtn .volumesideRight label, .container .Phone .PhoneRight .powerbtn .volumesideLeft label, .container .Phone .PhoneRight .powerbtn .volumesideFront label, .container .Phone .PhoneRight .volumbtn .volumesideRight label, .container .Phone .PhoneRight .volumbtn .volumesideLeft label, .container .Phone .PhoneRight .volumbtn .volumesideFront label {
+  .iPadContainer .Phone .PhoneRight .powerbtn .volumesideRight label, .iPadContainer .Phone .PhoneRight .powerbtn .volumesideLeft label, .iPadContainer .Phone .PhoneRight .powerbtn .volumesideFront label, .iPadContainer .Phone .PhoneRight .volumbtn .volumesideRight label, .iPadContainer .Phone .PhoneRight .volumbtn .volumesideLeft label, .iPadContainer .Phone .PhoneRight .volumbtn .volumesideFront label {
     height: 50%;
   }
-  .container .Phone .PhoneRight .powerbtn {
+  .iPadContainer .Phone .PhoneRight .powerbtn {
     top: 40px;
     height: 50px;
   }
-  .container .Phone .PhoneRight .powerbtn .powersideFront {
+  .iPadContainer .Phone .PhoneRight .powerbtn .powersideFront {
     width: 100%;
     height: 100%;
   }
-  .container .Phone .PhoneRight .powerbtn .powersideRight, .container .Phone .PhoneRight .powerbtn .powersideLeft {
+  .iPadContainer .Phone .PhoneRight .powerbtn .powersideRight, .iPadContainer .Phone .PhoneRight .powerbtn .powersideLeft {
     width: 5px;
     height: 100%;
   }
-  .container .Phone .PhoneRight .powerbtn .powersideRight {
+  .iPadContainer .Phone .PhoneRight .powerbtn .powersideRight {
     transform: rotateY(90deg) translate(50%) translateZ(17.5px);
   }
-  .container .Phone .PhoneRight .powerbtn .powersideLeft {
+  .iPadContainer .Phone .PhoneRight .powerbtn .powersideLeft {
     transform: rotateY(90deg) translateX(50%) translateZ(-2.5px);
   }
-  .container .Phone .PhoneRight .powerbtn .powersideBottom, .container .Phone .PhoneRight .powerbtn .powersideTop {
+  .iPadContainer .Phone .PhoneRight .powerbtn .powersideBottom, .iPadContainer .Phone .PhoneRight .powerbtn .powersideTop {
     width: 20px;
     height: 5px;
   }
-  .container .Phone .PhoneRight .powerbtn .powersideTop {
+  .iPadContainer .Phone .PhoneRight .powerbtn .powersideTop {
     transform: rotateX(90deg) translateZ(2.5px) translateY(-2.5px);
   }
-  .container .Phone .PhoneRight .powerbtn .powersideBottom {
+  .iPadContainer .Phone .PhoneRight .powerbtn .powersideBottom {
     transform: rotateX(90deg) translateZ(-47.5px) translateY(-2.5px);
   }
-  .container .Phone .PhoneRight .volumbtn {
+  .iPadContainer .Phone .PhoneRight .volumbtn {
     top: 100px;
     height: 100px;
   }
-  .container .Phone .PhoneRight .volumbtn .volumesideFront {
+  .iPadContainer .Phone .PhoneRight .volumbtn .volumesideFront {
     width: 100%;
     height: 100%;
   }
-  .container .Phone .PhoneRight .volumbtn .volumesideRight, .container .Phone .PhoneRight .volumbtn .volumesideLeft {
+  .iPadContainer .Phone .PhoneRight .volumbtn .volumesideRight, .iPadContainer .Phone .PhoneRight .volumbtn .volumesideLeft {
     width: 5px;
     height: 100%;
   }
-  .container .Phone .PhoneRight .volumbtn .volumesideRight {
+  .iPadContainer .Phone .PhoneRight .volumbtn .volumesideRight {
     transform: rotateY(90deg) translate(50%) translateZ(17.5px);
   }
-  .container .Phone .PhoneRight .volumbtn .volumesideLeft {
+  .iPadContainer .Phone .PhoneRight .volumbtn .volumesideLeft {
     transform: rotateY(90deg) translateX(50%) translateZ(-2.5px);
   }
-  .container .Phone .PhoneRight .volumbtn .volumesideBottom, .container .Phone .PhoneRight .volumbtn .volumesideTop {
+  .iPadContainer .Phone .PhoneRight .volumbtn .volumesideBottom, .iPadContainer .Phone .PhoneRight .volumbtn .volumesideTop {
     width: 20px;
     height: 5px;
   }
-  .container .Phone .PhoneRight .volumbtn .volumesideTop {
+  .iPadContainer .Phone .PhoneRight .volumbtn .volumesideTop {
     transform: rotateX(90deg) translateZ(2.5px) translateY(-2.5px);
   }
-  .container .Phone .PhoneRight .volumbtn .volumesideBottom {
+  .iPadContainer .Phone .PhoneRight .volumbtn .volumesideBottom {
     transform: rotateX(90deg) translateZ(-97.5px) translateY(-2.5px);
   }
-  .container .Phone .PhoneLeft {
+  .iPadContainer .Phone .PhoneLeft {
     transform: translateX(20px) rotateY(90deg) translateY(40px);
     right: 0;
   }

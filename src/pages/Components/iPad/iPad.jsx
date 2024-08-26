@@ -27,7 +27,7 @@ const Iphone13Demo = () => {
             <i className="bi bi-badge-3d"></i> <p>+</p> <i className="bi bi-apple"></i>
           </label>
         </div>
-        <div className="container">
+        <div className="iPadContainer">
           <div className="viewcontrols">
             <label htmlFor="topView"><i className="bi bi-caret-up-fill"></i></label>
             <label htmlFor="rightView"><i className="bi bi-caret-right-fill"></i></label>
@@ -133,7 +133,8 @@ const Iphone13Demo = () => {
                       </a>
                     </div>
                   </div>
-                  <div className="off"></div>
+                  {/* Turn screen on/off here */}
+                  {/* <div className="off"></div> */}
                   <div className="outervol">
                     <div className="volind">
                       <div className="bar"></div>

@@ -20,6 +20,9 @@ const Home = () => {
         <>
         <NavBar />
             <section id='Home'>
+                <div>
+                    <IPad />
+                </div>
                 <div className='container h-screen'>
                     <div className='flex flex-wrap'>
                         <img id='about' className='rock1' src={Rock1} alt='Rocks' />
@@ -48,9 +51,6 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <div>
-                <IPad />
-            </div>
         </>
     )
 }
