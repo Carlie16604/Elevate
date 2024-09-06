@@ -10,6 +10,8 @@
   scroll-behavior: smooth;
 }
 
+/* Need to add global message saying not available on mobile and disable everything if screen is less than ____ */
+
 :root {
   /* background-color: #e3ded7; */
   background-color: #dbd8d5;
