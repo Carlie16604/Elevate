@@ -38,6 +38,7 @@ const Iphone13Demo = () => {
           </div>
           <div className="Phone">
             <div className="phoneSide PhoneTop">
+              {/* Fix spacing between corners and screen */}
               <div className="leftCorner corner">
                 {Array.from({ length: 30 }).map((_, i) => (
                   <div key={i}></div>
