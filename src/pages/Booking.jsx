@@ -41,6 +41,7 @@ const Booking = () => {
                                         </h2>
                                     <div className='mt-5'>
                                         <div className='flex flex-col gap-3'>
+                                            {/* Add onClick functionality that brings you to contact <3 */}
                                             {selectedDateInfo.classes.length > 0 ? (
                                                 <ul className='flex flex-col gap-4 items-center'>
                                                     {selectedDateInfo.classes.map((cls) => (
