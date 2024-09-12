@@ -7,7 +7,7 @@ import Instagram from './assets/Instagram.webp';
 import Sig from './assets/Sig.png'; 
 const Iphone13Demo = () => {
   return (
-    <div>
+    <div className='preview'>
       <input type="radio" name="h" id="firstView" defaultChecked />
       <input type="radio" name="h" id="Intro_Animation" />
       <input type="radio" name="view" id="topView" />
