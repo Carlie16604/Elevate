@@ -101,6 +101,7 @@ const Calendar = ({ schedule, onDateSelect }) => {
                         <span id="calendar-next"
                             onClick={() => handleNavigation(1)}>
                             <img src={AR} alt='arrow right' className='w-[20px] h-[20px]'/>
+                            {/* Consider replacing this with ➜ */}
                         </span>
                     </div>
                 </div>
