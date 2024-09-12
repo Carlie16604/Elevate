@@ -239,7 +239,7 @@ i {
     background: rgb(36, 36, 36);
   }
   .iPadContainer .Phone .PhoneBack {
-    transform: translateZ(-40px) rotateY(180deg);
+    transform: translateZ(-20px) rotateY(180deg);
   }
   @media screen and (max-width: 768px) {
     .iPadContainer .Phone .PhoneBack {
