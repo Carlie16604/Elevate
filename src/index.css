@@ -15,12 +15,14 @@
   background-color: #dbd8d5;
   /* background-color: #eeeeee; */
   font-family: kanit;
+  min-width: 1200px;
+  min-height: 900x;
 }
 
 /* Format for all pages -------------------------------------------------------------*/
 
 .rockContainer {
-  margin: 0 auto;
+  /* margin: 0 auto; */
   max-width: 85rem;
 }
 
@@ -410,7 +412,7 @@ ul:hover a:hover ~ a:before {
 /* Classes -------------------------------------------------------------------------- */
 
 .classesRock {
-  display: flex;
+  /* display: flex; */
   z-index: -1;
   width: 1260px;
   height: 1240px;
