@@ -168,7 +168,7 @@
 /* Nav Bar --------------------------------------------------------------------------*/
 
 .NavBar {
-  /* margin: 0 177px; */
+  margin: 0 96px;
   padding: 20px 50px;
   z-index: auto;
 }
@@ -376,8 +376,8 @@ ul:hover a:hover ~ a:before {
 
 .rock1 {
   object-position: center;
-  width: 655px;
-  height: 520px;
+  max-width: 655px;
+  max-height: 520px;
   z-index: -15;
   position: absolute;
   margin: 350px 500px;
@@ -385,8 +385,8 @@ ul:hover a:hover ~ a:before {
 
 .rock2{
   object-position: center;
-  width: 315px;
-  height: 272px;
+  max-width: 315px;
+  max-height: 272px;
   z-index: -10;
   position: absolute;
   margin: 150px 800px;
@@ -394,8 +394,8 @@ ul:hover a:hover ~ a:before {
 
 .rock3 {
   object-position: center; 
-  width: 200px;
-  height: 175px;
+  max-width: 200px;
+  max-height: 175px;
   z-index: -10;
   position: absolute;
   margin: 720px 445px;
@@ -414,8 +414,8 @@ ul:hover a:hover ~ a:before {
 .classesRock {
   /* display: flex; */
   z-index: -1;
-  width: 1260px;
-  height: 1240px;
+  max-width: 1260px;
+  max-height: 1240px;
   position: absolute;
   margin-top: 18rem;
 }
@@ -511,10 +511,14 @@ ul:hover a:hover ~ a:before {
 .reviewsRock {
   display: flex;
   z-index: -1;
-  width: 1360px;
-  height: 1040px;
+  max-width: 1360px;
+  max-height: 1040px;
   position: absolute;
   margin: 4rem 0 0 5rem;
+
+  @media (max-width: 1200px) {
+    margin: 4rem 0 0 0;
+  }
 }
 
 .portals {
