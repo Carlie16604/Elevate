@@ -44,10 +44,10 @@ const Reviews = () => {
             <section className='mt-[10rem] mb-[4rem] mx-auto'>
                 <div className='container'>
                     <div className='mt-[20rem] bg-[#94997833] p-[30px]'>
-                        <div className='bg-[#DFDCD8] overflow-x-clip w-full h-[23rem] relative'>
+                        <div className='bg-[#eee9e6dd] overflow-x-clip w-full h-[23rem] relative'>
                             <img src={ReviewPhoto} alt='Pilates Woman' className='absolute bottom-0 z-20 h-[36rem] rounded-tr-[200px]'/>
                         <div className='flex'>
-                            <div className='absolute flex flex-col bg-[#DFDCD8] top-0 right-0 w-[60%] h-full py-[40px] px-[50px]'>
+                            <div className='absolute flex flex-col top-0 right-0 w-[60%] h-full py-[40px] px-[50px]'>
                                 <img className='w-[4rem] rotate-180' src={Quote} alt='quote'/>
                                     <p className='text-[17px] italic text-[#000] my-4 z-10'>“This Pilates studio offers an exceptional experience with knowledgeable instructors who tailor workouts to individual needs, ensuring both beginners and advanced practitioners feel challenged and supported. The serene atmosphere and state-of-the-art equipment create a welcoming environment that inspires a deep connection to the practice.”</p>
                                     <h3 className='text-[#000] text-[21px] mb-1 font-bold'>Harry Potter</h3>

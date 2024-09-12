@@ -3,6 +3,7 @@ import '../index.css'
 import Home from "../pages/Home"
 import Classes from '../pages/Classes'
 import Reviews from '../pages/Reviews'
+import Articles from '../pages/Articles'
 import Sunrays from "./Components/Sunrays"
 
 const Main = () => {
@@ -13,6 +14,7 @@ const Main = () => {
       <Home />
       <Classes />
       <Reviews />
+      <Articles />
     </>
   )
 }
