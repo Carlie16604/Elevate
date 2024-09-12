@@ -22,7 +22,7 @@
 /* Format for all pages -------------------------------------------------------------*/
 
 .rockContainer {
-  /* margin: 0 auto; */
+  margin: 0 auto;
   max-width: 85rem;
 }
 
