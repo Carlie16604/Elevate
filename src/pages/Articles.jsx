@@ -15,7 +15,7 @@ const Articles = () => {
                     Gymat an unknown printer took a galley of type and scrambled <br/> make a type specimen book.
                     </p>
                 </div>
-                <div className='flex gap-6 w-full mt-[4rem] md1200:justify-center flex-wrap justify-center'>
+                <div className='flex gap-12 w-full mt-[4rem] md1200:justify-center flex-wrap justify-center'>
                     <div className='bg-[#EEE9E6] w-[30rem] min460:w-[100%] shadow-xl flex flex-col px-[3rem] py-[5rem]'>
                         <p className="text-[15px] font-bold text-[#323232] border-[#3E5C47] border-solid rounded-full border-[1px] w-fit px-5 py-2 mb-6">
                             09.12.2024
