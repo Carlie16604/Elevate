@@ -1,10 +1,10 @@
 import React from "react";
-import NavBar from './Components/NavBar';
-import icon from '../assets/About/About.svg';
-import trophy from '../assets/About/trophy.svg';
-import woman1 from '../assets/About/woman1.jpg';
-import women2 from '../assets/About/women2.jpg';
-import woman3 from '../assets/About/woman3.jpg';
+import NavBar from '.././Components/NavBar';
+import icon from '../../assets/About/About.svg';
+import trophy from '../../assets/About/trophy.svg';
+import woman1 from '../../assets/About/woman1.jpg';
+import women2 from '../../assets/About/women2.jpg';
+import woman3 from '../../assets/About/woman3.jpg';
 
 const About = () => {
     

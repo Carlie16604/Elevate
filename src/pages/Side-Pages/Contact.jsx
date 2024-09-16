@@ -1,9 +1,9 @@
 import React from "react";
-import NavBar from '../pages/Components/NavBar';
-import Facebook from '../assets/Contact/Facebook.svg';
-import Instagram from '../assets/Contact/Instagram.svg';
-import Linkedin from '../assets/Contact/LinkedIn.svg';
-import Pintrest from '../assets/Contact/Pintrest.svg';
+import NavBar from '.././Components/NavBar';
+import Facebook from '../../assets/Contact/Facebook.svg';
+import Instagram from '../../assets/Contact/Instagram.svg';
+import Linkedin from '../../assets/Contact/LinkedIn.svg';
+import Pintrest from '../../assets/Contact/Pintrest.svg';
 const Contact = () => {
 
     // https://www.npmjs.com/package/react-calendar

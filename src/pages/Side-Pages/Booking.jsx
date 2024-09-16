@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import '../index.css';
-import NavBar from './Components/NavBar.jsx';
+import '../../index.css';
+import NavBar from '../Components/NavBar.jsx';
 import Calendar from './Calendar.jsx';
-import { schedule } from '../data/schedule.js';
+import { schedule } from '../../data/schedule.js';
 
 const Booking = () => {
     const [selectedDateInfo, setSelectedDateInfo] = useState({ date: null, classes: null });

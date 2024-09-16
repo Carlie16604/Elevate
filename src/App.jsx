@@ -2,9 +2,9 @@ import React from "react"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import './index.css'
 import Main from './pages/Main'
-import Booking from './pages/Booking'
-import About from './pages/About'
-import Contact from './pages/Contact'
+import Booking from './pages/Side-Pages/Booking'
+import About from './pages/Side-Pages/About'
+import Contact from './pages/Side-Pages/Contact'
 import Footer from './pages/Components/Footer'
 
 const App = () => {

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import '../index.css';
+import '../../index.css';
 // import AR from '../assets/Calendar/Arrow right.png';
 // import AL from '../assets/Calendar/Arrow Left.png';
 
