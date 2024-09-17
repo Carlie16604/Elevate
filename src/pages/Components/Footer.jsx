@@ -7,7 +7,7 @@ import Pintrest from '../../assets/Footer/Pintrest.svg';
 const Footer = () => {
     return (
         <>
-            <div className='bg-[#949978] opacity-[75%] z-[-1] py-[5rem] w-full'>
+            <div className='bg-[#949978] opacity-[75%] z-[-1] py-[5rem] w-full cursor-default'>
                 <div className='container px-8'>
                     <div className='flex justify-between min620:flex-col min620:items-center min620:text-center min620:gap-[5rem]'>
                         <div className='flex flex-col w-[50%] gap-4'>
