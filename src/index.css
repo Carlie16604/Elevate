@@ -448,12 +448,8 @@ ul:hover a:hover ~ a:before {
   transform-style: preserve-3d;
 }
 
-.card-inner.rotated {
-  transform: rotateY(-180deg)
-}
-
 .card-inner:hover {
-
+  transform: rotateY(-180deg)
 }
 
 .imgWrap {
