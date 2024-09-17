@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import '../../index.css';
 import NavBar from '../Components/NavBar.jsx';
 import Calendar from './Calendar.jsx';
@@ -6,7 +6,22 @@ import { schedule } from '../../data/schedule.js';
 
 const Booking = () => {
     const [selectedDateInfo, setSelectedDateInfo] = useState({ date: null, classes: null });
-    
+
+    const getCurrentDay = () => {
+        const daysOfWeek = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+        const today = new Date();
+        return daysOfWeek[today.getDay()];
+    };
+
+    useEffect(() => {
+        const currentDay = getCurrentDay();
+        const currentDaySchedule = schedule.find(daySchedule => daySchedule.day === currentDay);
+
+        if (currentDaySchedule) {
+            setSelectedDateInfo({ date: currentDaySchedule.day, classes: currentDaySchedule.classes });
+        }
+    }, []);
+
     const handleDateSelect = (date, classes) => {
         setSelectedDateInfo({ date, classes });
     };
@@ -18,7 +33,7 @@ const Booking = () => {
                 <div className='container pt-28'>
                     <div className='bg-[#949978] h-fit rounded-t-[4000px]'>
                         <div className='text-[70px] flex justify-center'>
-                            <div className='mt-32'>
+                            <div className='mt-32 pb-12'>
                                 <h1 className='text-white'>Schedule</h1>
                             </div>
                         </div>
@@ -72,7 +87,6 @@ const Booking = () => {
                         </div>
                         <div className='flex justify-center py-6'>
                             <Calendar schedule={schedule} />
-                            {/* Connect these */}
                         </div>
                     </div>
                 </div>

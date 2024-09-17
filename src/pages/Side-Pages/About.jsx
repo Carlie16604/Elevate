@@ -15,7 +15,7 @@ const About = () => {
                 <div className='container pt-28'>
                     <div className='bg-[#949978] h-full rounded-t-[4000px] z-[-1] overflow-hidden'>
                         <div className='text-[70px] text-center pt-1'>
-                            <div className='mt-32'>
+                            <div className='mt-32 pb-12'>
                                 <h1 className='text-white pb-[5rem]'>The Team</h1>
                             </div>
                         </div>
