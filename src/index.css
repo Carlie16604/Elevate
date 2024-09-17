@@ -418,6 +418,7 @@ ul:hover a:hover ~ a:before {
   max-height: 1240px;
   position: absolute;
   margin-top: 18rem;
+  overflow: hidden;
 }
 
 .cardContainer {
@@ -429,13 +430,13 @@ ul:hover a:hover ~ a:before {
 }
 
 .card-deck {
-  margin: 0 0 7rem;
+  margin: 0 0 3rem;
 }
 
 .card {
-  width: 398px;
-  height: 450px;
-  margin: 0 2rem;
+  width: 448px;
+  height: 500px;
+  /* margin: 0 3rem; */
   perspective: 1000px;
 }
 
@@ -447,8 +448,12 @@ ul:hover a:hover ~ a:before {
   transform-style: preserve-3d;
 }
 
-.card-inner:hover {
+.card-inner.rotated {
   transform: rotateY(-180deg)
+}
+
+.card-inner:hover {
+
 }
 
 .imgWrap {
@@ -504,6 +509,7 @@ ul:hover a:hover ~ a:before {
 
 .classType {
   font-size: 50px;
+  color:#2f4636;
 }
 
 /* Reviews ------------------------------------------------------------------ */
@@ -514,11 +520,7 @@ ul:hover a:hover ~ a:before {
   max-width: 1360px;
   max-height: 1040px;
   position: absolute;
-  margin: 4rem 0 0 5rem;
-
-  @media (max-width: 1200px) {
-    margin: 4rem 0 0 0;
-  }
+  margin-top: 4rem;
 }
 
 .portals {
