@@ -14,9 +14,9 @@ const NavBar = () => {
     return (
         <>
             <div className='p-0 w-full fixed z-50'>
-                <div className='flex flex-row-reverse'>
+                <div className='flex justify-center'>
                     <div className='NavBar'> 
-                        <ul className='font-medium cursor-pointer text-2xl'>                
+                        <ul className='font-medium cursor-pointer text-xl'>                
                             <Link to='/' onClick={ goTop }>
                                 <div>Home</div>
                             </Link>

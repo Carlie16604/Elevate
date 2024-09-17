@@ -170,7 +170,6 @@
 .NavBar {
   margin: 0 96px;
   padding: 20px 50px;
-  z-index: auto;
 }
 
 ul {
@@ -230,6 +229,7 @@ ul:hover a:hover ~ a:before {
   position: relative;
   box-shadow: 1.75rem -1.25rem 0 #3E5C47,
     -1.8rem -2rem 0 #949978;
+  cursor: pointer;
 }
 
 .elevate-card h1 {
@@ -501,11 +501,13 @@ ul:hover a:hover ~ a:before {
   font-size: 25px;
   opacity: .35;
   padding-top: 0.5rem;
+  cursor: default;
 }
 
 .classType {
   font-size: 50px;
   color:#2f4636;
+  cursor: default;
 }
 
 /* Reviews ------------------------------------------------------------------ */
