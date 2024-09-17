@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import '../../index.css';
 import NavBar from '../Components/NavBar.jsx';
-import Calendar from './Calendar.jsx';
+import Calendar from '../Components/Calendar.jsx';
 import { schedule } from '../../data/schedule.js';
 
 const Booking = () => {
@@ -48,7 +48,7 @@ const Booking = () => {
                                 </a>
                             ))}
                         </div>
-                        <div className='my-5'>
+                        <div className='mt-5'>
                             {selectedDateInfo.date ? (
                                 <>
                                         <h2 className='text-center text-[#2f4636] text-[30px] mb-6'>
@@ -85,7 +85,7 @@ const Booking = () => {
                                 <p className='text-center text-white text-[20px] mt-6'>Please select a day to view the schedule.</p>
                             )}
                         </div>
-                        <div className='flex justify-center py-6'>
+                        <div className='flex justify-center py-12'>
                             <Calendar schedule={schedule} />
                         </div>
                     </div>

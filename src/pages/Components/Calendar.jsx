@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import '../../index.css';
-// import AR from '../assets/Calendar/Arrow right.png';
-// import AL from '../assets/Calendar/Arrow Left.png';
 
 const Calendar = ({ schedule, onDateSelect }) => {
     const [date, setDate] = useState(new Date());
@@ -94,15 +92,13 @@ const Calendar = ({ schedule, onDateSelect }) => {
                     <div className='button-space hover:opacity-75'>
                         <span id="calendar-prev"
                             onClick={() => handleNavigation(-1)}>
-                            {/* <img src={AL} alt='arrow left' className='w-[20px] h-[20px]'/> */}
-                            <p className='text-white -rotate-180'>➜</p>
+                            <p className='text-white -rotate-180 text-[25px]'>➜</p>
                         </span>
                     </div>
                     <div className='button-space hover:opacity-75'>
                         <span id="calendar-next"
                             onClick={() => handleNavigation(1)}>
-                                <p className='text-white'>➜</p>
-                            {/* <img src={AR} alt='arrow right' className='w-[20px] h-[20px]'/> */}
+                                <p className='text-white text-[25px]'>➜</p>
                         </span>
                     </div>
                 </div>
