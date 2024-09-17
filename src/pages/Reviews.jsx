@@ -66,10 +66,10 @@ const Reviews = () => {
             <section>
                 <div className="my-[5rem] mx-auto">
                     <div className='flex gap-32 justify-center flex-wrap pt-[3rem]'>
-                        <img src={Stretch} alt='stretching person' className="scale-[.8] hover:invert h-32 w-32" style={{transition: '0.3s'}}/>
-                        <img src={Core} alt='person stretching their core' className="scale-[.8] hover:invert h-32 w-32" style={{transition: '0.3s'}}/>
-                        <img src={Sweat} alt='Sweating person' className="scale-[.8] hover:invert h-32 w-32" style={{transition: '0.3s'}}/>
-                        <img src={Moulding} alt='Moulding person' className="scale-[.8] hover:invert h-32 w-32" style={{transition: '0.3s'}}/>
+                        <img src={Stretch} alt='stretching person' className="scale-[.8] hover:brightness-125 h-32 w-32" style={{transition: '0.3s'}}/>
+                        <img src={Core} alt='person stretching their core' className="scale-[.8] hover:brightness-125 h-32 w-32" style={{transition: '0.3s'}}/>
+                        <img src={Sweat} alt='Sweating person' className="scale-[.8] hover:brightness-125 h-32 w-32" style={{transition: '0.3s'}}/>
+                        <img src={Moulding} alt='Moulding person' className="scale-[.8] hover:brightness-125 h-32 w-32" style={{transition: '0.3s'}}/>
                     </div>
                 </div>
             </section>
