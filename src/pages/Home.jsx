@@ -1,8 +1,5 @@
 import React from "react";
 import'../index.css';
-import Meditate from '../assets/Home/meditate.svg';
-import Stretch from '../assets/Home/Stretch.png';
-import Woman from '../assets/Home/woman.webp';
 import Studio from '../assets/Home/studio.jpg';
 import Facebook from '../assets/Footer/Facebook.svg';
 import Instagram from '../assets/Footer/Instagram.svg';
