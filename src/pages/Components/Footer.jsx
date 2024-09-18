@@ -19,10 +19,10 @@ const Footer = () => {
                             </p>
                             <div className='flex flex-wrap gap-4'>
                                 <div className='text-[18px] font-medium flex gap-5'>
-                                    <img className='w-[2.80rem] h-[2.80rem] rounded-full cursor-pointer hover:bg-[#fff] ease-in duration-200 hover:text-white hover:border-white hover:border-[3px]' src={Instagram} alt='Instagram'/>
-                                    <img className='w-[2.80rem] h-[2.80rem] rounded-full cursor-pointer hover:bg-[#fff] ease-in duration-200 hover:text-white hover:border-white hover:border-[3px]' src={Facebook} alt='Instagram'/>
-                                    <img className='w-[2.80rem] h-[2.80rem] rounded-full cursor-pointer hover:bg-[#fff] ease-in duration-200 hover:text-white hover:border-white hover:border-[3px]' src={Linkedin} alt='Instagram'/>
-                                    <img className='w-[2.80rem] h-[2.80rem] rounded-full cursor-pointer hover:bg-[#fff] ease-in duration-200 hover:text-white hover:border-white hover:border-[3px]' src={Pintrest} alt='Instagram'/>
+                                    <img className='socials' src={Instagram} alt='Instagram'/>
+                                    <img className='socials' src={Facebook} alt='Facebook'/>
+                                    <img className='socials' src={Linkedin} alt='Linkedin'/>
+                                    <img className='socials' src={Pintrest} alt='Pintrest'/>
                                 </div>
                             </div>
                                 <p className='text-[18px] font-medium '>Inspired by <a href='https://www.caretopilates.com/' className='hover:text-white ease-in duration-200'>Care to Pilates</a> | Boulder, CO</p>

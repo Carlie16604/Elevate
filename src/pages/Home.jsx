@@ -1,12 +1,12 @@
 import React from "react";
 import'../index.css';
-import Rock1 from '../assets/Home/Rock1.png'
-import Rock2 from '../assets/Home/Rock2.png'
-import Rock3 from '../assets/Home/Rock3.png'
-import Meditate from '../assets/Home/meditate.svg'
-import Stretch from '../assets/Home/Stretch.png'
-import Woman from '../assets/Home/woman.webp'
-import Studio from '../assets/Home/studio.jpg'
+import Meditate from '../assets/Home/meditate.svg';
+import Stretch from '../assets/Home/Stretch.png';
+import Woman from '../assets/Home/woman.webp';
+import Studio from '../assets/Home/studio.jpg';
+import Facebook from '../assets/Footer/Facebook.svg';
+import Instagram from '../assets/Footer/Instagram.svg';
+import Pintrest from '../assets/Footer/Pintrest.svg';
 import NavBar from '../pages/Components/NavBar.jsx';
 import { Link } from "react-router-dom";
 
@@ -19,13 +19,9 @@ const Home = () => {
         <>
         <NavBar />
             <section id='Home'>
-                <img src={Studio} alt="studio img" rel='norel' className='z-0 absolute h-[100vh] w-screen min-w-[1200px] object-cover'/>
+                <img src={Studio} alt="studio img" rel='norel' className='z-0 absolute h-[100vh] w-screen min-w-[1200px] object-cover shadow-md'/>
                 <div className='container h-screen'>
                     <div className='flex flex-wrap'>
-                        {/* <img className='rock1' src={Rock1} alt='Rocks' />
-                        <img className='rock2' src={Rock2} alt='Rocks' />
-                        <img className='rock3' src={Rock3} alt='Rocks' /> */}
-                        {/* <img className='w-[400px] h-[400px] absolute my-[277px] ml-[704px]' src={Woman} alt='Logo' /> */}
                             <div className='grid grid-cols-2 items-center pt-[250px] pl-12 relative'>
                                 <div>
                                     <div className='elevate-card top-32 '>
@@ -44,7 +40,18 @@ const Home = () => {
                                         Let's Talk About Your Health!
                                     </Link>
                                 </div>
+                                <div className='flex flex-row-reverse -rotate-90 text-white absolute top-[80%] right-[-106px] items-center min800:hidden'>
+                                    <p className='capitalize text-3xl font-bold tracking-wide'>
+                                        share
+                                    </p>
+                                <span className='w-[35px] bg-[#3E5C47] h-[2.5px] mr-6'></span>
+                                <div className='text-white gap-7 flex mr-7'>
+                                    <img className='socials rotate-90' src={Pintrest} alt='Pintrest'/>
+                                    <img className='socials rotate-90' src={Facebook} alt='Facebook'/>
+                                    <img className='socials rotate-90' src={Instagram} alt='Instagram'/>
+                                </div>
                             </div>
+                        </div>
                     </div>
                 </div>
             </section>

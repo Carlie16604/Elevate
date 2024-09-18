@@ -165,6 +165,22 @@
   100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
 }
 
+/* Global -------------------------------------------------------------------------- */
+
+.socials {
+  width: 2.80rem;
+  height: 2.80rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 200ms ease-in, color 200ms ease-in, border 200ms ease-in;
+}
+
+.socials:hover {
+  background-color: #fff;
+  color: white;
+  border: 3px solid white;
+}
+
 /* Nav Bar --------------------------------------------------------------------------*/
 
 .NavBar {
@@ -371,35 +387,6 @@ ul:hover a:hover ~ a:before {
       clip-path: circle(100%);
     }
   }
-}
-
-/* Background */
-
-.rock1 {
-  object-position: center;
-  max-width: 655px;
-  max-height: 520px;
-  z-index: -15;
-  position: absolute;
-  margin: 350px 500px;
-}
-
-.rock2{
-  object-position: center;
-  max-width: 315px;
-  max-height: 272px;
-  z-index: -10;
-  position: absolute;
-  margin: 150px 800px;
-}
-
-.rock3 {
-  object-position: center; 
-  max-width: 200px;
-  max-height: 175px;
-  z-index: -10;
-  position: absolute;
-  margin: 720px 445px;
 }
 
 /* Home Content */
