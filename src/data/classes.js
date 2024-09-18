@@ -1,7 +1,7 @@
-import Foundations from '../assets/Offers/Foundations.png';
-import Water from '../assets/Offers/Water.png';
-import Fire from '../assets/Offers/Fire.png';
-import Air from '../assets/Offers/Air.png';
+import Foundations from '../assets/Classes/Foundations.png';
+import Water from '../assets/Classes/Water.png';
+import Fire from '../assets/Classes/Fire.png';
+import Air from '../assets/Classes/Air.png';
 
 export const classes = [
     {

@@ -1,7 +1,7 @@
 import  React from "react";
 import { Link } from 'react-router-dom';
 import '../index.css';
-import Rock from '../assets/Offers/rock.png';
+import Rock from '../assets/Classes/rock.png';
 import { classes } from '../data/classes.js';
 const Classes = () => {
 
