@@ -16,7 +16,9 @@ const NavBar = () => {
         <>
             <div className='p-0 w-full fixed z-50 shadow-xl'>
                 <div className='px-10 py-2'> 
-                    <img src={Logo} alt='Elevate Logo' className='absolute h-[58px]'/>
+                    <Link to='/' onClick={ goTop }>
+                        <img src={Logo} alt='Elevate Logo' className='absolute h-[58px]'/>
+                    </Link>
                     <div className='flex justify-center'>
                         <ul className='font-medium cursor-pointer text-xl'>                
                             <Link to='/' onClick={ goTop }>
