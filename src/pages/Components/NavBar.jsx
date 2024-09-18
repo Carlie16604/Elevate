@@ -1,5 +1,6 @@
 import React from "react";
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom';
+import Logo from '../../assets/NavBar/Logo.png';
 
 const NavBar = () => {
     // const navigate = useNavigate()
@@ -13,9 +14,10 @@ const NavBar = () => {
 
     return (
         <>
-            <div className='p-0 w-full fixed z-50'>
-                <div className='flex justify-center'>
-                    <div className='NavBar'> 
+            <div className='p-0 w-full fixed z-50 shadow-xl'>
+                <div className='px-10 py-2'> 
+                    <img src={Logo} alt='Elevate Logo' className='absolute h-[58px]'/>
+                    <div className='flex justify-center'>
                         <ul className='font-medium cursor-pointer text-xl'>                
                             <Link to='/' onClick={ goTop }>
                                 <div>Home</div>
