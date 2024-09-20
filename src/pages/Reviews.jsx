@@ -21,9 +21,11 @@ const Reviews = () => {
         });
       };
 
+// https://github.com/dscyrescotti/ShuffleIt
+
     return (
             <>
-                <section id='reviws' className='mt-40'>
+                <section id='reviws' className='mt-20'>
                     <div className='rockContainer'>
                         {/* <img className='reviewsRock' src={Rock} alt='Rock' /> */}
                     </div>

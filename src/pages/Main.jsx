@@ -12,7 +12,7 @@ const Main = () => {
     <>
       {/* <Sunrays /> */}
       <Home />
-      <Classes />
+      {/* <Classes /> */}
       <Reviews />
       <Articles />
     </>
