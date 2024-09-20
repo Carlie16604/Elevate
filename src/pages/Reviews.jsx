@@ -25,7 +25,7 @@ const Reviews = () => {
             <>
                 <section id='reviws' className='mt-40'>
                     <div className='rockContainer'>
-                        <img className='reviewsRock' src={Rock} alt='Rock' />
+                        {/* <img className='reviewsRock' src={Rock} alt='Rock' /> */}
                     </div>
                         <div className='container'>
                             <div className='flex flex-col relative '>

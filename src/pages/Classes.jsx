@@ -1,7 +1,7 @@
 import  React from "react";
 import { Link } from 'react-router-dom';
 import '../index.css';
-import Rock from '../assets/Classes/rock.png';
+// import Rock from '../assets/Classes/rock.png';
 import { classes } from '../data/classes.js';
 const Classes = () => {
 
@@ -19,7 +19,7 @@ const Classes = () => {
     return (
         <section id='classes'>
             <div className='rockContainer'>
-                <img className='classesRock' src={Rock} alt='rock' />
+                {/* <img className='classesRock' src={Rock} alt='rock' /> */}
             </div>
             <div className='container'>
                 <div className='flex-wrap mb-14 px-24 relative'>
