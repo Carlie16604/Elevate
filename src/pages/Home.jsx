@@ -38,10 +38,10 @@ const Home = () => {
                                     </Link>
                                 </div>
                             </div>
-                            <div className='flex flex-row-reverse -rotate-90 text-white absolute top-[52%] right-[380px] items-center min800:hidden'>
-                                <p className='capitalize text-3xl font-bold tracking-wide'>
-                                    share
-                                </p>
+                        <div className='blur flex flex-row-reverse -rotate-90 text-white absolute top-[52%] right-[380px] items-center min800:hidden'>
+                            <p className='capitalize text-3xl font-bold tracking-wide'>
+                                share
+                            </p>
                             <span className='w-[35px] bg-[#3E5C47] h-[2.5px] mr-6'></span>
                             <div className='text-white gap-7 flex mr-7'>
                                 <img className='socials rotate-90' src={Pintrest} alt='Pintrest'/>

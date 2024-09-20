@@ -391,10 +391,16 @@ ul:hover a:hover ~ a:before {
 
 /* Home Content */
 
-.whyUs {
-  display: flex;
-  align-items: center;
-  background-color: rgba(84, 48, 25, 25%)
+.blur {
+  filter:blur(4px);
+  animation: unblur 2.5s forwards;
+
+}
+
+@keyframes unblur {
+  100% {
+    filter: blur(0);
+  }
 }
 
 /* Classes -------------------------------------------------------------------------- */
