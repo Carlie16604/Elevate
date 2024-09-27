@@ -22,6 +22,7 @@ const Reviews = () => {
       };
 
 // https://github.com/dscyrescotti/ShuffleIt
+// https://dscyrescotti.github.io/ShuffleIt/documentation/shuffleit/
 
     return (
             <>
