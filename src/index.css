@@ -420,7 +420,7 @@ ul:hover a:hover ~ a:before {
   flex-wrap: wrap;
   gap: 2rem 6.2rem;
   justify-content: center;
-  margin: 20px 0;
+  margin: 20px 0 74px 0;
 }
 
 .card-deck {
