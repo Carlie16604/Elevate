@@ -14,7 +14,7 @@ const NavBar = () => {
 
     return (
         <>
-            <div className='p-0 w-full fixed z-50 shadow-xl'>
+            <div className='p-0 w-full fixed z-50 shadow-xl min-w-[1200px]'>
                 <div className='px-10 py-2'> 
                     <Link to='/' onClick={ goTop }>
                         <img src={Logo} alt='Elevate Logo' className='absolute h-[58px]'/>
