@@ -167,7 +167,8 @@
 
 /* Global -------------------------------------------------------------------------- */
 
-#desktopMessage {
+.desktopMessage {
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
@@ -180,7 +181,7 @@
   z-index: 1000;
 }
 
-.message-content {
+.desktopMessage p {
   background-color: beige;
   padding: 20px;
   border-radius: 10px;
@@ -188,8 +189,10 @@
   font-size: 1.5rem;
 }
 
-.hidden {
-  display: none;
+@media (max-width: 1200px) {
+  .desktopMessage {
+    display: flex;
+  }    
 }
 
 .socials {

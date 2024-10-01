@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import './index.css'
 import Main from './pages/Main'
@@ -9,34 +9,31 @@ import Footer from './pages/Components/Footer'
 
 const App = () => {
 
-  // useEffect(() => {
-  //   function checkscreenHeight() {
-  //     const screenHeight = window.innerHeight;
-  //     const messageElement = document.getElementById("desktopMessage");
+  const [isMobile, setIsMobile] = useState(false);
 
-  //     if (screenHeight > 700) {
-  //       messageElement.classList.remove("hidden");
-  //     } else {
-  //       messageElement.classList.add("hidden");
-  //     }
-  //   }
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1200);
+    };
 
-  //   checkscreenHeight();
-  //   window.addEventListener('resize', checkscreenHeight);
+    handleResize();
 
-  //   return () => {
-  //     window.removeEventListener('resize', checkscreenHeight);
-  //   };
-  // }, []);
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
 
   return (
     <Router>
       <>
-        {/* <div id="desktopMessage" className="hidden">
-          <div className="message-content">
-            <p>This is only available on desktop!</p>
-          </div>
-        </div> */}
+      {isMobile && (
+        <div className='desktopMessage'>
+          <p>This is only available on desktop!</p>
+        </div>
+      )}
         <Routes>
           <Route path='/' element={<Main />}/>
           <Route path='/Booking' element={<Booking />}/>
