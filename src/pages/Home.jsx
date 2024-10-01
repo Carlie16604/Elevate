@@ -37,8 +37,7 @@ const Home = () => {
                                         Let's Talk About Your Health!
                                     </Link>
                                 </div>
-                            </div>
-                        <div className='blur flex flex-row-reverse -rotate-90 text-white absolute top-[52%] right-[380px] items-center min800:hidden'>
+                        <div className='blur flex flex-row-reverse -rotate-90 text-white absolute bottom-[25%] right-3 items-center min800:hidden'>
                             <p className='capitalize text-3xl font-bold tracking-wide'>
                                 share
                             </p>
@@ -49,6 +48,7 @@ const Home = () => {
                                 <img className='socials rotate-90' src={Instagram} alt='Instagram'/>
                             </div>
                         </div>
+                            </div>
                     </div>
                 </div>
             </section>
