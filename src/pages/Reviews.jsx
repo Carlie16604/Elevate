@@ -25,30 +25,30 @@ const Reviews = () => {
 // https://dscyrescotti.github.io/ShuffleIt/documentation/shuffleit/
 
     return (
-            <>
-                <section id='reviws' className='my-20'>
-                    <div className='container'>
-                        <div className='flex flex-col relative '>
-                            <div className='rockContainer'>
-                            <img className='reviewsRock right-0 top-1/4' src={Rock} alt='Rock' />
-                                <div className='flex flex-row justify-center gap-32 relative'>
-                                    <div className='portals'>
-                                        <Link to='/Booking' onClick={ goTop }>
-                                            <div className='text-white pButton text-[35px]'>Booking</div>
-                                        </Link>
-                                        <Link to='/About' onClick={ goTop }>
-                                            <div className='text-white pButton text-center text-[30px] px-[25px] leading-8'>Meet The <br/>Team</div>
-                                        </Link>
-                                        <Link to='/Contact' onClick={ goTop }>
-                                            <div className='text-white pButton text-[35px]'>Contact</div>
-                                        </Link>
-                                    </div>
+        <>
+            <section id='reviws' className='my-20'>
+                <div className='container'>
+                    <div className='flex flex-col relative '>
+                        <div className='rockContainer'>
+                        <img className='reviewsRock right-0 top-1/4' src={Rock} alt='Rock' />
+                            <div className='flex flex-row justify-center gap-32 relative'>
+                                <div className='portals'>
+                                    <Link to='/Booking' onClick={ goTop }>
+                                        <div className='text-white pButton text-[35px]'>Booking</div>
+                                    </Link>
+                                    <Link to='/About' onClick={ goTop }>
+                                        <div className='text-white pButton text-center text-[30px] px-[25px] leading-8'>Meet The <br/>Team</div>
+                                    </Link>
+                                    <Link to='/Contact' onClick={ goTop }>
+                                        <div className='text-white pButton text-[35px]'>Contact</div>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
                     </div>
-                {/* </section> */}
-            <div className='mt-[15rem] mb-[4rem] mx-auto'>
+                </div>
+            </section>
+            <section className='mt-[15rem] mx-auto'>
                 <div className='container'>
                     <div className=' bg-[#94997833] p-[30px]'>
                         <div className='bg-[#eee9e6dd] overflow-x-clip w-full h-[23rem] relative'>
@@ -65,10 +65,9 @@ const Reviews = () => {
                         </div>
                     </div>
                 </div>
-            </div>
             </section>
             <section>
-                <div className="my-[5rem] mx-auto">
+                <div className="my-[2rem] mx-auto">
                     <div className='flex gap-32 justify-center flex-wrap pt-[3rem]'>
                         <img src={Stretch} alt='stretching person' className="scale-[.8] hover:brightness-125 h-32 w-32" style={{transition: '0.3s'}}/>
                         <img src={Core} alt='person stretching their core' className="scale-[.8] hover:brightness-125 h-32 w-32" style={{transition: '0.3s'}}/>
