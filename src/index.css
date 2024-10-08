@@ -538,10 +538,9 @@ ul:hover a:hover ~ a:before {
 .reviewsRock {
   display: flex;
   z-index: -1;
-  max-width: 1360px;
-  max-height: 1040px;
+  max-width: 810px;
+  max-height: 490px;
   position: absolute;
-  margin-top: 4rem;
 }
 
 .portals {
