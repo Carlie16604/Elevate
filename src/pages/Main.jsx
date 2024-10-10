@@ -15,8 +15,8 @@ const Main = () => {
       {/* <Sunrays /> */}
       <Home />
       {/* <Classes /> */}
-      <About />
       <Portals />
+      <About />
       <Reviews />
       <Articles />
     </>
