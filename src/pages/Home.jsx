@@ -25,10 +25,10 @@ const Home = () => {
                                             <h1 className='elevate-card__title'>Elevate</h1>
                                         </div>
                                         <h3 className='text-[20px] text-black font-medium uppercase animate-slide-up'>
-                                            Award Winning Pilates Instructors
+                                            <span className='text-[#f36943]'>Award Winning </span>Pilates Instructors
                                         </h3>
                                         <h3 className='pt-[8.5rem] text-[35px] pb-8 text-black font-medium animate-slide-up'>
-                                            Regaining shape, <br/>Relearning you.
+                                            Regaining <span className='text-[#ff8e43]'>shape,</span><br/>Relearning <span className='text-[#ff8e43]'>you.</span>
                                         </h3>
                                         {/* <p className='pt-2 pb-10'>
                                             Pilates is a renowned Pilates studio dedicated to helping individuals achieve their fitness goals based in Boulder, CO. We host expertly crafted training along with empowering instructors. 
