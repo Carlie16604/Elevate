@@ -12,7 +12,7 @@
 
 :root {
   /* background-color: #e3ded7; */
-  background-color: #dbd8d5;
+  background-color: #dfdcd8;
   /* background-color: #eeeeee; */
   font-family: kanit;
   min-width: 1200px;
@@ -206,8 +206,8 @@
 
 .socials:hover {
   background-color: #fff;
-  color: white;
-  border: 3px solid white;
+  color: #fff;
+  border: 3px solid #fff;
 }
 
 /* Nav Bar --------------------------------------------------------------------------*/
