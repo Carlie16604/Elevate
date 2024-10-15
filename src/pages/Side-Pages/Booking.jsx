@@ -38,7 +38,7 @@ const Booking = () => {
                             <h1 className='text-white relative z-10'>Booking</h1>
                         </div>
                     </div>
-                        <div className='flex flex-wrap gap-4 justify-center mt-48'>
+                        <div className='flex flex-wrap gap-4 justify-center mt-48 pb-4'>
                             {schedule.map((daySchedule) => (
                                 <button
                                     key={daySchedule.id}
@@ -56,9 +56,9 @@ const Booking = () => {
                         <div className='mt-5'>
                             {selectedDateInfo.date ? (
                                 <>
-                                        <h2 className='text-center text-black text-[30px] mb-6'>
+                                        {/* <h2 className='text-center text-black text-[30px] mb-6'>
                                             Classes Available on <span className='text-[#ff8e43]'>{selectedDateInfo.date.charAt(0).toUpperCase() + selectedDateInfo.date.slice(1)}</span>
-                                        </h2>
+                                        </h2> */}
                                     <div className='mt-5'>
                                         <div className='flex flex-col gap-3'>
                                             {selectedDateInfo.classes.length > 0 ? (
@@ -66,15 +66,15 @@ const Booking = () => {
                                                     {selectedDateInfo.classes.map((cls) => (
                                                         <div key={cls.id} className='flex justify-between py-[15px] px-[55px] bg-[#D4CFC9] border-[2.3px] border-[#b2b799] w-full max-w-[800px] rounded-[40px]'>
                                                             <li className=''>
-                                                                <p className='text-[#949978] text-[15px] min-w-[140px]'>Class Type:</p>
+                                                                <p className='text-[#ff8e43] text-[15px] min-w-[140px]'>Class Type:</p>
                                                                 <p className='text-[25px] font-medium'>{cls.type}</p>
                                                             </li>
                                                             <li>
-                                                                <p className='text-[#949978] text-[15px] text-center min-w-[205.98px]'>Time</p>
+                                                                <p className='text-[#ff8e43] text-[15px] text-center min-w-[205.98px]'>Time</p>
                                                                 <p className='text-[25px] font-medium'>{cls.time}</p>
                                                             </li>
                                                             <li className='text-center'>
-                                                                <p className='text-[#949978] text-[15px] min-w-[148px]'>Instructor</p>
+                                                                <p className='text-[#ff8e43] text-[15px] min-w-[148px]'>Instructor</p>
                                                                 <p className='text-[25px] font-medium'>{cls.instructor}</p>
                                                             </li>
                                                         </div>

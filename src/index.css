@@ -594,6 +594,8 @@ ul:hover a:hover ~ a:before {
 /* Calendar */
 .calendar-container {
   width: 800px;
+  border: solid 2px #949978;
+  border-radius: 40px;
 }
 
 .calendar-container header {
@@ -610,7 +612,7 @@ header .calendar-navigation {
 }
 
 header .button-space {
-  background:#3E5C47;
+  background:#f36943; 
   line-height: 2rem;
   border-radius: 400px;
   margin: 0 10px;
@@ -668,6 +670,7 @@ header .calendar-current-date {
 .calendar-body .calendar-weekdays li {
   cursor: default;
   font-weight: 500;
+  color: #949978;
 }
 
 .calendar-body .calendar-dates li {
@@ -698,7 +701,7 @@ header .calendar-current-date {
 }
 
 .calendar-dates li.active::before {
-  background: #3E5C47;
+  background: #ff8e43;;
 }
 
 .calendar-dates li:not(.active):hover::before {
