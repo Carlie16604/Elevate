@@ -1,9 +1,9 @@
 import React from "react";
 import'../index.css';
 import Studio from '../assets/Home/studio.jpg';
-import Facebook from '../assets/Footer/Facebook.svg';
-import Instagram from '../assets/Footer/Instagram.svg';
-import Pintrest from '../assets/Footer/Pintrest.svg';
+import Facebook from '../assets/Home/facebook.svg';
+import Instagram from '../assets/Home/instagram.svg';
+import Pintrest from '../assets/Home/pinterest.svg';
 import NavBar from '../pages/Components/NavBar.jsx';
 import { Link } from "react-router-dom";
 
@@ -41,7 +41,7 @@ const Home = () => {
                                 <p className='capitalize text-3xl font-bold tracking-wide'>
                                     share
                                 </p>
-                                <span className='w-[35px] bg-[#3E5C47] h-[2.5px] mr-6'></span>
+                                <span className='w-[35px] bg-[#949978] h-[2.5px] mr-6'></span>
                                 <div className='text-white gap-7 flex mr-7'>
                                     <img className='socials rotate-90' src={Pintrest} alt='Pintrest'/>
                                     <img className='socials rotate-90' src={Facebook} alt='Facebook'/>

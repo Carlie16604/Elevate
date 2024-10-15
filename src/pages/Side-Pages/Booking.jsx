@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, props } from "react";
 import '../../index.css';
 import NavBar from '../Components/NavBar.jsx';
 import Calendar from '../Components/Calendar.jsx';
 import { schedule } from '../../data/schedule.js';
+import BG from '../../assets/Universal/example.jpg'
 
 const Booking = () => {
     const [selectedDateInfo, setSelectedDateInfo] = useState({ date: null, classes: null });
@@ -30,46 +31,50 @@ const Booking = () => {
         <>
         <NavBar />
             <div id='Booking'>
-                <div className='container pt-28'>
-                    <div className='bg-[#949978] h-fit rounded-t-[4000px]'>
-                        <div className='text-[70px] flex justify-center'>
-                            <div className='mt-32 pb-12'>
-                                <h1 className='text-white'>Schedule</h1>
-                            </div>
+                <img src={BG} rel='norel' className='z-0 absolute h-[50vh] w-screen min-w-[1200px] object-cover lg:h-[40vh]' alt='none'/>
+                <div className='container'>
+                    <div className='text-[70px] text-center pt-1'>
+                        <div className='mt-60 mb-20 md:mt-40'>
+                            <h1 className='text-white relative z-10'>Booking</h1>
                         </div>
-                        <div className='flex flex-wrap gap-4 justify-center mt-8'>
+                    </div>
+                        <div className='flex flex-wrap gap-4 justify-center mt-48'>
                             {schedule.map((daySchedule) => (
-                                <a
+                                <button
                                     key={daySchedule.id}
                                     onClick={() => handleDateSelect(daySchedule.day, daySchedule.classes)}
-                                    className='py-3 px-5 w-fit self-center text-black bg-[#D4CFC9] border-2 rounded-[400px] border-[#fff] inline-block text-[14px] tracking-[1px] cursor-pointer shadow-[inset_0_0_0_0_#DFDCD8] transition-[box-shadow] ease-out duration-1000 hover:shadow-[inset_400px_0_0_0_#D4CFC9] hover:text-white'
+                                    className={`py-3 px-5 w-fit self-center text-[14px] tracking-[1px] cursor-pointer border-2 rounded-[400px] transition-[box-shadow] ease-out duration-1000 ${
+                                        selectedDateInfo.date === daySchedule.day
+                                            ? 'text-black bg-[#ff8e43] border-[#ff8e43] shadow-[inset_0_0_0_0_#ff8e43] hover:shadow-[inset_400px_0_0_0_#ff8e43] hover:text-white'
+                                            : 'text-black bg-[#D4CFC9] border-[#fff] shadow-[inset_0_0_0_0_#DFDCD8] hover:shadow-[inset_400px_0_0_0_#D4CFC9] hover:text-white'
+                                    }`}
                                 >
                                     {daySchedule.day.charAt(0).toUpperCase() + daySchedule.day.slice(1)}
-                                </a>
+                                </button>
                             ))}
                         </div>
                         <div className='mt-5'>
                             {selectedDateInfo.date ? (
                                 <>
-                                        <h2 className='text-center text-[#2f4636] text-[30px] mb-6'>
-                                            Classes Available on {selectedDateInfo.date.charAt(0).toUpperCase() + selectedDateInfo.date.slice(1)}
+                                        <h2 className='text-center text-black text-[30px] mb-6'>
+                                            Classes Available on <span className='text-[#ff8e43]'>{selectedDateInfo.date.charAt(0).toUpperCase() + selectedDateInfo.date.slice(1)}</span>
                                         </h2>
                                     <div className='mt-5'>
                                         <div className='flex flex-col gap-3'>
                                             {selectedDateInfo.classes.length > 0 ? (
                                                 <ul className='flex flex-col gap-4 items-center'>
                                                     {selectedDateInfo.classes.map((cls) => (
-                                                        <div key={cls.id} className='flex justify-between py-[15px] px-[55px] bg-[#D4CFC9] w-full max-w-[800px] rounded-[40px]'>
+                                                        <div key={cls.id} className='flex justify-between py-[15px] px-[55px] bg-[#D4CFC9] border-[2.3px] border-[#b2b799] w-full max-w-[800px] rounded-[40px]'>
                                                             <li className=''>
-                                                                <p className='text-[#543019] opacity-[.4] text-[15px] min-w-[140px]'>Class Type:</p>
+                                                                <p className='text-[#949978] text-[15px] min-w-[140px]'>Class Type:</p>
                                                                 <p className='text-[25px] font-medium'>{cls.type}</p>
                                                             </li>
                                                             <li>
-                                                                <p className='text-[#543019] opacity-[.4] text-[15px] text-center min-w-[205.98px]'>Time</p>
+                                                                <p className='text-[#949978] text-[15px] text-center min-w-[205.98px]'>Time</p>
                                                                 <p className='text-[25px] font-medium'>{cls.time}</p>
                                                             </li>
                                                             <li className='text-center'>
-                                                                <p className='text-[#543019] opacity-[.4] text-[15px] min-w-[148px]'>Instructor</p>
+                                                                <p className='text-[#949978] text-[15px] min-w-[148px]'>Instructor</p>
                                                                 <p className='text-[25px] font-medium'>{cls.instructor}</p>
                                                             </li>
                                                         </div>
@@ -90,7 +95,7 @@ const Booking = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            {/* </div> */}
         </>
     );
 };

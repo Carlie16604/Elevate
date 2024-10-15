@@ -15,11 +15,11 @@ const Contact = () => {
         <>
         <NavBar />
             <section id='Contact'>
-                <img src={BG} rel='norel' className='z-0 absolute h-[50vh] w-screen min-w-[1200px] object-cover' alt='none'/>
+                <img src={BG} rel='norel' className='z-0 absolute h-[50vh] w-screen min-w-[1200px] object-cover lg:h-[40vh]' alt='none'/>
                 <div className='container'>
                     <div className='text-[70px] text-center pt-1'>
-                        <div className='sidePageContainer'>
-                            <h1 className='text-white relative z-10 sideTitle'>Contact</h1>
+                        <div className='mt-60 mb-20 md:mt-40'>
+                            <h1 className='text-white relative z-10'>Contact</h1>
                         </div>
                     </div>
                     <div className='pt-12 pb-[5rem] px-[7rem] grid grid-cols-2 items-center'>

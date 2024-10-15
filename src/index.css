@@ -31,16 +31,6 @@
   max-width: 72rem;
 }
 
-.sidePageContainer {
-  margin: 15rem 0 5rem 0;
-  font-size: 70px;
-  text-align: center;
-}
-
-.sideTitle {
-  text-shadow: 5px #ff8e43;
-}
-
 .sun { 
   position: fixed;
   top: 15rem;
