@@ -594,7 +594,7 @@ ul:hover a:hover ~ a:before {
 /* Calendar */
 .calendar-container {
   width: 800px;
-  border: solid 2px #949978;
+  border: solid 2px #b2b799;
   border-radius: 40px;
 }
 
