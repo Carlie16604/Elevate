@@ -20,9 +20,9 @@ const Classes = () => {
             <NavBar />
             <div className='container'>
                 {/* <div className='pt-28 bg-[#949978] h-full rounded-t-[4000px] z-[-1] overflow-hidden'> */}
-                    <div className='flex-wrap mb-14 px-24 relative'>
-                        <h1 className='pt-24 text-black text-[65px] flex flex-col stroke-black font-medium'>What we Offer</h1>
-                        <span className='absolute w-[5.5rem] h-[4px] my-[-15px] bg-[#949978]'></span>
+                    <div className='flex-wrap mb-14 mx-24 relative'>
+                        <h1 className='pt-24 text-black text-[65px] flex stroke-black font-medium flex-row-reverse'>What we Offer</h1>
+                        <span className='absolute w-[5.5rem] h-[4px] my-[-15px] bg-[#949978] right-0'></span>
                     </div>
                     <div className='cardContainer'>
                         {classes.map((info) => (
