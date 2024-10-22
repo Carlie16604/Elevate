@@ -36,8 +36,8 @@ const Blog = () => {
                                     </div>
                                     <div className='text-[16px] bg-[#f3f0ed] p-3 rounded-xl mb-5 h-auto min-w-[250px]'>
                                         <p className='pb-3'>Instagram:</p>
-                                        <div className='flex flex-col gap-1 relative p-2'>
-                                            <img src={Insta} className='h-[226px] w-auto'/>
+                                        <div className='flex flex-col gap-1 relative p-[.3rem]'>
+                                            <img src={Insta} className='h-[226px] rounded-lg w-auto hover:scale-105 transition duration-[.4s] ease-in-out '/>
                                         </div>
                                     </div>
                                     <div className='text-[16px] bg-[#f3f0ed] p-3 rounded-xl mb-5 h-auto min-w-[250px]'>
