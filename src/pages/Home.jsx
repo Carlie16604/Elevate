@@ -1,6 +1,6 @@
 import React from "react";
 import'../index.css';
-import Studio from '../assets/Home/woman.png';
+import Studio from '../assets/Home/woman.jpg';
 import Facebook from '../assets/Home/facebook.svg';
 import Instagram from '../assets/Home/instagram.svg';
 import Pintrest from '../assets/Home/pinterest.svg';

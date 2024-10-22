@@ -25,7 +25,7 @@ const Footer = () => {
                                     <img className='socials' src={Pintrest} alt='Pintrest'/>
                                 </div>
                             </div>
-                                <p className='text-[18px] font-medium '>Inspired by <a href='https://www.caretopilates.com/' className='hover:text-white ease-in duration-200'>Care to Pilates</a> | Boulder, CO</p>
+                                <p className='text-[18px] font-medium '>Inspired by <a href='https://www.caretopilates.com/' target='_blank' className='hover:text-white ease-in duration-200'>Care to Pilates</a> | Boulder, CO</p>
                         </div>
                         <div className='flex flex-col gap-4 relative'>
                             <p className='text-[22px] font-bold footer-main'>
