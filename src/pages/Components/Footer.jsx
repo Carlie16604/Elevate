@@ -19,10 +19,10 @@ const Footer = () => {
                             </p>
                             <div className='flex flex-wrap gap-4'>
                                 <div className='text-[18px] font-medium flex gap-5'>
-                                    <img className='socials' src={Instagram} alt='Instagram'/>
-                                    <img className='socials' src={Facebook} alt='Facebook'/>
-                                    <img className='socials' src={Linkedin} alt='Linkedin'/>
-                                    <img className='socials' src={Pintrest} alt='Pintrest'/>
+                                    <img className='Blogs' src={Instagram} alt='Instagram'/>
+                                    <img className='Blogs' src={Facebook} alt='Facebook'/>
+                                    <img className='Blogs' src={Linkedin} alt='Linkedin'/>
+                                    <img className='Blogs' src={Pintrest} alt='Pintrest'/>
                                 </div>
                             </div>
                                 <p className='text-[18px] font-medium '>Inspired by <a href='https://www.caretopilates.com/' target='_blank' className='hover:text-white ease-in duration-200'>Care to Pilates</a> | Boulder, CO</p>

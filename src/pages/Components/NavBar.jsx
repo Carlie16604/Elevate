@@ -35,8 +35,8 @@ const NavBar = () => {
                                 <a href='#Articles' >
                                     <div>Articles</div>
                                 </a>
-                                <Link to='/Social' onClick={ goTop }>
-                                    <div>Socials</div>
+                                <Link to='/Blog' onClick={ goTop }>
+                                    <div>Blog</div>
                                 </Link>
                             </ul>
                         </div>
@@ -55,8 +55,8 @@ const NavBar = () => {
                                 <Link to='/Contact' onClick={ goTop }>
                                     <div>Contact</div>
                                 </Link>
-                                <Link to='/Social' onClick={ goTop }>
-                                    <div>Socials</div>
+                                <Link to='/Blog' onClick={ goTop }>
+                                    <div>Blog</div>
                                 </Link>
                             </ul>
                         </div>

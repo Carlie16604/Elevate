@@ -44,9 +44,9 @@ const Home = () => {
                                 </p>
                                 <span className='w-[35px] bg-[#ff8e43] h-[2.5px] mr-6'></span>
                                 <div className='text-white gap-7 flex mr-7'>
-                                    <img className='socials rotate-90' src={Pintrest} alt='Pintrest'/>
-                                    <img className='socials rotate-90' src={Facebook} alt='Facebook'/>
-                                    <img className='socials rotate-90' src={Instagram} alt='Instagram'/>
+                                    <img className='Blogs rotate-90' src={Pintrest} alt='Pintrest'/>
+                                    <img className='Blogs rotate-90' src={Facebook} alt='Facebook'/>
+                                    <img className='Blogs rotate-90' src={Instagram} alt='Instagram'/>
                                 </div>
                             </div>
                     </div>

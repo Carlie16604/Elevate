@@ -3,11 +3,11 @@ import '../../index.css';
 import BG from '../../assets/Universal/sideBackground.jpg'
 import NavBar from '../Components/NavBar.jsx';
 
-const Social = () => {
+const Blog = () => {
     return (
         <>
             <NavBar />
-                <div id='Social'>
+                <div id='Blog'>
                 <img src={BG} rel='norel' className='z-0 absolute h-[50vh] w-screen min-w-[1200px] object-cover lg:h-[40vh]' alt='none'/>
                     <div className='container'>
                         <div className='text-[70px] text-center pt-1'>
@@ -25,7 +25,7 @@ const Social = () => {
                                         </div>
                                     </div>
                                     <div className='text-[16px] bg-[#f3f0ed] p-3 rounded-xl mb-5 h-auto min-w-[250px]'>
-                                        <p className='pb-3'>Check out our socials:</p>
+                                        <p className='pb-3'>Check out our Blogs:</p>
                                         <div className='flex flex-col gap-1 relative'>
                                             <p className='bg-[#eae6e2] mx-1 pl-2 py-1'>Instagram</p>
                                             <p className='bg-[#eae6e2] mx-1 pl-2 py-1'>Facebook</p>
@@ -52,4 +52,4 @@ const Social = () => {
     )
 }
 
-export default Social;
+export default Blog;

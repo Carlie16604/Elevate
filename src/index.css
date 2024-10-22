@@ -196,7 +196,7 @@
   }    
 }
 
-.socials {
+.Blogs {
   width: 2.80rem;
   height: 2.80rem;
   border-radius: 50%;
@@ -204,7 +204,7 @@
   transition: 200ms ease-in, color 200ms ease-in, border 200ms ease-in;
 }
 
-.socials:hover {
+.Blogs:hover {
   background-color: #fff;
   color: #fff;
   border: 3px solid #fff;
@@ -584,7 +584,7 @@ ul:hover a:hover ~ a:before {
   border-start-end-radius: 45%;
 }
 
-.socials-icon {
+.Blogs-icon {
   background-color: #D4CFC9;
   border-radius: 50%;
 }
