@@ -1,7 +1,8 @@
 import React from "react";
 import '../../index.css';
-import BG from '../../assets/Universal/sideBackground.jpg'
 import NavBar from '../Components/NavBar.jsx';
+import BG from '../../assets/Universal/sideBackground.jpg'
+import Insta from '../../assets/Blog/insta.jpg'
 
 const Blog = () => {
     return (
@@ -12,7 +13,7 @@ const Blog = () => {
                     <div className='container'>
                         <div className='text-[70px] text-center pt-1'>
                             <div className='mt-60 mb-20 md:mt-40'>
-                                <h1 className='text-white relative z-10'>More about Elevate</h1>
+                                <h1 className='text-white relative z-10'>Blog</h1>
                             </div>
                         </div>
                         <div className='pt-8'>
@@ -25,7 +26,7 @@ const Blog = () => {
                                         </div>
                                     </div>
                                     <div className='text-[16px] bg-[#f3f0ed] p-3 rounded-xl mb-5 h-auto min-w-[250px]'>
-                                        <p className='pb-3'>Check out our Blogs:</p>
+                                        <p className='pb-3'>Check out our Socials:</p>
                                         <div className='flex flex-col gap-1 relative'>
                                             <p className='bg-[#eae6e2] mx-1 pl-2 py-1'>Instagram</p>
                                             <p className='bg-[#eae6e2] mx-1 pl-2 py-1'>Facebook</p>
@@ -35,8 +36,17 @@ const Blog = () => {
                                     </div>
                                     <div className='text-[16px] bg-[#f3f0ed] p-3 rounded-xl mb-5 h-auto min-w-[250px]'>
                                         <p className='pb-3'>Instagram:</p>
+                                        <div className='flex flex-col gap-1 relative p-2'>
+                                            <img src={Insta} className='h-[226px] w-auto'/>
+                                        </div>
+                                    </div>
+                                    <div className='text-[16px] bg-[#f3f0ed] p-3 rounded-xl mb-5 h-auto min-w-[250px]'>
+                                        <p className='pb-3'>Read More:</p>
                                         <div className='flex flex-col gap-1 relative'>
-                                            <img/>
+                                            <p className='bg-[#eae6e2] mx-1 pl-2 py-1'>Healthy Foods</p>
+                                            <p className='bg-[#eae6e2] mx-1 pl-2 py-1'>How to cast spells</p>
+                                            <p className='bg-[#eae6e2] mx-1 pl-2 py-1'>Weather Report</p>
+                                            <p className='bg-[#eae6e2] mx-1 pl-2 py-1'>AI is fancy auto correct</p>
                                         </div>
                                     </div>
                                 </div>
