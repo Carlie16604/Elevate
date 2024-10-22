@@ -1,6 +1,6 @@
 import React from "react";
 import NavBar from '.././Components/NavBar';
-import BG from '../../assets/Universal/example.jpg';
+import BG from '../../assets/Universal/sideBackground.jpg';
 import Facebook from '../../assets/Contact/facebook.svg';
 import Instagram from '../../assets/Contact/instagram.svg';
 import Linkedin from '../../assets/Contact/linkedin.svg';

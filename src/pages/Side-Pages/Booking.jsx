@@ -3,7 +3,7 @@ import '../../index.css';
 import NavBar from '../Components/NavBar.jsx';
 import Calendar from '../Components/Calendar.jsx';
 import { schedule } from '../../data/schedule.js';
-import BG from '../../assets/Universal/example.jpg'
+import BG from '../../assets/Universal/sideBackground.jpg'
 
 const Booking = () => {
     const [selectedDateInfo, setSelectedDateInfo] = useState({ date: null, classes: null });
