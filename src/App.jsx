@@ -5,6 +5,7 @@ import Main from './pages/Main'
 import Booking from './pages/Side-Pages/Booking'
 import Classes from './pages/Side-Pages/Classes'
 import Contact from './pages/Side-Pages/Contact'
+import Social from './pages/Side-Pages/Social'
 import Footer from './pages/Components/Footer'
 
 const App = () => {
@@ -39,6 +40,7 @@ const App = () => {
           <Route path='/Booking' element={<Booking />}/>
           <Route path='/Classes' element={<Classes />}/>
           <Route path='/Contact' element={<Contact />}/>
+          <Route path='/Social' element={<Social />}/>
         </Routes>
         <Footer />
       </>
