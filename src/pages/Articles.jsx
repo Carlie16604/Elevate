@@ -2,6 +2,13 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import'../index.css';
 const Articles = () => {
+
+    const goTop = () => {
+        window.scrollTo({
+          top: 0,
+        });
+      };
+
     return (
         <section id='Articles'>
             <div className='container py-20'>
@@ -27,7 +34,7 @@ const Articles = () => {
                         <p className='text-[15px] text-[#646464] font-medium'>
                             The symbiotic relationship between <span className='text-[#ff8e43]'>Pilates and Mothers.</span> Pilates exercise during pregnancy prepares a woman for labor. 
                         </p>
-                        <Link to='/Blog' className='text-white bg-[#949978] border-2 rounded-[400px] border-[#949978] uppercase text-center font-bold mt-10 w-[12rem] h-[3.3rem] text-[15px] pt-[12.7px] tracking-[1px] cursor-pointer shadow-[inset_0_0_0_0_#3E5C47] transition-[box-shadow] ease-out duration-1000 hover:shadow-[inset_400px_0_0_0_#949978] '>
+                        <Link to='/Blog' onClick={goTop} className='text-white bg-[#949978] border-2 rounded-[400px] border-[#949978] uppercase text-center font-bold mt-10 w-[12rem] h-[3.3rem] text-[15px] pt-[12.7px] tracking-[1px] cursor-pointer shadow-[inset_0_0_0_0_#3E5C47] transition-[box-shadow] ease-out duration-1000 hover:shadow-[inset_400px_0_0_0_#949978] '>
                             Read More ➜
                             {/* <img src={arrow} className='h-7 w-7 flex'></img> */}
                         </Link>
@@ -42,7 +49,7 @@ const Articles = () => {
                         <p className='text-[15px] text-[#646464] font-medium'>
                             Pilates—the exercise and <span className='text-[#ff8e43]'>mind-body workout</span> routine—helps boost core strength, improve posture and make muscles more stable. 
                         </p>
-                        <Link to='/Blog' className='text-white bg-[#949978] border-2 rounded-[400px] border-[#949978] uppercase text-center font-bold mt-10 w-[12rem] h-[3.3rem] text-[15px] pt-[12.7px] tracking-[1px] cursor-pointer shadow-[inset_0_0_0_0_#3E5C47] transition-[box-shadow] ease-out duration-1000 hover:shadow-[inset_400px_0_0_0_#949978] '>
+                        <Link to='/Blog' onClick={goTop} className='text-white bg-[#949978] border-2 rounded-[400px] border-[#949978] uppercase text-center font-bold mt-10 w-[12rem] h-[3.3rem] text-[15px] pt-[12.7px] tracking-[1px] cursor-pointer shadow-[inset_0_0_0_0_#3E5C47] transition-[box-shadow] ease-out duration-1000 hover:shadow-[inset_400px_0_0_0_#949978] '>
                             Read More ➜
                         </Link>
                     </div>
@@ -56,7 +63,7 @@ const Articles = () => {
                         <p className='text-[15px] text-[#646464] font-medium'>
                         Get to know Kayla, a <span className='text-[#ff8e43]'>fitness enthusiast</span> and <span className='text-[#ff8e43]'>dedicated ambassador</span> who is passionate about helping others reach their fitness goals. 
                         </p>
-                        <Link to='/Blog' className='text-white bg-[#949978] border-2 rounded-[400px] border-[#949978] uppercase text-center font-bold mt-10 w-[12rem] h-[3.3rem] text-[15px] pt-[12.7px] tracking-[1px] cursor-pointer shadow-[inset_0_0_0_0_#3E5C47] transition-[box-shadow] ease-out duration-1000 hover:shadow-[inset_400px_0_0_0_#949978]  '>
+                        <Link to='/Blog' onClick={goTop} className='text-white bg-[#949978] border-2 rounded-[400px] border-[#949978] uppercase text-center font-bold mt-10 w-[12rem] h-[3.3rem] text-[15px] pt-[12.7px] tracking-[1px] cursor-pointer shadow-[inset_0_0_0_0_#3E5C47] transition-[box-shadow] ease-out duration-1000 hover:shadow-[inset_400px_0_0_0_#949978]  '>
                             Read More ➜
                         </Link>
                     </div>
