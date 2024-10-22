@@ -28,7 +28,7 @@ const Footer = () => {
                                 <p className='text-[18px] font-medium '>Inspired by <a href='https://www.caretopilates.com/' target='_blank' className='hover:text-white ease-in duration-200'>Care to Pilates</a> | Boulder, CO</p>
                         </div>
                         <div className='flex flex-col gap-4 relative'>
-                            <p className='text-[22px] font-bold footer-main'>
+                            <p className='text-[22px] font-bold'>
                                 Our Classes
                             </p>
                             <span className='top-[33px] absolute w-[60px] h-[4px] bg-[#3E5C47]'></span>
@@ -46,7 +46,7 @@ const Footer = () => {
                             </p>
                         </div>
                         <div className='flex flex-col gap-4 relative'>
-                        <p className='text-[22px] font-bold footer-main'>
+                        <p className='text-[22px] font-bold'>
                                 Working Hours
                             </p>
                             <span className='top-[33px] absolute w-[60px] h-[4px] bg-[#3E5C47]'></span>
