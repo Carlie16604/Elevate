@@ -55,7 +55,7 @@ const Blog = () => {
                                 </div>
                                 <div className='flex flex-col'>
                                     <p className='relative text-[25px] mb-3 text-center'>Take a look at our recent works!</p>
-                                    <span className='w-[50px] bg-[#ff8e43] h-[2.5px] ml-[16rem] mt-[-15px] mb-3'></span>
+                                    <span className='w-[50px] bg-[#ff8e43] h-[2.5px] ml-[16rem] mt-[-15px] mb-3'/>
                                     <div className='flex flex-col items-center mx-28 min-h-[875.3px] align-center'>
                                         <img src={First} className='mb-2'/>
                                         <img src={Third} className='mb-2 h-[420px]'/>

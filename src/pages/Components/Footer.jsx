@@ -31,7 +31,7 @@ const Footer = () => {
                             <p className='text-[22px] font-bold'>
                                 Our Classes
                             </p>
-                            <span className='top-[33px] absolute w-[60px] h-[4px] bg-[#3E5C47]'></span>
+                            <span className='top-[33px] absolute w-[60px] h-[4px] bg-[#3E5C47]'/>
                             <p className='text-[16px] hover:text-[#fff] ease-in duration-200 cursor-pointer text-[#000] font-medium hover:font-bold'>
                                 Foundation
                             </p>
@@ -49,7 +49,7 @@ const Footer = () => {
                         <p className='text-[22px] font-bold'>
                                 Working Hours
                             </p>
-                            <span className='top-[33px] absolute w-[60px] h-[4px] bg-[#3E5C47]'></span>
+                            <span className='top-[33px] absolute w-[60px] h-[4px] bg-[#3E5C47]'/>
                             <p className='text-[16px]  text-[#000] font-bold'>
                                 Monday - Friday:
                             </p>

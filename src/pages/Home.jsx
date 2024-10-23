@@ -42,7 +42,7 @@ const Home = () => {
                                 <p className='capitalize text-3xl font-bold tracking-wider'>
                                     share
                                 </p>
-                                <span className='w-[35px] bg-[#ff8e43] h-[2.5px] mr-6'></span>
+                                <span className='w-[35px] bg-[#ff8e43] h-[2.5px] mr-6'/>
                                 <div className='text-white gap-7 flex mr-7'>
                                     <img className='Blogs rotate-90' src={Pintrest} alt='Pintrest'/>
                                     <img className='Blogs rotate-90' src={Facebook} alt='Facebook'/>
