@@ -18,7 +18,7 @@ const Portals = () => {
                         <div className='rockContainer'>
                         <img className='reviewsRock right-0 top-1/4' src={Rock} alt='Rock' />
                             <div className='flex flex-row justify-center gap-32 relative'>
-                                <div className='portals'>
+                                <div className='portals animate-slide-up'>
                                     <Link to='/Booking' onClick={ goTop }>
                                         <div className='text-white pButton text-[35px]'>Booking</div>
                                     </Link>
