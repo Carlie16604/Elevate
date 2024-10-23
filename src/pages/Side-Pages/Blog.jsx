@@ -1,8 +1,10 @@
 import React from "react";
 import '../../index.css';
 import NavBar from '../Components/NavBar.jsx';
-import BG from '../../assets/Universal/sideBackground.jpg'
-import Insta from '../../assets/Blog/insta.jpg'
+import BG from '../../assets/Universal/sideBackground.jpg';
+import Insta from '../../assets/Blog/insta.jpg';
+import First from '../../assets/Blog/woman3.jpg';
+import Second from '../../assets/Blog/pilates4.jpg';
 
 const Blog = () => {
     return (
@@ -16,9 +18,9 @@ const Blog = () => {
                                 <h1 className='text-white relative z-10'>Blog</h1>
                             </div>
                         </div>
-                        <div className='pt-8'>
-                            <div className='pt-12 grid grid-cols-2 items-center '>
-                                <div className='flex flex-col items-center w-1/2 px-2 py-4'>
+                        <div className='pt-20'>
+                            <div className='flex flex-wrap items-center '>
+                                <div className='flex flex-col items-center px-2 py-4'>
                                     <div className='text-[16px] bg-[#f3f0ed] p-3 rounded-xl mb-5 h-auto min-w-[250px]'>
                                         <p className='pb-3'>Subscribe:</p>
                                         <div className='flex flex-col gap-1 relative'>
@@ -50,8 +52,12 @@ const Blog = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className=''>
-                                    <p>Take a look at our recent works!</p>
+                                <div className='relative flex flex-col content-center'>
+                                    <p className='text-center'>Take a look at our recent works!</p>
+                                    <div className='flex-wrap items-center mx-16 min-h-[875.3px] align-center'>
+                                        <img src={First}/>
+                                        <img src={Second} className='h-[380px]'/>
+                                    </div>
                                 </div>
                                 
                             </div>
