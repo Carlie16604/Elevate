@@ -12,6 +12,7 @@ const Portals = () => {
     
     return (
         <>
+        {/* redo portals */}
             <section id='portals' className='my-[-10rem] mb-[10rem]'>
                 <div className='container'>
                     <div className='flex flex-col relative '>
