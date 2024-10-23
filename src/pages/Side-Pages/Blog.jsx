@@ -5,6 +5,7 @@ import BG from '../../assets/Universal/sideBackground.jpg';
 import Insta from '../../assets/Blog/insta.jpg';
 import First from '../../assets/Blog/woman3.jpg';
 import Second from '../../assets/Blog/pilates4.jpg';
+import Third from '../../assets/Blog/pilates5.png';
 
 const Blog = () => {
     return (
@@ -19,8 +20,8 @@ const Blog = () => {
                             </div>
                         </div>
                         <div className='pt-20'>
-                            <div className='flex flex-wrap items-center '>
-                                <div className='flex flex-col items-center px-2 py-4'>
+                            <div className='flex flex-wrap'>
+                                <div className='flex flex-col px-2 py-4'>
                                     <div className='text-[16px] bg-[#f3f0ed] p-3 rounded-xl mb-5 h-auto min-w-[250px]'>
                                         <p className='pb-3'>Subscribe:</p>
                                         <div className='flex flex-col gap-1 relative'>
@@ -30,10 +31,10 @@ const Blog = () => {
                                     <div className='text-[16px] bg-[#f3f0ed] p-3 rounded-xl mb-5 h-auto min-w-[250px]'>
                                         <p className='pb-3'>Check out our Socials:</p>
                                         <div className='flex flex-col gap-1 relative'>
-                                            <p className='bg-[#eae6e2] mx-1 pl-2 py-1'>Instagram</p>
-                                            <p className='bg-[#eae6e2] mx-1 pl-2 py-1'>Facebook</p>
-                                            <p className='bg-[#eae6e2] mx-1 pl-2 py-1'>Pinterest</p>
-                                            <p className='bg-[#eae6e2] mx-1 pl-2 py-1'>Linkedin</p>
+                                            <p className='cursor-pointer bg-[#eae6e2] mx-1 pl-2 py-1 text-black shadow-[inset_0_0_0_0_#ff8e43] transition-[box-shadow] ease-out duration-1000 hover:shadow-[inset_400px_0_0_0_#fff] hover:text-[#ff8e43]'>Instagram</p>
+                                            <p className='cursor-pointer bg-[#eae6e2] mx-1 pl-2 py-1 text-black shadow-[inset_0_0_0_0_#ff8e43] transition-[box-shadow] ease-out duration-1000 hover:shadow-[inset_400px_0_0_0_#fff] hover:text-[#ff8e43]'>Facebook</p>
+                                            <p className='cursor-pointer bg-[#eae6e2] mx-1 pl-2 py-1 text-black shadow-[inset_0_0_0_0_#ff8e43] transition-[box-shadow] ease-out duration-1000 hover:shadow-[inset_400px_0_0_0_#fff] hover:text-[#ff8e43]'>Pinterest</p>
+                                            <p className='cursor-pointer bg-[#eae6e2] mx-1 pl-2 py-1 text-black shadow-[inset_0_0_0_0_#ff8e43] transition-[box-shadow] ease-out duration-1000 hover:shadow-[inset_400px_0_0_0_#fff] hover:text-[#ff8e43]'>Linkedin</p>
                                         </div>
                                     </div>
                                     <div className='text-[16px] bg-[#f3f0ed] p-3 rounded-xl mb-5 h-auto min-w-[250px]'>
@@ -45,21 +46,23 @@ const Blog = () => {
                                     <div className='text-[16px] bg-[#f3f0ed] p-3 rounded-xl mb-5 h-auto min-w-[250px]'>
                                         <p className='pb-3'>Read More:</p>
                                         <div className='flex flex-col gap-1 relative'>
-                                            <p className='bg-[#eae6e2] mx-1 pl-2 py-1'>Healthy Foods</p>
-                                            <p className='bg-[#eae6e2] mx-1 pl-2 py-1'>How to cast spells</p>
-                                            <p className='bg-[#eae6e2] mx-1 pl-2 py-1'>Weather Report</p>
-                                            <p className='bg-[#eae6e2] mx-1 pl-2 py-1'>AI is fancy auto correct</p>
+                                            <p className='cursor-pointer bg-[#eae6e2] mx-1 pl-2 py-1 text-black shadow-[inset_0_0_0_0_#ff8e43] transition-[box-shadow] ease-out duration-1000 hover:shadow-[inset_400px_0_0_0_#fff] hover:text-[#ff8e43]'>Healthy Foods</p>
+                                            <p className='cursor-pointer bg-[#eae6e2] mx-1 pl-2 py-1 text-black shadow-[inset_0_0_0_0_#ff8e43] transition-[box-shadow] ease-out duration-1000 hover:shadow-[inset_400px_0_0_0_#fff] hover:text-[#ff8e43]'>How to cast spells</p>
+                                            <p className='cursor-pointer bg-[#eae6e2] mx-1 pl-2 py-1 text-black shadow-[inset_0_0_0_0_#ff8e43] transition-[box-shadow] ease-out duration-1000 hover:shadow-[inset_400px_0_0_0_#fff] hover:text-[#ff8e43]'>Weather Report</p>
+                                            <p className='cursor-pointer bg-[#eae6e2] mx-1 pl-2 py-1 text-black shadow-[inset_0_0_0_0_#ff8e43] transition-[box-shadow] ease-out duration-1000 hover:shadow-[inset_400px_0_0_0_#fff] hover:text-[#ff8e43]'>AI is fancy auto correct</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div className='relative flex flex-col content-center'>
-                                    <p className='text-center'>Take a look at our recent works!</p>
-                                    <div className='flex-wrap items-center mx-16 min-h-[875.3px] align-center'>
-                                        <img src={First}/>
-                                        <img src={Second} className='h-[380px]'/>
+                                <div className='flex flex-col'>
+                                    <p className='relative text-[25px] mb-3 text-center'>Take a look at our recent works!</p>
+                                    <span className='w-[50px] bg-[#ff8e43] h-[2.5px] ml-[16rem] mt-[-15px] mb-3'></span>
+                                    <div className='flex flex-col items-center mx-28 min-h-[875.3px] align-center'>
+                                        <img src={First} className='mb-2'/>
+                                        <img src={Third} className='mb-2 h-[420px]'/>
+                                        {/* <img src={Second} className='mb-5 h-[380px] flex flex-wrap'/>
+                                        <img src={Third} className='h-[393px]'/> */}
                                     </div>
                                 </div>
-                                
                             </div>
                         </div>
                     </div>
