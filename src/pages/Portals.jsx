@@ -12,7 +12,7 @@ const Portals = () => {
     
     return (
         <>
-            <section id='portals' className='my-20'>
+            <section id='portals' className='my-[-10rem] mb-[10rem]'>
                 <div className='container'>
                     <div className='flex flex-col relative '>
                         <div className='rockContainer'>
@@ -27,6 +27,9 @@ const Portals = () => {
                                     </Link> */}
                                     <Link to='/Contact' onClick={ goTop }>
                                         <div className='text-white pButton text-[35px]'>Contact</div>
+                                    </Link>
+                                    <Link to='/Blog' onClick={ goTop }>
+                                        <div className='text-white pButton text-[35px]'>Blog</div>
                                     </Link>
                                 </div>
                             </div>

@@ -273,8 +273,8 @@ ul:hover a:hover ~ a:before {
   min-width: 528px;
   margin: auto;
   position: relative;
-  box-shadow: 1.75rem -1.25rem 0 #3E5C47,
-    -1.8rem -2rem 0 #949978;
+  box-shadow: 1.75rem -1.25rem 0 #ff8e43,
+    -1.8rem -2rem 0 #b9c095;
   cursor: pointer;
 }
 
@@ -537,7 +537,7 @@ ul:hover a:hover ~ a:before {
 
 .reviewsRock {
   display: flex;
-  z-index: -1;
+  z-index: 1;
   max-width: 810px;
   max-height: 490px;
   position: absolute;
@@ -547,6 +547,7 @@ ul:hover a:hover ~ a:before {
   display: flex;
   align-content: center;
   cursor: pointer;
+  z-index: 5;
 }
 
 .portals .pButton{

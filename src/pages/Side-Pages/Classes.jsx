@@ -15,6 +15,8 @@ const Classes = () => {
         });
       };
 
+    //   redo next
+
     return (
         <section id='classes'>
             <NavBar />
