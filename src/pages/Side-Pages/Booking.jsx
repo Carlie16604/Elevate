@@ -5,6 +5,8 @@ import Calendar from '../Components/Calendar.jsx';
 import { schedule } from '../../data/schedule.js';
 import BG from '../../assets/Universal/sideBackground.jpg'
 
+// https://codepen.io/lmgonzalves/details/NyzKdr
+// implement this
 const Booking = () => {
     const [selectedDateInfo, setSelectedDateInfo] = useState({ date: null, classes: null });
 
