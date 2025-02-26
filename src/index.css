@@ -554,7 +554,7 @@ ul:hover a:hover ~ a:before {
   display: flex;
   flex-wrap: wrap;
   margin: 0 3rem;
-  background-color: #3E5C47;
+  background-color: #949978;
   border-radius: 400px;
   transition: all .4s ease-in-out;
   cursor: pointer;
