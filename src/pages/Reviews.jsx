@@ -3,6 +3,7 @@ import '../index.css';
 import ReviewPhoto2 from '../assets/Reviews/ReviewPhoto2.png';
 import Quote from '../assets/Reviews/quote.svg';
 import Machine from '../assets/Reviews/Pilates.svg';
+import Beige from '../assets/Reviews/beige.png';
 // import LeftArrow from '../assets/Calendar/Arrow Left.png';
 // import RightArrow from '../assets/Calendar/Arrow right.png';
 
@@ -15,6 +16,7 @@ const Reviews = () => {
     return (
         <>
             <section className='mt-[15rem] mx-auto'>
+                {/* <img src={Beige} rel='norel' className='z-[-2] absolute h-[80vh] w-screen min-w-[1200px] object-cover lg:h-[40vh]' alt='none'/> */}
                 <div className='container'>
                     <div className=' bg-[#94997833] p-[30px]'>
                         <div className='bg-[#f8f4f1] overflow-x-clip w-full h-[23rem] relative'>
