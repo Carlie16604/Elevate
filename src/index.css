@@ -231,7 +231,7 @@ ul a {
   transition: .3s;
 }
 ul a:hover {
-  color: #949978;
+  color: #fff;
   transition: .6s;
 }
 ul a:before {
