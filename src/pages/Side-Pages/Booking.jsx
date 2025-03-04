@@ -1,4 +1,4 @@
-import React, { useState, useEffect, props } from "react";
+import React, { useState, useEffect } from "react";
 import '../../index.css';
 import NavBar from '../Components/NavBar.jsx';
 import Calendar from '../Components/Calendar.jsx';

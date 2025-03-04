@@ -6,6 +6,7 @@ import Booking from './pages/Side-Pages/Booking'
 import Classes from './pages/Side-Pages/Classes'
 import Contact from './pages/Side-Pages/Contact'
 import Blog from './pages/Side-Pages/Blog'
+import Challenge from "./pages/Side-Pages/Challenge"
 import Footer from './pages/Components/Footer'
 
 const App = () => {
@@ -41,6 +42,7 @@ const App = () => {
           <Route path='/Classes' element={<Classes />}/>
           <Route path='/Contact' element={<Contact />}/>
           <Route path='/Blog' element={<Blog />}/>
+          <Route path='/Challenge' element={<Challenge />}/>
         </Routes>
         <Footer />
       </>
