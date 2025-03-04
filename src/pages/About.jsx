@@ -25,7 +25,7 @@ const About = () => {
             </section>
             <section>
                 <div className="my-[2rem] mx-auto">
-                    <div className='flex gap-32 justify-center flex-wrap pt-[3rem]'>
+                    <div className='flex gap-32 justify-center flex-wrap py-[3rem] bg-[#e0dcd9]'>
                         <img src={Stretch} alt='stretching person' className="scale-[.8] brightness-125 h-32 w-32"/>
                         <img src={Core} alt='person stretching their core' className="scale-[.8] brightness-125 h-32 w-32"/>
                         <img src={Sweat} alt='Sweating person' className="scale-[.8]  h-32 w-32"/>
