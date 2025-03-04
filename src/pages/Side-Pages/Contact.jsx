@@ -86,16 +86,16 @@ const Contact = () => {
                                 Get In Touch!
                             </h3>
                             <span className='bg-[#949978] w-[50px] h-[4px] absolute top-[67.5px]'/>
-                            <input className='w-full py-[12px] px-[20px] h-[51px] text-[14px] bg-[#D4CFC9] outline-none mb-8 rounded-xl border-[2.3px] border-[#b2b799]' placeholder="Full Name" type='text'/> 
-                            <input className='w-full py-[12px] px-[20px] h-[51px] text-[14px] bg-[#D4CFC9] outline-none mb-8 rounded-xl border-[2.3px] border-[#b2b799]' placeholder="Email Address" type='email'/>
-                            <select className='w-full py-[12px] px-[20px] h-[51px] text-[14px] bg-[#D4CFC9] outline-none mb-8 rounded-xl border-[2.3px] border-[#b2b799]'>
+                            <input className='w-full py-[12px] px-[20px] h-[51px] text-[14px] bg-[#e0ddd9] outline-none mb-8 rounded-xl border-[2.3px] border-[#b2b799]' placeholder="Full Name" type='text'/> 
+                            <input className='w-full py-[12px] px-[20px] h-[51px] text-[14px] bg-[#e0ddd9] outline-none mb-8 rounded-xl border-[2.3px] border-[#b2b799]' placeholder="Email Address" type='email'/>
+                            <select className='w-full py-[12px] px-[20px] h-[51px] text-[14px] bg-[#e0ddd9] outline-none mb-8 rounded-xl border-[2.3px] border-[#b2b799]'>
                                 <option>Select Class</option>
                                 <option>Foundations</option>
                                 <option>Water</option>
                                 <option>Fire</option>
                                 <option>Air</option>
                             </select>
-                            <textarea className='w-full max-h-[12rem] py-[12px] px-[20px] h-[140px] text-[14px] bg-[#D4CFC9] outline-none mb-8 rounded-xl border-[2.3px] border-[#b2b799]' placeholder='Comments'/>
+                            <textarea className='w-full max-h-[12rem] py-[12px] px-[20px] h-[140px] text-[14px] bg-[#e0ddd9] outline-none mb-8 rounded-xl border-[2.3px] border-[#b2b799]' placeholder='Comments'/>
                             <button className='py-3 px-5 w-fit self-center text-black bg-transparent border-2 rounded-[400px] border-[#ff8e43] inline-block text-[14px] tracking-[1px] cursor-pointer shadow-[inset_0_0_0_0_#ff8e43] transition-[box-shadow] ease-out duration-1000 hover:shadow-[inset_400px_0_0_0_#ff8e43] hover:text-white'>Submit</button>
                         </form>
                     </div>

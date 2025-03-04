@@ -1,4 +1,4 @@
-import React, { useState, useEffect, props } from "react";
+import React, { useState, useEffect } from "react";
 import '../../index.css';
 import NavBar from '../Components/NavBar.jsx';
 import Calendar from '../Components/Calendar.jsx';
@@ -49,7 +49,7 @@ const Booking = () => {
                                     className={`py-3 px-5 w-fit self-center text-[14px] tracking-[1px] cursor-pointer border-2 rounded-[400px] transition-[box-shadow] ease-out duration-1000 ${
                                         selectedDateInfo.date === daySchedule.day
                                             ? 'text-black bg-[#ff8e43] border-[#ff8e43] shadow-[inset_0_0_0_0_#ff8e43] hover:shadow-[inset_400px_0_0_0_#ff8e43] hover:text-white'
-                                            : 'text-black bg-[#D4CFC9] border-[#fff] shadow-[inset_0_0_0_0_#DFDCD8] hover:shadow-[inset_400px_0_0_0_#D4CFC9] hover:text-white'
+                                            : 'text-black bg-[#e0ddd9] border-[#fff] shadow-[inset_0_0_0_0_#DFDCD8] hover:shadow-[inset_400px_0_0_0_#D4CFC9] hover:text-white'
                                     }`}
                                 >
                                     {daySchedule.day.charAt(0).toUpperCase() + daySchedule.day.slice(1)}
@@ -67,7 +67,7 @@ const Booking = () => {
                                             {selectedDateInfo.classes.length > 0 ? (
                                                 <ul className='flex flex-col gap-4 items-center'>
                                                     {selectedDateInfo.classes.map((cls) => (
-                                                        <div key={cls.id} className='flex justify-between py-[15px] px-[55px] bg-[#D4CFC9] border-[2.3px] border-[#b2b799] w-full max-w-[800px] rounded-[40px]'>
+                                                        <div key={cls.id} className='flex justify-between py-[15px] px-[55px] bg-[#e0ddd9] border-[2.3px] border-[#b2b799] w-full max-w-[800px] rounded-[40px]'>
                                                             <li className=''>
                                                                 <p className='text-[#ff8e43] text-[15px] min-w-[140px]'>Class Type:</p>
                                                                 <p className='text-[25px] font-medium'>{cls.type}</p>

@@ -11,9 +11,8 @@
 }
 
 :root {
-  /* background-color: #e3ded7; */
-  background-color: #dfdcd8;
-  /* background-color: #eeeeee; */
+  /* background-color: #dfdcd8; og bg color*/ 
+  background-color: #eae9e6;
   font-family: kanit;
   min-width: 1200px;
   min-height: 900x;
@@ -232,7 +231,7 @@ ul a {
   transition: .3s;
 }
 ul a:hover {
-  color: #949978;
+  color: #fff;
   transition: .6s;
 }
 ul a:before {
@@ -449,7 +448,7 @@ ul:hover a:hover ~ a:before {
   flex-wrap: wrap;
   gap: 2rem 6.2rem;
   justify-content: center;
-  margin: 1rem 0 6rem 0;
+  margin: 10rem 0 6rem 0;
 }
 
 .card-deck {
@@ -605,7 +604,7 @@ ul:hover a:hover ~ a:before {
   padding: 25px 30px 10px;
   border-radius: 40px 40px 0 0;
   justify-content: space-between;
-  background: #D4CFC9;
+  background: #e0ddd9;
 }
 
 header .calendar-navigation {
@@ -647,7 +646,7 @@ header .calendar-current-date {
 
 .calendar-body {
   padding: 20px;
-  background: #D4CFC9;
+  background: #e0ddd9;
   border-radius: 0 0 40px 40px;
 }
 

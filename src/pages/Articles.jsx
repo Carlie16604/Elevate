@@ -24,7 +24,7 @@ const Articles = () => {
                     </p>
                 </div>
                 <div className='flex gap-12 w-full mt-[4rem] md1200:justify-center justify-center'>
-                    <div className='bg-[#EEE9E6] w-[30rem] min460:w-[100%] shadow-xl flex flex-col px-[2.5rem] py-[2.5rem] rounded-md rounded-br-[150px]'>
+                    <div className='bg-[#f7f4f2] w-[30rem] min460:w-[100%] shadow-xl flex flex-col px-[2.5rem] py-[2.5rem] rounded-md rounded-br-[150px]'>
                         <p className="text-[15px] font-bold text-[#323232] border-[#3E5C47] border-solid rounded-full border-[1px] w-fit px-5 py-2 mb-6">
                             09.12.2024
                         </p>
@@ -39,7 +39,7 @@ const Articles = () => {
                             {/* <img src={arrow} className='h-7 w-7 flex'></img> */}
                         </Link>
                     </div>
-                    <div className='bg-[#EEE9E6] w-[30rem] min460:w-[100%] shadow-xl flex flex-col px-[2.5rem] py-[2.5rem] rounded-md rounded-br-[150px]'>
+                    <div className='bg-[#f7f4f2] w-[30rem] min460:w-[100%] shadow-xl flex flex-col px-[2.5rem] py-[2.5rem] rounded-md rounded-br-[150px]'>
                         <p className="text-[15px] font-bold text-[#323232] border-[#3E5C47] border-solid rounded-full border-[1px] w-fit px-5 py-2 mb-6">
                             08.04.2024
                         </p>
@@ -53,7 +53,7 @@ const Articles = () => {
                             Read More ➜
                         </Link>
                     </div>
-                    <div className='bg-[#EEE9E6] w-[30rem] min460:w-[100%] shadow-xl flex flex-col px-[2.5rem] py-[2.5rem] rounded-md rounded-br-[150px]'>
+                    <div className='bg-[#f7f4f2] w-[30rem] min460:w-[100%] shadow-xl flex flex-col px-[2.5rem] py-[2.5rem] rounded-md rounded-br-[150px]'>
                         <p className="text-[15px] font-bold text-[#323232] border-[#3E5C47] border-solid rounded-full border-[1px] w-fit px-5 py-2 mb-6">
                             07.22.2024
                         </p>

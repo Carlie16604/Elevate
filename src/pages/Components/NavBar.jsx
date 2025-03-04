@@ -38,6 +38,9 @@ const NavBar = () => {
                                 <Link to='/Blog' onClick={ goTop }>
                                     <div>Blog</div>
                                 </Link>
+                                {/* <Link to='/Challenge' onClick={ goTop }>
+                                    <div>Challenge</div>
+                                </Link> */}
                             </ul>
                         </div>
                         : 
@@ -46,9 +49,9 @@ const NavBar = () => {
                                 <Link to='/' onClick={ goTop }>
                                 <div>Home</div>
                                 </Link>
-                                {/* <Link to='/Classes' onClick={ goTop }>
+                                <Link to='/Classes' onClick={ goTop }>
                                     <div>Classes</div>
-                                </Link> */}
+                                </Link>
                                 <Link to='/Booking' onClick={ goTop }>
                                     <div>Booking</div>
                                 </Link>
@@ -58,6 +61,9 @@ const NavBar = () => {
                                 <Link to='/Blog' onClick={ goTop }>
                                     <div>Blog</div>
                                 </Link>
+                                {/* <Link to='/Challenge' onClick={ goTop }>
+                                    <div>Challenge</div>
+                                </Link> */}
                             </ul>
                         </div>
                     }
