@@ -552,7 +552,7 @@ ul:hover a:hover ~ a:before {
 .portals .pButton{
   display: flex;
   flex-wrap: wrap;
-  margin: 0 3rem;
+  margin: 0 2rem;
   background-color: #949978;
   border-radius: 400px;
   transition: all .4s ease-in-out;

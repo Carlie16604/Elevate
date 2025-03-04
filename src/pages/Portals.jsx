@@ -13,19 +13,19 @@ const Portals = () => {
     return (
         <>
         {/* redo portals */}
-            <section id='portals' className='my-[-10rem] mb-[5rem]'>
+            <section id='portals' className='mt-[-8rem] mb-[5rem]'>
                 <div className='container'>
                     <div className='flex flex-col relative '>
                         <div className='rockContainer'>
                         {/* <img className='reviewsRock right-0 top-1/4' src={Rock} alt='Rock' /> */}
-                            <div className='flex flex-row justify-center gap-32 relative'>
+                            <div className='flex flex-row justify-center gap-16 relative'>
                                 <div className='portals animate-slide-up'>
                                     <Link to='/Booking' onClick={ goTop }>
                                         <div className='text-white pButton text-[35px]'>Booking</div>
                                     </Link>
-                                    {/* <Link to='/About' onClick={ goTop }>
-                                        <div className='text-white pButton text-center text-[30px] px-[25px] leading-8'>Meet The <br/>Team</div>
-                                    </Link> */}
+                                    <Link to='/About' onClick={ goTop }>
+                                        <div className='text-white pButton text-center text-[30px] px-[25px] leading-8'>30 Day <br/>Challenge</div>
+                                    </Link>
                                     <Link to='/Contact' onClick={ goTop }>
                                         <div className='text-white pButton text-[35px]'>Contact</div>
                                     </Link>
