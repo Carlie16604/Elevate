@@ -13,11 +13,11 @@ const Portals = () => {
     return (
         <>
         {/* redo portals */}
-            <section id='portals' className='my-[-10rem] mb-[10rem]'>
+            <section id='portals' className='my-[-10rem] mb-[5rem]'>
                 <div className='container'>
                     <div className='flex flex-col relative '>
                         <div className='rockContainer'>
-                        <img className='reviewsRock right-0 top-1/4' src={Rock} alt='Rock' />
+                        {/* <img className='reviewsRock right-0 top-1/4' src={Rock} alt='Rock' /> */}
                             <div className='flex flex-row justify-center gap-32 relative'>
                                 <div className='portals animate-slide-up'>
                                     <Link to='/Booking' onClick={ goTop }>

@@ -1,6 +1,6 @@
 import React from "react";
 import '../index.css';
-import ReviewPhoto from '../assets/Reviews/ReviewPhoto.png';
+import ReviewPhoto2 from '../assets/Reviews/ReviewPhoto2.png';
 import Quote from '../assets/Reviews/quote.svg';
 import Machine from '../assets/Reviews/Pilates.svg';
 // import LeftArrow from '../assets/Calendar/Arrow Left.png';
@@ -17,8 +17,8 @@ const Reviews = () => {
             <section className='mt-[15rem] mx-auto'>
                 <div className='container'>
                     <div className=' bg-[#94997833] p-[30px]'>
-                        <div className='bg-[#eee9e6dd] overflow-x-clip w-full h-[23rem] relative'>
-                            <img src={ReviewPhoto} alt='Pilates Woman' className='absolute bottom-0 z-20 h-[36rem] rounded-tr-[200px]'/>
+                        <div className='bg-[#f8f4f1] overflow-x-clip w-full h-[23rem] relative'>
+                            <img src={ReviewPhoto2} alt='Pilates Woman' className='absolute bottom-0 z-20 h-[36rem] rounded-tr-[200px] border-black'/>
                                 <div className='flex'>
                                     <div className='absolute flex flex-col top-0 right-0 w-[60%] h-full py-[40px] px-[50px]'>
                                         <img className='w-[4rem] rotate-180' src={Quote} alt='quote'/>

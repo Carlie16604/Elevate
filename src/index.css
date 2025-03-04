@@ -11,9 +11,8 @@
 }
 
 :root {
-  /* background-color: #e3ded7; */
-  background-color: #dfdcd8;
-  /* background-color: #eeeeee; */
+  /* background-color: #dfdcd8; og bg color*/ 
+  background-color: #eae9e6;
   font-family: kanit;
   min-width: 1200px;
   min-height: 900x;
