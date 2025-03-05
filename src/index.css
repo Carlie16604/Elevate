@@ -536,10 +536,10 @@ ul:hover a:hover ~ a:before {
 
 .portals{
 	box-shadow: 
-		inset var(--itemWidthMinus) var(--itemWidthMinus) 0 #515839, 
+		inset var(--itemWidthMinus) var(--itemWidthMinus) 0 #949978, 
 		inset var(--itemWidth) var(--itemWidthMinus) 0 #fefefe, 
 		inset var(--itemWidthMinus) var(--itemWidth) 0 #fa7031, 
-		inset var(--itemWidth) var(--itemWidth) 0 #dde4b8, 
+		inset var(--itemWidth) var(--itemWidth) 0 #515839, 
 		0 0 20px silver;
 	transition: box-shadow ease-in-out .6s, color ease-in-out .5s;	
 	width: var(--itemWidth);
