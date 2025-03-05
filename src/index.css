@@ -550,7 +550,8 @@ ul:hover a:hover ~ a:before {
 	cursor: pointer;
 	display: grid;
 	color: white;
-	font-size: calc(var(--itemWidth) / 7);
+	font-size: 30px;
+  place-items: center;
 	grid-row:  2 / 3;
 }
 
