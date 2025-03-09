@@ -11,7 +11,7 @@ const Portals = () => {
     
     return (
         <>
-            <section id='portals' className='mt-[-8rem] mb-[5rem]'>
+            <section id='portals' className='mt-[-9rem] mb-[5rem]'>
                 <div className='container'>
                     <div className='flex flex-col relative'>
                         <div className='portal-container'>
