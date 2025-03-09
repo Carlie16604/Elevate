@@ -15,7 +15,7 @@ const Home = () => {
     return (
         <>
         <NavBar />
-            <section id='Home' className="bg-[#e0dcd9]">
+            <section id='Home'>
                 <img src={Studio} alt="studio img" rel='norel' className='z-0 absolute h-[95vh] overflow-hidden w-screen min-w-[1200px] object-cover'/>
                 <div className='container h-screen'>
                     <div className='flex flex-wrap'>

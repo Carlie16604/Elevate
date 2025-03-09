@@ -20,11 +20,11 @@ const Portals = () => {
                                     <span>Booking</span>
                                 </Link>
                             </div>
-                            <div className='portals'>
+                            {/* <div className='portals'>
                                 <Link to='/Challenge' onClick={ goTop }>
                                     <span>30 Day <br/>Challenge</span>
                                 </Link>
-                            </div>
+                            </div> */}
                             <div className='portals'>
                                 <Link to='/Contact' onClick={ goTop }>
                                     <span>Contact</span>
