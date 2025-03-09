@@ -8,7 +8,6 @@ const Challenge = () => {
     <>
       <NavBar />
       <div id="Challenge">
-        {/* Background Image */}
         <img
           src={BG}
           rel="norel"
@@ -17,7 +16,6 @@ const Challenge = () => {
         />
 
         <div className="container">
-          {/* Main Title */}
           <div className="text-[70px] text-center pt-1">
             <div className="mt-60 mb-20 md:mt-40">
               <h1 className="text-white relative z-10">30 Day Challenge</h1>
