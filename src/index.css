@@ -20,148 +20,9 @@
 
 /* Format for all pages -------------------------------------------------------------*/
 
-/* .rockContainer {
-  margin: 0 auto;
-  max-width: 85rem;
-} */
-
 .container {
   margin: 0 auto;
   max-width: 72rem;
-}
-
-.sun { 
-  position: fixed;
-  top: 15rem;
-  left: 22rem;
-  margin: auto;  
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;  
-  background: white;
-  opacity: 0.9;      
-  box-shadow: 0px 0px 40px 15px white;  
-  z-index: -1;
-}
-
-.ray_box {
-  position: absolute;
-  margin: auto;
-  top: 0px;
-  left: 0;
-  right: 0;
-  bottom: 0;  
-  width: 70px;  
-  -webkit-animation: ray_anim 120s linear infinite;
-  animation: ray_anim 120s linear infinite;
-}
-
-.ray {  
-  background: linear-gradient(to top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);
-  margin-left: 10px;
-  border-radius: 80% 80% 0 0;
-  position: absolute;
-  opacity: 0.1;
-}
-
-.ray1 {    
-  height: 170px;
-  width: 30px;
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
-  top: -175px;
-  left: 15px;
-}
-
-.ray2 {
-  height: 100px;
-  width: 8px;
-  -webkit-transform: rotate(220deg);
-  transform: rotate(220deg);
-  top: -90px;
-  left: 75px;
-}
-
-.ray3 {
-  height: 170px;
-  width: 50px;
-  -webkit-transform: rotate(250deg);
-  transform: rotate(250deg);
-  top: -80px;
-  left: 100px;
-}
-
-.ray4 {
-  height: 120px;
-  width: 14px;
-  -webkit-transform: rotate(305deg);
-  transform: rotate(305deg);
-  top: 30px;
-  left: 100px;
-}
-
-.ray5 {
-  height: 140px;
-  width: 30px;
-  -webkit-transform: rotate(-15deg);
-  transform: rotate(-15deg);
-  top: 60px;
-  left: 40px;
-}
-
-.ray6 {
-  height: 90px;
-  width: 50px;
-  -webkit-transform: rotate(30deg);
-  transform: rotate(30deg);
-  top: 60px;
-  left: -40px;
-}
-
-.ray7 {
-  height: 180px;
-  width: 10px;
-  -webkit-transform: rotate(70deg);
-  transform: rotate(70deg);
-  top: -35px;
-  left: -40px;
-}
-
-.ray8 {
-  height: 120px;
-  width: 30px;
-  -webkit-transform: rotate(100deg);
-  transform: rotate(100deg);
-  top: -45px;
-  left: -90px;
-}
-
-.ray9 {
-  height: 80px;
-  width: 10px;
-  -webkit-transform: rotate(120deg);
-  transform: rotate(120deg);
-  top: -65px;
-  left: -60px;
-}
-
-.ray10 {
-  height: 190px;
-  width: 23px;
-  -webkit-transform: rotate(150deg);
-  transform: rotate(150deg);
-  top: -185px;
-  left: -60px;
-}
-
-@-webkit-keyframes ray_anim { 
-  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }    
-  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
-}
-
-@keyframes ray_anim { 
-  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }    
-  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
 }
 
 /* Global -------------------------------------------------------------------------- */
@@ -176,7 +37,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  /*background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   z-index: 1000;
 }
 
@@ -273,14 +134,14 @@ ul:hover a:hover ~ a:before {
   margin: auto;
   position: relative;
   box-shadow: 1.75rem -1.25rem 0 #ff8e43,
-    -1.8rem -2rem 0 #b9c095;
+    -1.8rem -2rem 0 #f3cea1;
   cursor: pointer;
 }
 
 .elevate-card h1 {
   position: absolute;
   margin-left: 2rem;
-  color: #fff;
+  color: #F2CEA1;
 }
 
 .elevate-card__title {
@@ -346,17 +207,17 @@ ul:hover a:hover ~ a:before {
   .elevate-card {
     background-image: linear-gradient(
         to top right,
-        #d3cfca 25%,
+        #FEEAD1 25%,
         transparent
       ),
       radial-gradient(
         circle at bottom right,
         transparent 15%,
-        #949978 15%,
-        #949978 20%,
+        #F2CEA1 15%,
+        #F2CEA1 20%,
         transparent 20%,
         transparent 22%,
-        #949978 22%,
+        #F2CEA1 22%,
         transparent 30%
       );
 
@@ -366,7 +227,7 @@ ul:hover a:hover ~ a:before {
       grid-row: 1 / 2;
       background: linear-gradient(
         to bottom left,
-        #3E5C47 40%,
+        #FEEAD1 40%,
         transparent
       );
       mix-blend-mode: multiply;
@@ -389,7 +250,7 @@ ul:hover a:hover ~ a:before {
   .elevate-card__title {
     -webkit-text-stroke: 0.035em;
     /* color: white; */
-    text-shadow: 0.075em 0.075em #949978;
+    text-shadow: 0.075em 0.075em #fff;
   }
 }
 
@@ -404,9 +265,9 @@ ul:hover a:hover ~ a:before {
     clip-path: circle(3% at 95%);
     background-image: linear-gradient(
       150deg,
-      #fff 30%,
-      #949978 50%,
-      #3E5C47
+      /* #fff 30%, */
+      /* #949978 50%, */
+      #F2CEA1
     );
     z-index: -1;
     transition: clip-path 400ms ease-in-out;
