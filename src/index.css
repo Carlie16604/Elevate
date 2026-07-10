@@ -397,7 +397,7 @@ ul:hover a:hover ~ a:before {
 
 .portals{
 	box-shadow: 
-		inset var(--itemWidthMinus) var(--itemWidthMinus) 0 #949978, 
+		inset var(--itemWidthMinus) var(--itemWidthMinus) 0 #97ab87, 
 		inset var(--itemWidth) var(--itemWidthMinus) 0 #fefefe, 
 		inset var(--itemWidthMinus) var(--itemWidth) 0 #fa7031, 
 		inset var(--itemWidth) var(--itemWidth) 0 #515839, 

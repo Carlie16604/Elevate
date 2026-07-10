@@ -1,6 +1,6 @@
 import React from "react";
 import'../index.css';
-import Studio from '../assets/Home/woman.jpg';
+import Studio from '../assets/Home/tester.png';
 import Facebook from '../assets/Home/facebook.svg';
 import Instagram from '../assets/Home/instagram.svg';
 import Pintrest from '../assets/Home/pinterest.svg';
@@ -16,9 +16,9 @@ const Home = () => {
         <>
         <NavBar />
             <section id='Home'>
-                <img src={Studio} alt="studio img" rel='norel' className='z-0 absolute h-[95vh] overflow-hidden w-screen min-w-[1200px] object-cover'/>
+                <img src={Studio} alt="studio img" rel='norel' className='z-0 absolute h-[95vh] overflow-hidden w-screen min-w-[1200px] object-cover bg-[#ddedd065] border-2 border-[#97ab86]'/>
                 <div className='container h-screen'>
-                    <div className='flex flex-wrap'>
+                    <div className='flex flex-wrap '>
                         <div className='grid grid-cols-2 items-center pt-[250px] relative'>
                             <div>
                                 <div className='elevate-card top-32 '>
@@ -33,7 +33,7 @@ const Home = () => {
                                 {/* <p className='pt-2 pb-10'>
                                     Pilates is a renowned Pilates studio dedicated to helping individuals achieve their fitness goals based in Boulder, CO. We host expertly crafted training along with empowering instructors. 
                                 </p> */}
-                                <Link to='/Contact' className='text-black border-2 rounded-[400px] border-[#abb18b] px-10 py-5 inline-block text-[19px] tracking-[1px] cursor-pointer shadow-[inset_0_0_0_0_#949978] transition-[box-shadow] ease-out duration-1000 hover:shadow-[inset_400px_0_0_0_#abb18b] hover:text-white'>
+                                <Link to='/Contact' className='text-black border-4 rounded-[400px] border-[#97ab87] px-10 py-5 inline-block text-[19px] tracking-[1px] cursor-pointer shadow-[inset_0_0_0_0_#949978] transition-[box-shadow] ease-out duration-1000 hover:shadow-[inset_400px_0_0_0_#abb18b] hover:text-white'>
                                     Let's Talk About Your Health!
                                 </Link>
                             </div>
