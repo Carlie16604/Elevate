@@ -6,13 +6,11 @@ import Reviews from '../pages/Reviews'
 import Articles from '../pages/Articles'
 import Portals from '../pages/Portals'
 import About from '../pages/About'
-import Sunrays from "./Components/Sunrays"
 
 const Main = () => {
 
   return (
     <>
-      {/* <Sunrays /> */}
       <Home />
       <Portals />
       <About />
