@@ -16,7 +16,7 @@ const Home = () => {
         <>
         <NavBar />
             <section id='Home'>
-                <img src={Studio} alt="studio img" rel='norel' className='z-0 absolute h-[95vh] overflow-hidden w-screen min-w-[1200px] object-cover bg-[#ddedd065] border-2 border-[#97ab86]'/>
+                <img src={Studio} alt="studio img" rel='norel' className='z-0 absolute h-[95vh] overflow-hidden w-screen min-w-[1200px] object-cover bg-[#f8f4f1]'/>
                 <div className='container h-screen'>
                     <div className='flex flex-wrap '>
                         <div className='grid grid-cols-2 items-center pt-[250px] relative'>
