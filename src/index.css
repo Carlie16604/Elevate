@@ -12,7 +12,7 @@
 
 :root {
   /* background-color: #dfdcd8; og bg color*/ 
-  background-color: #F5F5F5;
+  background-color: #f8f4f1;
   font-family: kanit;
   min-width: 1200px;
   min-height: 900x;
@@ -276,6 +276,10 @@ ul:hover a:hover ~ a:before {
       clip-path: circle(100%);
     }
   }
+}
+
+.radial-gradient {
+  background: radial-gradient(#f8f4f1, #eff1e4);
 }
 
 /* Home Content */

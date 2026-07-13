@@ -11,7 +11,7 @@ const Articles = () => {
 
     return (
         <section id='Articles' className='bg-[#ddedd065] border-2 border-[#97ab86]'>
-            <div className='container py-20'>
+            <div className='container py-16'>
                 <div className='flex flex-col text-center relative items-center'>
                     {/* <p className='text-white relative z-10 text-[15px] uppercase font-bold mb-8'>
                         Lastest News

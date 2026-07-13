@@ -15,8 +15,8 @@ const Home = () => {
     return (
         <>
         <NavBar />
-            <section id='Home'>
-                <img src={Studio} alt="studio img" rel='norel' className='z-0 absolute h-[95vh] overflow-hidden w-screen min-w-[1200px] object-cover bg-[#f8f4f1]'/>
+            <section id='Home' className='radial-gradient'>
+                <img src={Studio} alt="studio img" rel='norel' className='z-10 absolute h-[95vh] overflow-hidden w-screen min-w-[1200px] object-cover '/>
                 <div className='container h-screen'>
                     <div className='flex flex-wrap '>
                         <div className='grid grid-cols-2 items-center pt-[250px] relative'>
@@ -38,7 +38,7 @@ const Home = () => {
                                 </Link>
                             </div>
                         </div>
-                        <div className='blur flex flex-row-reverse -rotate-90 text-black absolute top-1/2 right-3 items-center min800:hidden'>
+                        <div className='z-10 blur flex flex-row-reverse -rotate-90 text-black absolute top-1/2 right-3 items-center min800:hidden'>
                             <p className='capitalize text-3xl font-bold tracking-wider'>
                                 share
                             </p>
