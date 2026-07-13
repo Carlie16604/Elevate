@@ -15,14 +15,14 @@ const Contact = () => {
         <>
         <NavBar />
             <section id='Contact'>
-                <img src={BG} rel='norel' className='z-0 absolute h-[50vh] w-screen min-w-[1200px] object-cover lg:h-[40vh]' alt='none'/>
+                <img src={BG} rel='norel' className='z-10 absolute h-[50vh] w-screen min-w-[1200px] object-cover lg:h-[40vh]' alt='none'/>
                 <div className='container'>
                     <div className='text-[70px] text-center pt-1'>
                         <div className='mt-60 mb-20 md:mt-40'>
-                            <h1 className='text-white relative z-10'>Contact</h1>
+                            <h1 className='text-white relative z-10 backdrop-blur-sm'>Contact</h1>
                         </div>
                     </div>
-                    <div className='pt-12 pb-[5rem] px-[7rem] grid grid-cols-2 items-center'>
+                    <div className='pt-12 pb-[5rem] px-[7rem] grid grid-cols-2 items-center bg-[#97ab8623] backdrop-blur-sm shadow-xl'>
                         <div>
                             <h2 className='text-[#ff8e43] text-[40px] font-bold leading-[1.2]'>
                                 We're here to help!
@@ -35,7 +35,7 @@ const Contact = () => {
                                     <h3 className='text-black text-[2rem] font-medium mb-10'>
                                         Boulder, CO
                                     </h3>
-                                    <span className='bg-[#949978] w-[50px] h-[4px] absolute top-[43px]'/>
+                                    <span className='bg-[#ff8b40] w-[50px] h-[4px] absolute top-[43px]'/>
                                     <p className='text-[15px] font-medium'> 
                                         1234 S Rocky Road <br/> Boulder CO, 80305
                                     </p>
@@ -44,7 +44,7 @@ const Contact = () => {
                                     <h3 className='text-black text-[2rem] font-medium mb-10'>
                                         Opening Hours
                                     </h3>
-                                    <span className='bg-[#949978] w-[50px] h-[4px] absolute top-[43px]'/>
+                                    <span className='bg-[#ff8b40] w-[50px] h-[4px] absolute top-[43px]'/>
                                     <p className='text-[15px] font-medium'> 
                                         Mon to Fri: 9:00am - 7:00pm
                                     </p>
@@ -59,7 +59,7 @@ const Contact = () => {
                                     <h3 className='text-black text-[2rem] font-medium mb-10'>
                                         Our Info
                                     </h3>
-                                    <span className='bg-[#949978] w-[50px] h-[4px] absolute top-[43px]'/>
+                                    <span className='bg-[#ff8b40] w-[50px] h-[4px] absolute top-[43px]'/>
                                     <p className='text-[15px] font-medium'> 
                                         +1 123-456-7890 
                                     </p>
@@ -71,7 +71,7 @@ const Contact = () => {
                                     <h3 className='text-black text-[2rem] font-medium mb-10'>
                                         Follow Us
                                     </h3>
-                                    <span className='bg-[#949978] w-[50px] h-[4px] absolute top-[43px]'/>
+                                    <span className='bg-[#ff8b40] w-[50px] h-[4px] absolute top-[43px]'/>
                                     <div className='text-[18px] font-medium flex gap-3'>
                                         <img className='w-[2.80rem] h-[2.80rem] rounded-full cursor-pointer hover:bg-[#fff] ease-in duration-200 hover:text-white hover:border-white hover:border-[3px]' src={Instagram} alt='Instagram'/>
                                         <img className='w-[2.80rem] h-[2.80rem] rounded-full cursor-pointer hover:bg-[#fff] ease-in duration-200 hover:text-white hover:border-white hover:border-[3px]' src={Facebook} alt='Facebook'/>
@@ -82,13 +82,13 @@ const Contact = () => {
                             </div>
                         </div>
                         <form className='flex flex-col mt-[6rem] pt-[30px] pb-[50px] pl-[45px] relative'>
-                            <h3 className='text-[#ff8e43] text-[28px] font-bold mb-14'>
+                            <h3 className='text-[#000000] text-[28px] mb-14'>
                                 Get In Touch!
                             </h3>
-                            <span className='bg-[#949978] w-[50px] h-[4px] absolute top-[67.5px]'/>
-                            <input className='w-full py-[12px] px-[20px] h-[51px] text-[14px] bg-[#e0ddd9] outline-none mb-8 rounded-xl border-[2.3px] border-[#b2b799]' placeholder="Full Name" type='text'/> 
-                            <input className='w-full py-[12px] px-[20px] h-[51px] text-[14px] bg-[#e0ddd9] outline-none mb-8 rounded-xl border-[2.3px] border-[#b2b799]' placeholder="Email Address" type='email'/>
-                            <select className='w-full py-[12px] px-[20px] h-[51px] text-[14px] bg-[#e0ddd9] outline-none mb-8 rounded-xl border-[2.3px] border-[#b2b799]'>
+                            <span className='bg-[#ff8b40] w-[50px] h-[4px] absolute top-[67.5px]'/>
+                            <input className='w-full py-[12px] px-[20px] h-[51px] text-[14px] bg-[#e0ddd9] outline-none mb-8 rounded-xl border-[2.3px] border-[#97ab86]' placeholder="Full Name" type='text'/> 
+                            <input className='w-full py-[12px] px-[20px] h-[51px] text-[14px] bg-[#e0ddd9] outline-none mb-8 rounded-xl border-[2.3px] border-[#97ab86]' placeholder="Email Address" type='email'/>
+                            <select className='w-full py-[12px] px-[20px] h-[51px] text-[14px] bg-[#e0ddd9] outline-none mb-8 rounded-xl border-[2.3px] border-[#97ab86]'>
                                 <option>Select Class</option>
                                 <option>Foundations</option>
                                 <option>Water</option>

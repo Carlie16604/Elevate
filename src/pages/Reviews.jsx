@@ -18,7 +18,7 @@ const Reviews = () => {
             <section className='mt-[15rem] mx-auto'>
                 {/* <img src={Beige} rel='norel' className='z-[-2] absolute h-[80vh] w-screen min-w-[1200px] object-cover lg:h-[40vh]' alt='none'/> */}
                 <div className='container'>
-                    <div className=' bg-[#94997833] p-[30px]'>
+                    <div className=' bg-[#97ab8640] p-[30px]'>
                         <div className='bg-[#f8f4f1] overflow-x-clip w-full h-[23rem] relative'>
                             <img src={ReviewPhoto2} alt='Pilates Woman' className='absolute bottom-0 z-20 h-[36rem] rounded-tr-[200px] border-black'/>
                                 <div className='flex'>

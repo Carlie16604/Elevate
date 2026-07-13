@@ -12,16 +12,16 @@ const Blog = () => {
         <>
             <NavBar />
                 <div id='Blog'>
-                <img src={BG} rel='norel' className='z-0 absolute h-[50vh] w-screen min-w-[1200px] object-cover lg:h-[40vh]' alt='none'/>
+                <img src={BG} rel='norel' className='z-10 absolute h-[50vh] w-screen min-w-[1200px] object-cover lg:h-[40vh]' alt='none'/>
                     <div className='container'>
                         <div className='text-[70px] text-center pt-1'>
                             <div className='mt-60 mb-20 md:mt-40'>
-                                <h1 className='text-white relative z-10'>Blog</h1>
+                                <h1 className='text-white relative z-10 backdrop-blur-sm'>Blog</h1>
                             </div>
                         </div>
-                        <div className='pt-20'>
-                            <div className='flex flex-wrap'>
-                                <div className='flex flex-col px-2 py-4'>
+                        <div className='py-28 bg-[#97ab8623] backdrop-blur-sm shadow-xl'>
+                            <div className='flex flex-wrap '>
+                                <div className='flex flex-col px-5 py-4'>
                                     <div className='text-[16px] bg-[#fcfbfa] p-3 rounded-xl mb-5 h-auto min-w-[250px]'>
                                         <p className='pb-3'>Subscribe:</p>
                                         <div className='flex flex-col gap-1 relative'>

@@ -22,12 +22,13 @@ const Classes = () => {
         <>
         <NavBar />
             <div id='Classes'>
-                <img src={BG} rel='norel' className='z-0 absolute h-[50vh] w-screen min-w-[1200px] object-cover lg:h-[40vh]' alt='none'/>
+                <img src={BG} rel='norel' className='z-10 absolute h-[50vh] w-screen min-w-[1200px] object-cover lg:h-[40vh]' alt='none'/>
                 <div className='container'>
                     <div className='text-[70px] text-center pt-1'>
                         <div className='mt-60 mb-20 md:mt-40'>
-                            <h1 className='text-white relative z-10'>Classes</h1>
+                            <h1 className='text-white relative z-10 backdrop-blur-sm'>Classes</h1>
                         </div>
+                    <div className='bg-[#97ab8623] backdrop-blur-sm shadow-xl pt-[.15rem]'>
                     <div className='cardContainer'>
                         {classes.map((info) => (
                             <div key={info.id} className={info.id % 2 !== 0 ? 'card-deck' : 'card-deck pt-24'}>
@@ -58,6 +59,7 @@ const Classes = () => {
                                 </div>
                             </div> 
                         ))}
+                    </div>
                     </div>
                     </div>
                 </div>
