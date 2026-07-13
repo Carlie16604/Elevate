@@ -92,7 +92,7 @@ ul a {
   transition: .3s;
 }
 ul a:hover {
-  color: #fff;
+  color: #fe9148;
   transition: .6s;
 }
 ul a:before {
@@ -249,7 +249,6 @@ ul:hover a:hover ~ a:before {
 @supports (-webkit-text-stroke: 1px white) {
   .elevate-card__title {
     -webkit-text-stroke: 0.035em;
-    /* color: white; */
     text-shadow: 0.075em 0.075em #fff;
   }
 }
