@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import Instagram from '../../assets/Footer/Instagram.svg';
 import Facebook from '../../assets/Footer/Facebook.svg';
 import Linkedin from '../../assets/Footer/LinkedIn.svg';
@@ -11,7 +12,6 @@ const Footer = () => {
                 <div className='container px-8'>
                     <div className='flex justify-between min620:flex-col min620:items-center min620:text-center min620:gap-[5rem]'>
                         <div className='flex flex-col w-[50%] gap-4'>
-                            {/* Logo here */}
                             <p className='text-[25px] font-bold'>Studio Policies</p>
                             <p className='text-[25px] font-bold'>FAQs</p>
                             <p className="text-[18px] color-[#000] font-medium opacity-100">
@@ -29,21 +29,29 @@ const Footer = () => {
                         </div>
                         <div className='flex flex-col gap-4 relative'>
                             <p className='text-[22px] font-bold'>
-                                Our Classes
-                            </p>
+                                    Our Classes
+                                </p>
                             <span className='top-[33px] absolute w-[60px] h-[4px] bg-[#3E5C47]'/>
-                            <p className='text-[16px] hover:text-[#fff] ease-in duration-200 cursor-pointer text-[#000] font-medium hover:font-bold'>
-                                Foundation
-                            </p>
-                            <p className='text-[16px] hover:text-[#fff] ease-in duration-200 cursor-pointer text-[#000] font-medium hover:font-bold'>
-                                Water
-                            </p>
-                            <p className='text-[16px] hover:text-[#fff] ease-in duration-200 cursor-pointer text-[#000] font-medium hover:font-bold'>
-                                Fire
-                            </p>
-                            <p className='text-[16px] hover:text-[#fff] ease-in duration-200 cursor-pointer text-[#000] font-medium hover:font-bold'>
-                                Air
-                            </p>
+                            <Link to='/Classes' onClick={ () => window.scrollTo({ top: 0 }) }>
+                                <p className='text-[16px] hover:text-[#fff] ease-in duration-200 cursor-pointer text-[#000] font-medium hover:font-bold'>
+                                    Foundation
+                                </p>
+                            </Link>
+                            <Link to='/Classes' onClick={ () => window.scrollTo({ top: 0 }) }>
+                                <p className='text-[16px] hover:text-[#fff] ease-in duration-200 cursor-pointer text-[#000] font-medium hover:font-bold'>
+                                    Water
+                                </p>
+                            </Link>
+                            <Link to='/Classes' onClick={ () => window.scrollTo({ top: 0 }) }>
+                                <p className='text-[16px] hover:text-[#fff] ease-in duration-200 cursor-pointer text-[#000] font-medium hover:font-bold'>
+                                    Fire
+                                </p>
+                            </Link>
+                            <Link to='/Classes' onClick={ () => window.scrollTo({ top: 0 }) }>
+                                <p className='text-[16px] hover:text-[#fff] ease-in duration-200 cursor-pointer text-[#000] font-medium hover:font-bold'>
+                                    Air
+                                </p>
+                            </Link>
                         </div>
                         <div className='flex flex-col gap-4 relative'>
                         <p className='text-[22px] font-bold'>

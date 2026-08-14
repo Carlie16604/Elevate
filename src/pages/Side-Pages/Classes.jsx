@@ -28,7 +28,7 @@ const Classes = () => {
                         <div className='mt-60 mb-20 md:mt-40'>
                             <h1 className='text-white relative z-10 backdrop-blur-sm'>Classes</h1>
                         </div>
-                    <div className='bg-[#97ab8623] backdrop-blur-sm shadow-xl pt-[.15rem]'>
+                    <div className='bg-[#97ab8623] backdrop-blur-sm shadow-xl pt-[.15rem] vh-[100vh]'>
                     <div className='cardContainer'>
                         {classes.map((info) => (
                             <div key={info.id} className={info.id % 2 !== 0 ? 'card-deck' : 'card-deck pt-24'}>

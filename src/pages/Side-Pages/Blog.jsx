@@ -50,7 +50,7 @@ const Blog = () => {
                                             <p className='cursor-pointer bg-[#eae6e2] mx-1 pl-2 py-1 text-black shadow-[inset_0_0_0_0_#ff8e43] transition-[box-shadow] ease-out duration-1000 hover:shadow-[inset_400px_0_0_0_#fff] hover:text-[#ff8e43]'>Healthy Foods</p>
                                             <p className='cursor-pointer bg-[#eae6e2] mx-1 pl-2 py-1 text-black shadow-[inset_0_0_0_0_#ff8e43] transition-[box-shadow] ease-out duration-1000 hover:shadow-[inset_400px_0_0_0_#fff] hover:text-[#ff8e43]'>How to cast spells</p>
                                             <p className='cursor-pointer bg-[#eae6e2] mx-1 pl-2 py-1 text-black shadow-[inset_0_0_0_0_#ff8e43] transition-[box-shadow] ease-out duration-1000 hover:shadow-[inset_400px_0_0_0_#fff] hover:text-[#ff8e43]'>Weather Report</p>
-                                            <p className='cursor-pointer bg-[#eae6e2] mx-1 pl-2 py-1 text-black shadow-[inset_0_0_0_0_#ff8e43] transition-[box-shadow] ease-out duration-1000 hover:shadow-[inset_400px_0_0_0_#fff] hover:text-[#ff8e43]'>AI is fancy auto correct</p>
+                                            <p className='cursor-pointer bg-[#eae6e2] mx-1 pl-2 py-1 text-black shadow-[inset_0_0_0_0_#ff8e43] transition-[box-shadow] ease-out duration-1000 hover:shadow-[inset_400px_0_0_0_#fff] hover:text-[#ff8e43]'>AI is actually pretty cool</p>
                                         </div>
                                     </div>
                                 </div>
