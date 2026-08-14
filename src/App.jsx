@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react"
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { useEffect, useState } from "react"
+import { HashRouter as Router, Routes, Route } from "react-router-dom"
 import './index.css'
 import Main from './pages/Main'
 import Booking from './pages/Side-Pages/Booking'
