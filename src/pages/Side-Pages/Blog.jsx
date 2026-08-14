@@ -1,5 +1,6 @@
 import React from "react";
 import '../../index.css';
+import { Link, Route, HashRouter, Routes } from "react-router-dom";
 import NavBar from '../Components/NavBar.jsx';
 import BG from '../../assets/Universal/sideBackground.jpg';
 import Insta from '../../assets/Blog/insta.jpg';
