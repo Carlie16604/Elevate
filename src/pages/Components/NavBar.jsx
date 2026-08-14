@@ -23,6 +23,9 @@ const NavBar = () => {
                     {HomePage ? 
                         <div className='flex justify-center'>
                             <ul className='font-medium cursor-pointer text-xl'>
+                                <Link to='/' onClick={ goTop }>
+                                    <div>Home</div>
+                                </Link>
                                 <Link to='/Classes' onClick={ goTop }>
                                     <div>Classes</div>
                                 </Link>
@@ -32,9 +35,9 @@ const NavBar = () => {
                                 <Link to='/Contact' onClick={ goTop }>
                                     <div>Contact</div>
                                 </Link>
-                                <a href='#Articles' >
+                                {/* <a href='#Articles' >
                                     <div>Articles</div>
-                                </a>
+                                </a> */}
                                 <Link to='/Blog' onClick={ goTop }>
                                     <div>Blog</div>
                                 </Link>
