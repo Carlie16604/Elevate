@@ -4,6 +4,7 @@ export const articles = [
         slug: 'childbirth-and-pilates',
         date: '09.12.2024',
         title: 'Childbirth and Pilates',
+        dek: 'What a 2026 BMJ Open review found about prenatal Pilates, pregnancy pain, and preparing the body for labor.',
         excerpt: [
             { text: 'The symbiotic relationship between ' },
             { text: 'Pilates and Mothers.', highlight: true },
@@ -11,28 +12,40 @@ export const articles = [
         ],
         image: null,
         imageAlt: 'Prenatal Pilates at Elevate',
+        pullQuote: 'Compared with standard care, structured prenatal Pilates significantly alleviates musculoskeletal pain and disability while also enhancing psychological status.',
+        source: {
+            label: 'BMJ Open',
+            citation: 'Pilates during pregnancy for maternal musculoskeletal pain and discomfort: a systematic review and meta-analysis.',
+            url: 'https://bmjopen.bmj.com/content/16/5/e112441'
+        },
         sections: [
             {
-                heading: 'A strong partnership through pregnancy',
+                heading: 'Why pregnancy and Pilates belong together',
                 paragraphs: [
-                    'Pregnancy asks a lot of the body. As the baby grows, posture shifts, the pelvic floor takes on extra work, and the deep core has to support a changing center of gravity. Pilates is uniquely suited to that season. Slow, controlled movement, focused breathing, and alignment work help mothers stay connected to their bodies without the impact of high-intensity training.',
-                    'At Elevate, we treat prenatal Pilates as preparation, not restriction. The same principles that build strength in Foundations and Water classes — breath, stability, and control — become tools for labor, recovery, and everyday movement with a newborn.'
+                    'Pregnancy changes how a body carries itself. As the baby grows, the center of gravity shifts, the pelvic floor takes on more load, and the low back, hips, and shoulders often start to ache. That musculoskeletal discomfort is common, and it can make sleep, work, and even walking feel harder than they should.',
+                    'Pilates was built around breath, alignment, and controlled strength — the same skills that help a pregnant body stay supported. A 2026 systematic review and meta-analysis in BMJ Open asked a practical question: when prenatal Pilates is structured and compared with standard care, does it actually reduce pregnancy-related pain and disability?'
                 ]
             },
             {
-                heading: 'How Pilates prepares the body for labor',
+                heading: 'What the research found',
                 paragraphs: [
-                    'Labor is an endurance event that rewards awareness more than brute strength. Pilates trains the breath so it can be used as a focus during contractions, and it strengthens the pelvic floor in a balanced way: enough support to carry a growing baby, with enough release to let the body open when it is time.',
-                    'We also work on posture and hip mobility. As the belly expands, many people lean back or round forward, which can strain the low back and pelvic joints. Gentle reformer and mat work helps keep the spine stacked, the glutes and deep abdominals engaged, and the hips free enough to find comfortable labor positions.',
-                    'None of this replaces medical care. Always check with your provider before starting or continuing a program, especially if you have a high-risk pregnancy, pelvic pain, or have been advised to modify exercise.'
+                    'The reviewers included 13 studies. Ten of those contributed data to the meta-analysis. Pain was measured on a 0–10 visual analogue scale. Moderate-certainty evidence showed that Pilates reduced musculoskeletal pain during pregnancy by a mean difference of −2.59 points (95% CI −4.19 to −1.00).',
+                    'Low-certainty evidence suggested a reduction in pregnancy-related disability as well (standardised mean difference −1.82). Psychological status also improved (SMD −0.86), while sleep quality did not reach statistical significance. In other words: the strongest signal is for pain, with additional support for function and mood.',
+                    'Risk of bias was mixed — seven studies were rated low risk, three unclear, and three high — which is why the authors were careful with certainty ratings. Even so, the direction of the findings is consistent: structured prenatal Pilates helps more than usual care alone.'
                 ]
             },
             {
-                heading: 'Prenatal and postnatal practice at Elevate',
+                heading: 'How that prepares a body for labor',
                 paragraphs: [
-                    'During pregnancy, we typically recommend Foundations and Water. Both emphasize control over intensity. Instructors can swap supine work, avoid deep twisting, and keep you off your back after the first trimester when that is more comfortable. The goal is to leave class taller, calmer, and more supported — not exhausted.',
-                    'After birth, Pilates is one of the most effective ways to rebuild. Diastasis, pelvic floor changes, and the physical load of feeding and carrying a baby all respond well to the slow progression we already use with new clients. Many parents return with a Foundations block, then move into Water as strength and coordination come back.',
-                    'If you are expecting, newly postpartum, or planning ahead, reach out through our Contact page. We will help you choose a class and an instructor who can meet you where you are.'
+                    'Less pain and more function during pregnancy are not only about comfort. They are about staying mobile, breathing well, and keeping the deep core and pelvic floor coordinated as the body prepares for labor. Pilates trains those exact capacities: diaphragmatic breath, hip and spinal mobility, and strength that does not rely on bracing or impact.',
+                    'That is the symbiotic relationship the teaser on our home page points to. Mothers who can move with control, notice tension, and use breath as an anchor have tools they can take into labor and into the early weeks of recovery. The BMJ Open review does not claim Pilates changes the mode of delivery on its own. It does show a meaningful effect on the aches, disability, and psychological load that so often accompany the third trimester.'
+                ]
+            },
+            {
+                heading: 'Practicing prenatal Pilates at Elevate',
+                paragraphs: [
+                    'At Elevate, prenatal clients usually start in Foundations or Water, where intensity stays secondary to control. Instructors can modify supine work, skip deep twisting, and keep you off your back later in pregnancy when that is more comfortable. The aim is to leave class taller and more supported, not depleted.',
+                    'This is not a replacement for obstetric care. Always check with your provider before starting or continuing exercise, especially with a high-risk pregnancy, pelvic pain, or any advice to modify activity. If you are expecting or newly postpartum, send a note through Contact and we will help you choose a class and an instructor who can meet you where you are.'
                 ]
             }
         ]
@@ -42,6 +55,7 @@ export const articles = [
         slug: 'health-benefits-of-pilates',
         date: '08.04.2024',
         title: 'Health Benefits of Pilates at Elevate',
+        dek: 'New research shows weekly Pilates can ease anxiety, depression, and stress — not only build a stronger core.',
         excerpt: [
             { text: 'Pilates—the exercise and ' },
             { text: 'mind-body workout', highlight: true },
@@ -49,28 +63,40 @@ export const articles = [
         ],
         image: null,
         imageAlt: 'Pilates health benefits at Elevate',
+        pullQuote: 'Participants who practiced Pilates once a week for three months showed significant reductions in anxiety, depression, and somatization compared with inactive controls.',
+        source: {
+            label: 'Healthcare (MDPI) / PMC',
+            citation: 'Guidotti S, Fiduccia A, Morisi G, Pruneti C. Benefits of Pilates on Depression, Anxiety, and Stress: An Observational Study Comparing People Practicing Pilates to Non-Active Controls. Healthcare. 2025;13(7):772.',
+            url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC11988874/'
+        },
         sections: [
             {
-                heading: 'More than a core workout',
+                heading: 'More than core strength',
                 paragraphs: [
-                    'Pilates is often introduced as a core class, and the core is a big part of it. What keeps people coming back to Elevate is how that work shows up everywhere else: standing taller at a desk, hiking with fewer aches, moving through a day with more control and less compensation.',
-                    'The method is a mind-body practice. You are asked to notice breath, alignment, and the difference between effort and strain. That attention is what makes the strength usable. Muscles become more stable not because they are simply tired, but because they learn when to fire and when to let go.'
+                    'Clients usually arrive at Elevate for posture, core stability, and a workout that does not beat the body up. Those physical effects are well documented: balance, strength, flexibility, and muscular endurance all respond to regular Pilates. The mind-body part of the method — breath, attention, and control — is harder to put on a flyer, but it may be just as important.',
+                    'A 2025 observational study in Healthcare, now indexed in PubMed Central, looked past the usual strength outcomes. Guidotti, Fiduccia, Morisi, and Pruneti asked whether a simple weekly mat program could change anxiety, depression, somatization, and the everyday behaviors that put people at risk for stress-related physical problems.'
                 ]
             },
             {
-                heading: 'Strength, posture, and stability',
+                heading: 'What the Parma study measured',
                 paragraphs: [
-                    'A strong center supports the spine. When the deep abdominals, back, and pelvic floor work together, the shoulders can sit over the ribs and the head can rest over the spine instead of drifting forward. Better posture is not a pose you hold — it is a pattern you train.',
-                    'Stability is the other half. Reformer springs give you resistance and assistance at the same time, which teaches joints to stay organized under load. That is why clients who come in with cranky knees, tight hips, or a history of “strong but injured” often feel more reliable in their movement after a few weeks.',
-                    'Flexibility comes along with that control. We lengthen through strength rather than forcing a stretch, so range of motion is something you can actually use.'
+                    'Twenty-five adults ages 50 to 64 (five men, twenty women) practiced mat Pilates for the first time, once a week for an hour, over three months. They were compared with 24 inactive adults of a similar age. Psychological symptoms were measured with the Symptom Questionnaire. Stress-related risk behaviors were measured with the P Stress Questionnaire.',
+                    'The Pilates sessions were classic matwork: axial lengthening, core control, shoulder organization, spinal mobility, and breath. Small props such as the magic circle and softball were used to make exercises easier or more challenging. The researchers described the hour as an introspective journey as much as a workout.',
+                    'Compared with the inactive group, the Pilates group showed a significant drop in anxiety (large effect, p < 0.001), depression (medium effect, p < 0.05), and somatization (large effect, p < 0.01). Stress-risk behaviors improved too, especially the ability to use spare time and “take one’s mind away” from daily commitments (large effect, p < 0.01).'
                 ]
             },
             {
-                heading: 'How our classes deliver those benefits',
+                heading: 'Why breath and attention matter',
                 paragraphs: [
-                    'Foundations is where you learn the vocabulary: breath, imprint versus neutral, how to move limbs without dumping into the low back. Water builds on that with a balanced, full-body session. Fire turns up strength, coordination, and challenge. Air adds low-impact cardio on the jump board so stamina grows without pounding the joints.',
-                    'Taken together, the schedule is designed for a body that needs both power and ease. Two to three classes a week is enough for most people to feel a difference in posture, core endurance, and how they carry themselves outside the studio.',
-                    'Whether you are new to movement or coming back from a long break, the work scales. Start where you are, stay curious, and let the practice make you more stable over time.'
+                    'The authors point to mechanisms many studio teachers already cue. Diaphragmatic, controlled breathing can shift autonomic balance toward the parasympathetic system. Directing attention to quality of movement, posture, and breath is a form of mindfulness. Deep-muscle work can lower chronic tension that often travels with stress.',
+                    'The study was small, mostly women, and compared Pilates with doing nothing rather than with another form of exercise. Those are real limits. Even so, the finding is useful: light-to-moderate Pilates, once a week for three months, was enough to move mental-health scores in a non-clinical group. The authors note that this is less volume than typical WHO activity guidelines, which makes the method more approachable for people who cannot or will not do high-intensity training.'
+                ]
+            },
+            {
+                heading: 'How we use this at Elevate',
+                paragraphs: [
+                    'That is the health benefit we want clients to feel in class. Foundations teaches the breath and alignment that the study used. Water keeps the work full-body without rushing. Fire and Air add load and stamina when the nervous system and the joints are ready. Two or three sessions a week is plenty for most people; even one consistent hour, the dose in this paper, is a start.',
+                    'Pilates will not replace clinical care for anxiety or depression. It is a practical, low-impact way to train strength, posture, and the ability to step out of the day. If you want help choosing a class, book a spot or reach us through Contact.'
                 ]
             }
         ]
@@ -80,6 +106,7 @@ export const articles = [
         slug: 'meet-instructor-kayla',
         date: '07.22.2024',
         title: 'Meet Award Winning Instructor Kayla',
+        dek: 'An APPI-advanced reformer teacher, personal trainer, and yoga instructor with a BSc in Fitness, Nutrition & Health.',
         excerpt: [
             { text: 'Get to know Kayla, a ' },
             { text: 'fitness enthusiast', highlight: true },
@@ -89,26 +116,40 @@ export const articles = [
         ],
         image: null,
         imageAlt: 'Instructor Kayla at Elevate',
+        pullQuote: 'Kayla walked in and just got it — the way we teach, the way we want people to feel.',
+        source: {
+            label: 'Instructor profile',
+            citation: 'Adapted from Kayla’s teaching biography and studio introduction.',
+            url: 'https://www.vitalis-studios.com/blog/meet-kayla'
+        },
         sections: [
             {
-                heading: 'A teacher who meets you where you are',
+                heading: 'Welcome to the studio',
                 paragraphs: [
-                    'Kayla Price is one of the instructors you will see most often on the Elevate schedule, especially in Water. She came to Pilates the same way many of our clients do: looking for a practice that would make her stronger without leaving her beaten up. The method stuck. Teaching it became the way she could pass that feeling on.',
-                    'Clients describe her classes as focused and warm. She notices when a shoulder is creeping toward an ear, when breath has gone shallow, or when someone is ready for a bigger challenge. The cue is usually small. The change is usually immediate.'
+                    'We are glad to have Kayla on the Elevate floor. From her first session here it was clear she shared the values this studio was built on: thoughtful, personalised movement in a room where everyone feels welcome.',
+                    'Clients already know her as Kayla Price on the weekly schedule, especially in Water. What they feel in class is a teacher who is precise without being cold, and demanding without leaving anyone behind.'
                 ]
             },
             {
-                heading: 'Fitness enthusiast, studio ambassador',
+                heading: 'Kayla’s background',
                 paragraphs: [
-                    'Outside the reformer, Kayla is a genuine student of movement. She cross-trains, reads, and keeps showing up to other instructors’ classes so her teaching stays honest. As a studio ambassador, she is often the first person a new client meets — on the floor, in a Foundations intro, or answering the “is this going to be too hard for me?” question with a yes-and: it will be challenging, and you will be supported.',
-                    'That ambassador role matters to her because Pilates can look intimidating from the doorway. Springs, straps, and unfamiliar language are a lot. Kayla’s job, as she puts it, is to make the room feel like a place you already belong.'
+                    'Kayla is an APPI Advanced qualified reformer Pilates instructor, a personal trainer, and a Yoga Alliance certified teacher (200 hour). She also holds a BSc in Fitness, Nutrition & Health.',
+                    'That mix of disciplines gives her unusual depth. She does not only know the exercises. She understands the anatomy and movement principles behind them, which is what makes her teaching so specific and so effective.'
                 ]
             },
             {
-                heading: 'What it is like to train with Kayla',
+                heading: 'Her approach',
                 paragraphs: [
-                    'Expect clear progressions, a strong emphasis on form, and a class that still feels like a workout. She loves Water for the way it balances intensity and restoration, and she will nudge long-time clients toward Fire when their bodies are ready for more load and coordination.',
-                    'If your goal is pain-free strength, better posture, or simply a practice you will actually keep, Kayla will help you build it one session at a time. Check the Booking page for her upcoming classes, or send a note through Contact if you want help getting started.'
+                    'Kayla brings a thoughtful, anatomy-led approach to every session. Her teaching focuses on building strength through connection — guiding clients to move with greater control, confidence, and intention.',
+                    'Each class is tailored, so individual progress sits inside a refined, effective practice. Expect a creative yet classical reformer flow designed to challenge, strengthen, and elevate your movement.',
+                    'As one of our lead teachers put it: she walked in and just got it — the way we teach, and the way we want people to feel.'
+                ]
+            },
+            {
+                heading: 'When to find Kayla',
+                paragraphs: [
+                    'You can join Kayla for Water on Tuesdays and Wednesdays at 5:30pm, and Thursdays at 11:00am. Whether you are new to reformer Pilates or looking for a fresh perspective on your practice, her classes are a strong place to start.',
+                    'A limited number of reformers are available each session. Book your spot on the Booking page and come train with her at Elevate.'
                 ]
             }
         ]

@@ -31,8 +31,8 @@ const Portals = () => {
                                 </Link>
                             </div>
                             <div className='portals'>
-                                <Link to='/Articles' onClick={ goTop }>
-                                    <span>Articles</span>
+                                <Link to='/Blog' onClick={ goTop }>
+                                    <span>Blog</span>
                                 </Link>
                             </div>
                         </div>

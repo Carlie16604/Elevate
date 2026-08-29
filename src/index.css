@@ -677,3 +677,53 @@ header .calendar-current-date {
   font-size: 16px;
   font-weight: 500;
 }
+
+.article-hero-image.article-image-placeholder,
+.article-hero-image {
+  min-height: 360px;
+  border-radius: 24px;
+  object-fit: cover;
+}
+
+.article-card-image.article-image-placeholder {
+  min-height: 240px;
+  height: 100%;
+}
+
+.article-page {
+  max-width: 100%;
+}
+
+.article-section h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2f4636;
+  margin: 2.25rem 0 0.85rem;
+}
+
+.article-section p {
+  font-size: 17px;
+  color: #4a4a4a;
+  font-weight: 400;
+  line-height: 1.85;
+  margin-bottom: 1.15rem;
+  max-width: 46rem;
+}
+
+.article-pullquote {
+  border-left: 4px solid #ff8e43;
+  margin: 0 0 2.5rem;
+  padding: 0.35rem 0 0.35rem 1.5rem;
+  font-size: 22px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #2f4636;
+  max-width: 42rem;
+}
+
+.article-source {
+  margin-top: 2.5rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid #97ab86;
+  max-width: 46rem;
+}

@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { Link, useParams } from 'react-router-dom';
 import NavBar from '../Components/NavBar.jsx';
-import ArticlesSidebar from '../Components/ArticlesSidebar.jsx';
 import ArticleImage from '../Components/ArticleImage.jsx';
 import { getArticleBySlug, articles } from '../../data/articles.js';
 import BG from '../../assets/Universal/sideBackground.jpg';
@@ -25,7 +24,7 @@ const Article = () => {
         return (
             <>
                 <NavBar />
-                <div id='Articles'>
+                <div id='ArticlePage'>
                     <img src={BG} rel='norel' className='z-10 absolute h-[50vh] w-screen min-w-[1200px] object-cover lg:h-[40vh]' alt='none'/>
                     <div className='container'>
                         <div className='text-[70px] text-center pt-1'>
@@ -48,7 +47,7 @@ const Article = () => {
     return (
         <>
             <NavBar />
-            <div id='Articles'>
+            <div id='ArticlePage'>
                 <img src={BG} rel='norel' className='z-10 absolute h-[50vh] w-screen min-w-[1200px] object-cover lg:h-[40vh]' alt='none'/>
                 <div className='container'>
                     <div className='text-[70px] text-center pt-1'>
@@ -56,56 +55,69 @@ const Article = () => {
                             <h1 className='text-white relative z-10 backdrop-blur-sm'>Articles</h1>
                         </div>
                     </div>
-                    <div className='py-16 bg-[#97ab8623] backdrop-blur-sm shadow-xl'>
-                        <div className='flex flex-wrap'>
-                            <ArticlesSidebar />
-                            <div className='flex flex-col flex-1 px-10 pb-8 max-w-[820px]'>
-                                <Link to='/Articles' onClick={goTop} className='text-[15px] font-bold text-[#ff8e43] mb-6 w-fit hover:text-[#3E5C47]'>
-                                    ← All Articles
-                                </Link>
-                                <p className="text-[15px] font-bold text-[#323232] border-[#97ab86] border-solid rounded-full border-[1px] w-fit px-5 py-2 mb-6">
-                                    {article.date}
-                                </p>
-                                <h2 className='text-[36px] font-bold leading-tight mb-6'>
-                                    {article.title}
-                                </h2>
-                                <ArticleImage
-                                    src={article.image}
-                                    alt={article.imageAlt}
-                                    className='mb-8'
-                                />
-                                {article.sections.map((section) => (
-                                    <div key={section.heading} className='mb-8'>
-                                        <h3 className='text-[24px] font-bold mb-3 text-[#2f4636]'>
-                                            {section.heading}
-                                        </h3>
-                                        {section.paragraphs.map((paragraph) => (
-                                            <p key={paragraph} className='text-[16px] text-[#646464] font-medium leading-7 mb-4'>
-                                                {paragraph}
-                                            </p>
-                                        ))}
-                                    </div>
+                    <article className='article-page bg-[#f7f4f2] backdrop-blur-sm shadow-xl py-16 px-[6rem] mb-8'>
+                        <Link to='/Articles' onClick={goTop} className='text-[15px] font-bold text-[#ff8e43] mb-8 inline-block hover:text-[#3E5C47]'>
+                            ← All Articles
+                        </Link>
+                        <p className="text-[14px] font-bold tracking-[1px] uppercase text-[#97ab86] mb-4">
+                            {article.date} · {article.source.label}
+                        </p>
+                        <h2 className='text-[42px] font-bold leading-[1.15] mb-4 text-[#2f4636]'>
+                            {article.title}
+                        </h2>
+                        <p className='text-[20px] text-[#646464] font-medium leading-8 mb-8 max-w-[46rem]'>
+                            {article.dek}
+                        </p>
+                        <ArticleImage
+                            src={article.image}
+                            alt={article.imageAlt}
+                            className='article-hero-image mb-10'
+                        />
+                        <blockquote className='article-pullquote'>
+                            {article.pullQuote}
+                        </blockquote>
+                        {article.sections.map((section) => (
+                            <section key={section.heading} className='article-section'>
+                                <h3>
+                                    {section.heading}
+                                </h3>
+                                {section.paragraphs.map((paragraph) => (
+                                    <p key={paragraph}>
+                                        {paragraph}
+                                    </p>
                                 ))}
-                                {otherArticles.length > 0 && (
-                                    <div className='mt-4 pt-8 border-t border-[#97ab86]'>
-                                        <p className='text-[18px] font-bold mb-4'>Keep reading</p>
-                                        <div className='flex flex-col gap-3'>
-                                            {otherArticles.map((item) => (
-                                                <Link
-                                                    key={item.slug}
-                                                    to={`/Articles/${item.slug}`}
-                                                    onClick={goTop}
-                                                    className='text-[16px] font-medium text-[#ff8e43] hover:text-[#3E5C47]'
-                                                >
-                                                    {item.title} ➜
-                                                </Link>
-                                            ))}
-                                        </div>
-                                    </div>
-                                )}
-                            </div>
+                            </section>
+                        ))}
+                        <div className='article-source'>
+                            <p className='text-[14px] font-bold uppercase tracking-[1px] text-[#97ab86] mb-2'>Source</p>
+                            <p className='text-[15px] text-[#646464] font-medium leading-6 mb-3'>{article.source.citation}</p>
+                            <a
+                                href={article.source.url}
+                                target='_blank'
+                                rel='noreferrer'
+                                className='text-[15px] font-bold text-[#ff8e43] hover:text-[#3E5C47]'
+                            >
+                                Read the original ➜
+                            </a>
                         </div>
-                    </div>
+                        {otherArticles.length > 0 && (
+                            <div className='mt-12 pt-8 border-t border-[#97ab86]'>
+                                <p className='text-[18px] font-bold mb-4'>Keep reading</p>
+                                <div className='flex flex-col gap-3'>
+                                    {otherArticles.map((item) => (
+                                        <Link
+                                            key={item.slug}
+                                            to={`/Articles/${item.slug}`}
+                                            onClick={goTop}
+                                            className='text-[16px] font-medium text-[#ff8e43] hover:text-[#3E5C47]'
+                                        >
+                                            {item.title} ➜
+                                        </Link>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
+                    </article>
                 </div>
             </div>
         </>
