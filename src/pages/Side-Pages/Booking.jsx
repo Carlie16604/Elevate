@@ -95,8 +95,9 @@ const Booking = () => {
                                     <div className='mt-5'>
                                         <div className='flex flex-col gap-3'>
                                             {selectedDateInfo.classes.length > 0 ? (
+                                                <>
+                                                <p className='text-[16px] font-medium text-[#2f4636] text-center'>Select a class to book</p>
                                                 <ul className='flex flex-col gap-4 items-center'>
-                                                    <p className='text-[16px] font-medium text-[#2f4636]'>Select a class to book</p>
                                                     {selectedDateInfo.classes.map((cls) => (
                                                         <div
                                                             key={cls.id}
@@ -126,6 +127,7 @@ const Booking = () => {
                                                         </div>
                                                     ))}
                                                 </ul>
+                                                </>
                                             ) : (
                                                 <p className='text-center text-white text-[20px]'>No classes scheduled for this day.</p>
                                             )}
