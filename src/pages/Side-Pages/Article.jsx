@@ -68,11 +68,13 @@ const Article = () => {
                         <p className='text-[20px] text-[#646464] font-medium leading-8 mb-8 max-w-[46rem]'>
                             {article.dek}
                         </p>
-                        <ArticleImage
-                            src={article.image}
-                            alt={article.imageAlt}
-                            className='article-hero-image mb-10'
-                        />
+                        <div className='article-hero mb-10'>
+                            <ArticleImage
+                                src={article.image}
+                                alt={article.imageAlt}
+                                className='article-hero-image'
+                            />
+                        </div>
                         <blockquote className='article-pullquote'>
                             {article.pullQuote}
                         </blockquote>
