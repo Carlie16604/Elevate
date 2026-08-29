@@ -603,3 +603,55 @@ header .calendar-current-date {
   color: #000;
   bottom: 0;
 }
+
+.booking-class-card {
+  cursor: pointer;
+  transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+}
+
+.booking-class-card:hover {
+  transform: translateY(-2px);
+  border-color: #ff8e43;
+  box-shadow: 0 8px 20px rgba(255, 142, 67, 0.18);
+}
+
+/* Popup -------------------------------------------------------------------------- */
+
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(47, 70, 54, 0.45);
+  backdrop-filter: blur(6px);
+  padding: 1.5rem;
+}
+
+.popup-card {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  background: #f8f4f1;
+  border: 2.3px solid #97ab86;
+  border-radius: 40px;
+  box-shadow: 0 20px 50px rgba(47, 70, 54, 0.2);
+  padding: 3rem 2.5rem 2.5rem;
+}
+
+.popup-close {
+  position: absolute;
+  top: 0.85rem;
+  right: 1.15rem;
+  border: none;
+  background: transparent;
+  color: #2f4636;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.popup-close:hover {
+  color: #ff8e43;
+}
