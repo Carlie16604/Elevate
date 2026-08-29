@@ -22,19 +22,19 @@ const ArticlesHub = () => {
         <>
             <NavBar />
             <div id='ArticlesPage'>
-                <img src={BG} rel='norel' className='z-10 absolute h-[50vh] w-screen min-w-[1200px] object-cover lg:h-[40vh]' alt='none'/>
+                <img src={BG} rel='norel' className='z-10 absolute h-[40vh] w-full object-cover desktop:h-[50vh]' alt='none'/>
                 <div className='container'>
-                    <div className='text-[70px] text-center pt-1'>
-                        <div className='mt-60 mb-20 md:mt-40'>
+                    <div className='text-[42px] desktop:text-[70px] text-center pt-1'>
+                        <div className='mt-32 mb-10 desktop:mt-60 desktop:mb-20 md:mt-40'>
                             <h1 className='text-white relative z-10 backdrop-blur-sm'>Articles</h1>
                         </div>
                     </div>
-                    <div className='py-16 px-16 bg-[#97ab8623] backdrop-blur-sm shadow-xl mb-8'>
+                    <div className='py-8 px-4 desktop:py-16 desktop:px-16 bg-[#97ab8623] backdrop-blur-sm shadow-xl mb-8'>
                         <p className='relative text-[25px] mb-3 text-center'>Studio reading</p>
                         <span className='w-[50px] bg-[#ff8e43] h-[2.5px] mx-auto block mt-[-4px] mb-10'/>
                         <div className='flex flex-col gap-12'>
                             {articles.map((article) => (
-                                <article key={article.id} className='bg-[#f7f4f2] shadow-xl grid grid-cols-[1.1fr_1.4fr] gap-10 px-[2.5rem] py-[2.5rem] rounded-md rounded-br-[80px]'>
+                                <article key={article.id} className='bg-[#f7f4f2] shadow-xl grid grid-cols-1 lg:grid-cols-[1.1fr_1.4fr] gap-6 desktop:gap-10 px-6 desktop:px-[2.5rem] py-8 desktop:py-[2.5rem] rounded-md rounded-br-[80px]'>
                                     <ArticleImage
                                         src={article.image}
                                         alt={article.imageAlt}

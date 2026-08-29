@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react"
 import { HashRouter as Router, Routes, Route } from "react-router-dom"
 import './index.css'
 import Main from './pages/Main'
@@ -12,32 +11,9 @@ import Challenge from "./pages/Side-Pages/Challenge"
 import Footer from './pages/Components/Footer'
 
 const App = () => {
-
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 1200);
-    };
-
-    handleResize();
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
-
   return (
     <Router>
       <>
-      {isMobile && (
-        <div className='desktopMessage'>
-          <p>This is only available on desktop!</p>
-        </div>
-      )}
         <Routes>
           <Route path='/' element={<Main />}/>
           <Route path='/Booking' element={<Booking />}/>

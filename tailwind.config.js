@@ -7,6 +7,9 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        'desktop': '1200px',
+      },
       keyframes: {
         'slide-up': {
           '0%': { marginTop: '50%', height: '50%', opacity: '0'},

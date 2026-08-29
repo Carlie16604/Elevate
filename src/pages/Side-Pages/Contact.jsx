@@ -40,14 +40,14 @@ const Contact = () => {
         <>
         <NavBar />
             <section id='Contact'>
-                <img src={BG} rel='norel' className='z-10 absolute h-[50vh] w-screen min-w-[1200px] object-cover lg:h-[40vh]' alt='none'/>
+                <img src={BG} rel='norel' className='z-10 absolute h-[40vh] w-full object-cover desktop:h-[50vh]' alt='none'/>
                 <div className='container'>
-                    <div className='text-[70px] text-center pt-1'>
-                        <div className='mt-60 mb-20 md:mt-40'>
+                    <div className='text-[42px] desktop:text-[70px] text-center pt-1'>
+                        <div className='mt-32 mb-10 desktop:mt-60 desktop:mb-20 md:mt-40'>
                             <h1 className='text-white relative z-10 backdrop-blur-sm'>Contact</h1>
                         </div>
                     </div>
-                    <div className='pt-12 pb-[5rem] px-[7rem] grid grid-cols-2 items-center bg-[#97ab8623] backdrop-blur-sm shadow-xl'>
+                    <div className='pt-8 pb-12 px-4 desktop:pt-12 desktop:pb-[5rem] desktop:px-[7rem] grid grid-cols-1 lg:grid-cols-2 items-center bg-[#97ab8623] backdrop-blur-sm shadow-xl'>
                         <div>
                             <h2 className='text-[#ff8e43] text-[40px] font-bold leading-[1.2]'>
                                 We're here to help!
@@ -55,7 +55,7 @@ const Contact = () => {
                             <p className='text-[16px] w-[95%] font-medium my-[30px]'>
                                 Our mission is to help clients feel better by finding a balance of strength and flexibility in your body.
                             </p>
-                            <div className='grid grid-cols-2 grid-rows-2 gap-y-10'>
+                            <div className='grid grid-cols-1 sm:grid-cols-2 grid-rows-2 gap-y-10'>
                                 <div className='flex flex-col relative'>
                                     <h3 className='text-black text-[2rem] font-medium mb-10'>
                                         Boulder, CO
@@ -106,7 +106,7 @@ const Contact = () => {
                                 </div>
                             </div>
                         </div>
-                        <form className='flex flex-col mt-[6rem] pt-[30px] pb-[50px] pl-[45px] relative' onSubmit={handleSubmit}>
+                        <form className='flex flex-col mt-10 desktop:mt-[6rem] pt-[30px] pb-[50px] px-0 desktop:pl-[45px] relative' onSubmit={handleSubmit}>
                             <h3 className='text-[#000000] text-[28px] mb-14'>
                                 Get In Touch!
                             </h3>
