@@ -29,7 +29,7 @@ const ArticlesHub = () => {
                             <h1 className='text-white relative z-10 backdrop-blur-sm'>Articles</h1>
                         </div>
                     </div>
-                    <div className='py-16 px-16 bg-[#97ab8623] backdrop-blur-sm shadow-xl mb-8'>
+                    <div className='py-16 px-16 relative z-20 bg-[#97ab8623] backdrop-blur-sm shadow-xl mb-8'>
                         <p className='relative text-[25px] mb-3 text-center'>Studio reading</p>
                         <span className='w-[50px] bg-[#ff8e43] h-[2.5px] mx-auto block mt-[-4px] mb-10'/>
                         <div className='flex flex-col gap-12'>

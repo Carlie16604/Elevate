@@ -51,14 +51,14 @@ const Article = () => {
                 <img src={BG} rel='norel' className='z-10 absolute h-[50vh] w-screen min-w-[1200px] object-cover lg:h-[40vh]' alt='none'/>
                 <div className='container'>
                     <div className='text-[70px] text-center pt-1'>
-                        <div className='mt-60 mb-20 md:mt-40'>
+                        <div className='mt-60 mb-20 md:mt-40 relative z-10'>
                             <h1 className='text-white relative z-10 backdrop-blur-sm'>Articles</h1>
+                            <Link to='/Articles' onClick={goTop} className='article-back-link'>
+                                ← All Articles
+                            </Link>
                         </div>
                     </div>
-                    <article className='article-page bg-[#f7f4f2] backdrop-blur-sm shadow-xl py-16 px-[6rem] mb-8'>
-                        <Link to='/Articles' onClick={goTop} className='text-[15px] font-bold text-[#ff8e43] mb-8 inline-block hover:text-[#3E5C47]'>
-                            ← All Articles
-                        </Link>
+                    <article className='article-page relative z-20 bg-[#f7f4f2] backdrop-blur-sm shadow-xl py-16 px-[6rem] mb-8'>
                         <p className="text-[14px] font-bold tracking-[1px] uppercase text-[#97ab86] mb-4">
                             {article.date} · {article.source.label}
                         </p>

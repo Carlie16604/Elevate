@@ -727,3 +727,22 @@ header .calendar-current-date {
   border-top: 1px solid #97ab86;
   max-width: 46rem;
 }
+
+.article-back-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.55rem 1.4rem;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  border-radius: 400px;
+  background: transparent;
+}
+
+.article-back-link:hover {
+  color: #2f4636;
+  background: #fff;
+}
