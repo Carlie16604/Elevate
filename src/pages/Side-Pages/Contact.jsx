@@ -1,15 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import NavBar from '.././Components/NavBar';
+import Popup from '.././Components/Popup';
 import BG from '../../assets/Universal/sideBackground.jpg';
 import Facebook from '../../assets/Contact/facebook.svg';
 import Instagram from '../../assets/Contact/instagram.svg';
 import Linkedin from '../../assets/Contact/linkedin.svg';
 import Pintrest from '../../assets/Contact/pinterest.svg';
-const Contact = () => {
 
-    // https://www.npmjs.com/package/react-calendar
-    // https://github.com/wojtekmaj/react-calendar
-    // https://mantine.dev/ 
+const emptyContactForm = {
+    name: '',
+    email: '',
+    selectedClass: '',
+    comments: ''
+};
+
+const Contact = () => {
+    const [formData, setFormData] = useState(emptyContactForm);
+    const [showThanks, setShowThanks] = useState(false);
+
+    const handleChange = (event) => {
+        const { name, value } = event.target;
+        setFormData((previous) => ({
+            ...previous,
+            [name]: value
+        }));
+    };
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        setShowThanks(true);
+        setFormData(emptyContactForm);
+    };
+
+    const closeThanks = () => {
+        setShowThanks(false);
+    };
 
     return (
         <>
@@ -81,26 +106,66 @@ const Contact = () => {
                                 </div>
                             </div>
                         </div>
-                        <form className='flex flex-col mt-[6rem] pt-[30px] pb-[50px] pl-[45px] relative'>
+                        <form className='flex flex-col mt-[6rem] pt-[30px] pb-[50px] pl-[45px] relative' onSubmit={handleSubmit}>
                             <h3 className='text-[#000000] text-[28px] mb-14'>
                                 Get In Touch!
                             </h3>
                             <span className='bg-[#ff8b40] w-[50px] h-[4px] absolute top-[67.5px]'/>
-                            <input className='w-full py-[12px] px-[20px] h-[51px] text-[14px] bg-[#e0ddd9] outline-none mb-8 rounded-xl border-[2.3px] border-[#97ab86]' placeholder="Full Name" type='text'/> 
-                            <input className='w-full py-[12px] px-[20px] h-[51px] text-[14px] bg-[#e0ddd9] outline-none mb-8 rounded-xl border-[2.3px] border-[#97ab86]' placeholder="Email Address" type='email'/>
-                            <select className='w-full py-[12px] px-[20px] h-[51px] text-[14px] bg-[#e0ddd9] outline-none mb-8 rounded-xl border-[2.3px] border-[#97ab86]'>
-                                <option>Select Class</option>
-                                <option>Foundations</option>
-                                <option>Water</option>
-                                <option>Fire</option>
-                                <option>Air</option>
+                            <input
+                                className='w-full py-[12px] px-[20px] h-[51px] text-[14px] bg-[#e0ddd9] outline-none mb-8 rounded-xl border-[2.3px] border-[#97ab86]'
+                                placeholder="Full Name"
+                                type='text'
+                                name='name'
+                                value={formData.name}
+                                onChange={handleChange}
+                                required
+                            />
+                            <input
+                                className='w-full py-[12px] px-[20px] h-[51px] text-[14px] bg-[#e0ddd9] outline-none mb-8 rounded-xl border-[2.3px] border-[#97ab86]'
+                                placeholder="Email Address"
+                                type='email'
+                                name='email'
+                                value={formData.email}
+                                onChange={handleChange}
+                                required
+                            />
+                            <select
+                                className='w-full py-[12px] px-[20px] h-[51px] text-[14px] bg-[#e0ddd9] outline-none mb-8 rounded-xl border-[2.3px] border-[#97ab86]'
+                                name='selectedClass'
+                                value={formData.selectedClass}
+                                onChange={handleChange}
+                            >
+                                <option value=''>Select Class</option>
+                                <option value='Foundations'>Foundations</option>
+                                <option value='Water'>Water</option>
+                                <option value='Fire'>Fire</option>
+                                <option value='Air'>Air</option>
                             </select>
-                            <textarea className='w-full max-h-[12rem] py-[12px] px-[20px] h-[140px] text-[14px] bg-[#e0ddd9] outline-none mb-8 rounded-xl border-[2.3px] border-[#97ab86]' placeholder='Comments'/>
-                            <button className='py-3 px-5 w-fit self-center text-black bg-transparent border-2 rounded-[400px] border-[#ff8e43] inline-block text-[14px] tracking-[1px] cursor-pointer shadow-[inset_0_0_0_0_#ff8e43] transition-[box-shadow] ease-out duration-1000 hover:shadow-[inset_400px_0_0_0_#ff8e43] hover:text-white'>Submit</button>
+                            <textarea
+                                className='w-full max-h-[12rem] py-[12px] px-[20px] h-[140px] text-[14px] bg-[#e0ddd9] outline-none mb-8 rounded-xl border-[2.3px] border-[#97ab86]'
+                                placeholder='Comments'
+                                name='comments'
+                                value={formData.comments}
+                                onChange={handleChange}
+                            />
+                            <button type='submit' className='py-3 px-5 w-fit self-center text-black bg-transparent border-2 rounded-[400px] border-[#ff8e43] inline-block text-[14px] tracking-[1px] cursor-pointer shadow-[inset_0_0_0_0_#ff8e43] transition-[box-shadow] ease-out duration-1000 hover:shadow-[inset_400px_0_0_0_#ff8e43] hover:text-white'>Submit</button>
                         </form>
                     </div>
                 </div>
             </section>
+            <Popup isOpen={showThanks} onClose={closeThanks}>
+                <div className='text-center'>
+                    <h3 className='text-[#ff8e43] text-[32px] font-bold mb-3'>Thanks for contacting us!</h3>
+                    <p className='text-[16px] font-medium mb-8'>We'll be in touch.</p>
+                    <button
+                        type='button'
+                        onClick={closeThanks}
+                        className='py-3 px-8 text-black bg-transparent border-2 rounded-[400px] border-[#ff8e43] text-[14px] tracking-[1px] cursor-pointer shadow-[inset_0_0_0_0_#ff8e43] transition-[box-shadow] ease-out duration-1000 hover:shadow-[inset_400px_0_0_0_#ff8e43] hover:text-white'
+                    >
+                        Close
+                    </button>
+                </div>
+            </Popup>
         </>
     )
 }

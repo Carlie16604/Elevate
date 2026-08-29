@@ -2,14 +2,20 @@ import React, { useState, useEffect } from "react";
 import '../../index.css';
 import NavBar from '../Components/NavBar.jsx';
 import Calendar from '../Components/Calendar.jsx';
+import Popup from '../Components/Popup.jsx';
 import { schedule } from '../../data/schedule.js';
 import BG from '../../assets/Universal/sideBackground.jpg'
 
-// https://codepen.io/lmgonzalves/details/NyzKdr
-// also download animejs
-// implement this
+const emptyBookingForm = {
+    name: '',
+    email: ''
+};
+
 const Booking = () => {
     const [selectedDateInfo, setSelectedDateInfo] = useState({ date: null, classes: null });
+    const [selectedClass, setSelectedClass] = useState(null);
+    const [formData, setFormData] = useState(emptyBookingForm);
+    const [isBooked, setIsBooked] = useState(false);
 
     const getCurrentDay = () => {
         const daysOfWeek = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
@@ -28,6 +34,32 @@ const Booking = () => {
 
     const handleDateSelect = (date, classes) => {
         setSelectedDateInfo({ date, classes });
+    };
+
+    const openBookingPopup = (cls) => {
+        setSelectedClass(cls);
+        setFormData(emptyBookingForm);
+        setIsBooked(false);
+    };
+
+    const closeBookingPopup = () => {
+        setSelectedClass(null);
+        setFormData(emptyBookingForm);
+        setIsBooked(false);
+    };
+
+    const handleChange = (event) => {
+        const { name, value } = event.target;
+        setFormData((previous) => ({
+            ...previous,
+            [name]: value
+        }));
+    };
+
+    const handleBookingSubmit = (event) => {
+        event.preventDefault();
+        setIsBooked(true);
+        setFormData(emptyBookingForm);
     };
 
     return (
@@ -60,15 +92,24 @@ const Booking = () => {
                         <div className='mt-5'>
                             {selectedDateInfo.date ? (
                                 <>
-                                        {/* <h2 className='text-center text-black text-[30px] mb-6'>
-                                            Classes Available on <span className='text-[#ff8e43]'>{selectedDateInfo.date.charAt(0).toUpperCase() + selectedDateInfo.date.slice(1)}</span>
-                                        </h2> */}
                                     <div className='mt-5'>
                                         <div className='flex flex-col gap-3'>
                                             {selectedDateInfo.classes.length > 0 ? (
                                                 <ul className='flex flex-col gap-4 items-center'>
                                                     {selectedDateInfo.classes.map((cls) => (
-                                                        <div key={cls.id} className='flex justify-between py-[15px] px-[55px] bg-[#e0ddd9] border-[2.3px] border-[#b2b799] w-full max-w-[800px] rounded-[40px]'>
+                                                        <div
+                                                            key={cls.id}
+                                                            className='booking-class-card flex justify-between py-[15px] px-[55px] bg-[#e0ddd9] border-[2.3px] border-[#b2b799] w-full max-w-[800px] rounded-[40px]'
+                                                            onClick={() => openBookingPopup(cls)}
+                                                            role='button'
+                                                            tabIndex={0}
+                                                            onKeyDown={(event) => {
+                                                                if (event.key === 'Enter' || event.key === ' ') {
+                                                                    event.preventDefault();
+                                                                    openBookingPopup(cls);
+                                                                }
+                                                            }}
+                                                        >
                                                             <li className=''>
                                                                 <p className='text-[#ff8e43] text-[15px] min-w-[140px]'>Class Type:</p>
                                                                 <p className='text-[25px] font-medium'>{cls.type}</p>
@@ -100,6 +141,55 @@ const Booking = () => {
                         </div>
                     </div>
                 </div>
+            <Popup isOpen={Boolean(selectedClass)} onClose={closeBookingPopup}>
+                {isBooked ? (
+                    <div className='text-center'>
+                        <h3 className='text-[#ff8e43] text-[32px] font-bold mb-3'>You're booked!</h3>
+                        <p className='text-[16px] font-medium mb-8'>See you there.</p>
+                        <button
+                            type='button'
+                            onClick={closeBookingPopup}
+                            className='py-3 px-8 text-black bg-transparent border-2 rounded-[400px] border-[#ff8e43] text-[14px] tracking-[1px] cursor-pointer shadow-[inset_0_0_0_0_#ff8e43] transition-[box-shadow] ease-out duration-1000 hover:shadow-[inset_400px_0_0_0_#ff8e43] hover:text-white'
+                        >
+                            Close
+                        </button>
+                    </div>
+                ) : (
+                    <form className='flex flex-col' onSubmit={handleBookingSubmit}>
+                        <h3 className='text-[#000000] text-[28px] mb-2 text-center'>Book this class</h3>
+                        <span className='bg-[#ff8b40] w-[50px] h-[4px] mx-auto mb-6'/>
+                        {selectedClass && (
+                            <p className='text-center text-[16px] font-medium mb-6'>
+                                {selectedClass.type} · {selectedClass.time}
+                            </p>
+                        )}
+                        <input
+                            className='w-full py-[12px] px-[20px] h-[51px] text-[14px] bg-[#e0ddd9] outline-none mb-5 rounded-xl border-[2.3px] border-[#97ab86]'
+                            placeholder='Full Name'
+                            type='text'
+                            name='name'
+                            value={formData.name}
+                            onChange={handleChange}
+                            required
+                        />
+                        <input
+                            className='w-full py-[12px] px-[20px] h-[51px] text-[14px] bg-[#e0ddd9] outline-none mb-8 rounded-xl border-[2.3px] border-[#97ab86]'
+                            placeholder='Email Address'
+                            type='email'
+                            name='email'
+                            value={formData.email}
+                            onChange={handleChange}
+                            required
+                        />
+                        <button
+                            type='submit'
+                            className='py-3 px-8 w-fit self-center text-black bg-transparent border-2 rounded-[400px] border-[#ff8e43] text-[14px] tracking-[1px] cursor-pointer shadow-[inset_0_0_0_0_#ff8e43] transition-[box-shadow] ease-out duration-1000 hover:shadow-[inset_400px_0_0_0_#ff8e43] hover:text-white'
+                        >
+                            Submit
+                        </button>
+                    </form>
+                )}
+            </Popup>
         </>
     );
 };
