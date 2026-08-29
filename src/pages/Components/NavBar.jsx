@@ -35,11 +35,11 @@ const NavBar = () => {
                                 <Link to='/Contact' onClick={ goTop }>
                                     <div>Contact</div>
                                 </Link>
-                                {/* <a href='#Articles' >
-                                    <div>Articles</div>
-                                </a> */}
                                 <Link to='/Blog' onClick={ goTop }>
                                     <div>Blog</div>
+                                </Link>
+                                <Link to='/Articles' onClick={ goTop }>
+                                    <div>Articles</div>
                                 </Link>
                                 {/* <Link to='/Challenge' onClick={ goTop }>
                                     <div>Challenge</div>
@@ -63,6 +63,9 @@ const NavBar = () => {
                                 </Link>
                                 <Link to='/Blog' onClick={ goTop }>
                                     <div>Blog</div>
+                                </Link>
+                                <Link to='/Articles' onClick={ goTop }>
+                                    <div>Articles</div>
                                 </Link>
                                 {/* <Link to='/Challenge' onClick={ goTop }>
                                     <div>Challenge</div>

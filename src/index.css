@@ -655,3 +655,75 @@ header .calendar-current-date {
 .popup-close:hover {
   color: #ff8e43;
 }
+
+/* Articles -------------------------------------------------------------------------- */
+
+.article-image-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 280px;
+  width: 100%;
+  background: repeating-linear-gradient(
+    -45deg,
+    #e0ddd9,
+    #e0ddd9 12px,
+    #f7f4f2 12px,
+    #f7f4f2 24px
+  );
+  border: 2.3px dashed #97ab86;
+  border-radius: 24px;
+  color: #646464;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.article-hero-image.article-image-placeholder,
+.article-hero-image {
+  min-height: 360px;
+  border-radius: 24px;
+  object-fit: cover;
+}
+
+.article-card-image.article-image-placeholder {
+  min-height: 240px;
+  height: 100%;
+}
+
+.article-page {
+  max-width: 100%;
+}
+
+.article-section h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2f4636;
+  margin: 2.25rem 0 0.85rem;
+}
+
+.article-section p {
+  font-size: 17px;
+  color: #4a4a4a;
+  font-weight: 400;
+  line-height: 1.85;
+  margin-bottom: 1.15rem;
+  max-width: 46rem;
+}
+
+.article-pullquote {
+  border-left: 4px solid #ff8e43;
+  margin: 0 0 2.5rem;
+  padding: 0.35rem 0 0.35rem 1.5rem;
+  font-size: 22px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #2f4636;
+  max-width: 42rem;
+}
+
+.article-source {
+  margin-top: 2.5rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid #97ab86;
+  max-width: 46rem;
+}
