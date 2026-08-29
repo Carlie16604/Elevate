@@ -87,6 +87,12 @@ html, body, #root {
   justify-content: center;
 }
 
+.desktop-nav {
+  display: none;
+  justify-content: center;
+  flex: 1;
+}
+
 .menu-toggle {
   display: flex;
   flex-direction: column;
@@ -98,6 +104,17 @@ html, body, #root {
   border: none;
   background: transparent;
   cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+  .desktop-nav {
+    display: flex;
+  }
+
+  .menu-toggle,
+  .mobile-menu {
+    display: none;
+  }
 }
 
 .menu-toggle-bar {

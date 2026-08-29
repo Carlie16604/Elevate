@@ -33,13 +33,24 @@ const NavBar = () => {
         };
     }, [menuOpen]);
 
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth >= 1200) {
+                setMenuOpen(false);
+            }
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     return (
         <header className='site-header p-0 w-full fixed z-50 shadow-xl backdrop-blur-sm'>
             <div className='site-header-bar px-4 py-2 desktop:px-10'>
                 <Link to='/' onClick={goTop} className='site-logo'>
                     <img src={Logo} alt='Elevate Logo' className='h-12 desktop:h-[58px]'/>
                 </Link>
-                <nav className='hidden desktop:flex justify-center flex-1'>
+                <nav className='desktop-nav'>
                     <ul className='nav-desktop font-medium cursor-pointer text-xl'>
                         {links.map((link) => (
                             <Link key={link.to} to={link.to} onClick={goTop}>
@@ -50,7 +61,7 @@ const NavBar = () => {
                 </nav>
                 <button
                     type='button'
-                    className='menu-toggle desktop:hidden'
+                    className='menu-toggle'
                     onClick={() => setMenuOpen((open) => !open)}
                     aria-expanded={menuOpen}
                     aria-label={menuOpen ? 'Close menu' : 'Open menu'}
@@ -61,7 +72,7 @@ const NavBar = () => {
                 </button>
             </div>
             {menuOpen && (
-                <nav className='mobile-menu desktop:hidden' aria-label='Mobile'>
+                <nav className='mobile-menu' aria-label='Mobile'>
                     {links.map((link) => (
                         <Link key={link.to} to={link.to} onClick={goTop} className='mobile-menu-link'>
                             {link.label}
