@@ -655,3 +655,25 @@ header .calendar-current-date {
 .popup-close:hover {
   color: #ff8e43;
 }
+
+/* Articles -------------------------------------------------------------------------- */
+
+.article-image-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 280px;
+  width: 100%;
+  background: repeating-linear-gradient(
+    -45deg,
+    #e0ddd9,
+    #e0ddd9 12px,
+    #f7f4f2 12px,
+    #f7f4f2 24px
+  );
+  border: 2.3px dashed #97ab86;
+  border-radius: 24px;
+  color: #646464;
+  font-size: 16px;
+  font-weight: 500;
+}
