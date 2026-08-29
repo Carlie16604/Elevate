@@ -156,7 +156,7 @@ const Contact = () => {
             <Popup isOpen={showThanks} onClose={closeThanks}>
                 <div className='text-center'>
                     <h3 className='text-[#ff8e43] text-[32px] font-bold mb-3'>Thanks for contacting us!</h3>
-                    <p className='text-[16px] font-medium mb-8'>We'll be in touch.</p>
+                    <p className='text-[16px] font-medium mb-8'>{"We'll be in touch."}</p>
                     <button
                         type='button'
                         onClick={closeThanks}

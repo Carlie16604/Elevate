@@ -96,6 +96,7 @@ const Booking = () => {
                                         <div className='flex flex-col gap-3'>
                                             {selectedDateInfo.classes.length > 0 ? (
                                                 <ul className='flex flex-col gap-4 items-center'>
+                                                    <p className='text-[16px] font-medium text-[#2f4636]'>Select a class to book</p>
                                                     {selectedDateInfo.classes.map((cls) => (
                                                         <div
                                                             key={cls.id}
@@ -144,7 +145,7 @@ const Booking = () => {
             <Popup isOpen={Boolean(selectedClass)} onClose={closeBookingPopup}>
                 {isBooked ? (
                     <div className='text-center'>
-                        <h3 className='text-[#ff8e43] text-[32px] font-bold mb-3'>You're booked!</h3>
+                        <h3 className='text-[#ff8e43] text-[32px] font-bold mb-3'>{"You're booked!"}</h3>
                         <p className='text-[16px] font-medium mb-8'>See you there.</p>
                         <button
                             type='button'
