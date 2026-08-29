@@ -15,16 +15,16 @@ const Articles = () => {
         <section id='Articles' className='bg-[#ddedd065] border-2 border-[#97ab86]'>
             <div className='container py-16'>
                 <div className='flex flex-col text-center relative items-center'>
-                    <h2 className='text-[3.4rem] font-bold mb-4'>
+                    <h2 className='text-[2.2rem] desktop:text-[3.4rem] font-bold mb-4 px-4'>
                         Our Recent Articles
                     </h2>
                     <p className='text-[#646464] font-medium text-[15px] '>
                     Find out what we have going on in house <br/> with our news letter!
                     </p>
                 </div>
-                <div className='flex gap-12 w-full mt-[4rem] md1200:justify-center justify-center'>
+                <div className='flex flex-col desktop:flex-row gap-8 desktop:gap-12 w-full mt-[4rem] justify-center items-stretch px-4 desktop:px-0'>
                     {articles.map((article) => (
-                        <div key={article.id} className='bg-[#f7f4f2] w-[30rem] min460:w-[100%] shadow-xl flex flex-col px-[2.5rem] py-[2.5rem] rounded-md rounded-br-[150px]'>
+                        <div key={article.id} className='bg-[#f7f4f2] w-full desktop:w-[30rem] shadow-xl flex flex-col px-6 desktop:px-[2.5rem] py-[2.5rem] rounded-md rounded-br-[80px] desktop:rounded-br-[150px]'>
                             <p className="text-[15px] font-bold text-[#323232] border-[#97ab86] border-solid rounded-full border-[1px] w-fit px-5 py-2 mb-6">
                                 {article.date}
                             </p>

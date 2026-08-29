@@ -15,30 +15,27 @@ const Home = () => {
     return (
         <>
         <NavBar />
-            <section id='Home' className='radial-gradient border-2 border-[#97ab86]'>
-                <img src={Studio} alt="studio img" rel='norel' className='z-8 absolute h-[95vh] overflow-hidden w-screen min-w-[1200px] object-cover '/>
-                <div className='container h-screen'>
+            <section id='Home' className='radial-gradient border-2 border-[#97ab86] relative overflow-hidden'>
+                <img src={Studio} alt="studio img" rel='norel' className='z-8 absolute h-[95vh] overflow-hidden w-full object-cover'/>
+                <div className='container min-h-screen h-auto pb-16 desktop:h-screen desktop:pb-0'>
                     <div className='flex flex-wrap '>
-                        <div className='grid grid-cols-2 items-center pt-[250px] relative'>
+                        <div className='grid grid-cols-1 desktop:grid-cols-2 items-center pt-32 desktop:pt-[250px] relative'>
                             <div>
-                                <div className='elevate-card top-32 '>
+                                <div className='elevate-card top-8 desktop:top-32 '>
                                     <h1 className='elevate-card__title'>Elevate</h1>
                                 </div>
-                                <h3 className='text-[20px] text-black font-medium uppercase animate-slide-up'>
+                                <h3 className='text-[16px] desktop:text-[20px] text-black font-medium uppercase animate-slide-up'>
                                     <span className='text-[#f36943]'>Award Winning </span>Pilates Instructors
                                 </h3>
-                                <h3 className='pt-[8.5rem] text-[35px] pb-8 text-black font-medium animate-slide-up'>
+                                <h3 className='pt-8 desktop:pt-[8.5rem] text-[26px] desktop:text-[35px] pb-8 text-black font-medium animate-slide-up'>
                                     Regaining <span className='text-[#ff8e43]'>shape,</span><br/>Relearning <span className='text-[#ff8e43]'>you.</span>
                                 </h3>
-                                {/* <p className='pt-2 pb-10'>
-                                    Pilates is a renowned Pilates studio dedicated to helping individuals achieve their fitness goals based in Boulder, CO. We host expertly crafted training along with empowering instructors. 
-                                </p> */}
-                                <Link to='/Contact' className='text-black border-4 rounded-[400px] border-[#97ab87] px-10 py-5 inline-block text-[19px] tracking-[1px] cursor-pointer shadow-[inset_0_0_0_0_#97ab86] transition-[box-shadow] ease-out duration-1000 hover:shadow-[inset_400px_0_0_0_#97ab86] hover:text-white z-10'>
+                                <Link to='/Contact' className='text-black border-4 rounded-[400px] border-[#97ab87] px-6 py-3 desktop:px-10 desktop:py-5 inline-block text-[16px] desktop:text-[19px] tracking-[1px] cursor-pointer shadow-[inset_0_0_0_0_#97ab86] transition-[box-shadow] ease-out duration-1000 hover:shadow-[inset_400px_0_0_0_#97ab86] hover:text-white z-10'>
                                     Let's Talk About Your Health!
                                 </Link>
                             </div>
                         </div>
-                        <div className='z-10 blur flex flex-row-reverse -rotate-90 text-black absolute top-1/2 right-3 items-center min800:hidden'>
+                        <div className='z-10 blur hidden desktop:flex flex-row-reverse -rotate-90 text-black absolute top-1/2 right-3 items-center'>
                             <p className='capitalize text-3xl font-bold tracking-wider'>
                                 share
                             </p>

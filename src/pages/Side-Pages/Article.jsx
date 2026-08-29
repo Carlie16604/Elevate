@@ -25,10 +25,10 @@ const Article = () => {
             <>
                 <NavBar />
                 <div id='ArticlePage'>
-                    <img src={BG} rel='norel' className='z-10 absolute h-[50vh] w-screen min-w-[1200px] object-cover lg:h-[40vh]' alt='none'/>
+                    <img src={BG} rel='norel' className='z-10 absolute h-[40vh] w-full object-cover desktop:h-[50vh]' alt='none'/>
                     <div className='container'>
-                        <div className='text-[70px] text-center pt-1'>
-                            <div className='mt-60 mb-20 md:mt-40'>
+                        <div className='text-[42px] desktop:text-[70px] text-center pt-1'>
+                            <div className='mt-32 mb-10 desktop:mt-60 desktop:mb-20 md:mt-40'>
                                 <h1 className='text-white relative z-10 backdrop-blur-sm'>Articles</h1>
                             </div>
                         </div>
@@ -48,21 +48,21 @@ const Article = () => {
         <>
             <NavBar />
             <div id='ArticlePage'>
-                <img src={BG} rel='norel' className='z-10 absolute h-[50vh] w-screen min-w-[1200px] object-cover lg:h-[40vh]' alt='none'/>
+                <img src={BG} rel='norel' className='z-10 absolute h-[40vh] w-full object-cover desktop:h-[50vh]' alt='none'/>
                 <div className='container'>
-                    <div className='text-[70px] text-center pt-1'>
-                        <div className='mt-60 mb-20 md:mt-40'>
+                    <div className='text-[42px] desktop:text-[70px] text-center pt-1'>
+                        <div className='mt-32 mb-10 desktop:mt-60 desktop:mb-20 md:mt-40'>
                             <h1 className='text-white relative z-10 backdrop-blur-sm'>Articles</h1>
                         </div>
                     </div>
-                    <article className='article-page bg-[#f7f4f2] backdrop-blur-sm shadow-xl py-16 px-[6rem] mb-8'>
+                    <article className='article-page bg-[#f7f4f2] backdrop-blur-sm shadow-xl py-8 px-5 desktop:py-16 desktop:px-[6rem] mb-8'>
                         <Link to='/Articles' onClick={goTop} className='text-[15px] font-bold text-[#ff8e43] mb-8 inline-block hover:text-[#3E5C47]'>
                             ← All Articles
                         </Link>
                         <p className="text-[14px] font-bold tracking-[1px] uppercase text-[#97ab86] mb-4">
                             {article.date} · {article.source.label}
                         </p>
-                        <h2 className='text-[42px] font-bold leading-[1.15] mb-4 text-[#2f4636]'>
+                        <h2 className='text-[28px] desktop:text-[42px] font-bold leading-[1.15] mb-4 text-[#2f4636]'>
                             {article.title}
                         </h2>
                         <p className='text-[20px] text-[#646464] font-medium leading-8 mb-8 max-w-[46rem]'>

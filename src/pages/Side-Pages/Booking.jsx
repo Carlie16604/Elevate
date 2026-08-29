@@ -66,15 +66,15 @@ const Booking = () => {
         <>
         <NavBar />
             <div id='Booking'>
-                <img src={BG} rel='norel' className='z-10 absolute h-[50vh] w-screen min-w-[1200px] object-cover lg:h-[40vh]' alt='none'/>
+                <img src={BG} rel='norel' className='z-10 absolute h-[40vh] w-full object-cover desktop:h-[50vh]' alt='none'/>
                 <div className='container'>
-                    <div className='text-[70px] text-center pt-1'>
-                        <div className='mt-60 mb-20 md:mt-40'>
+                    <div className='text-[42px] desktop:text-[70px] text-center pt-1'>
+                        <div className='mt-32 mb-10 desktop:mt-60 desktop:mb-20 md:mt-40'>
                             <h1 className='z-10 text-white relative backdrop-blur-sm'>Booking</h1>
                         </div>
                     </div>
                     <div className='bg-[#97ab8623] backdrop-blur-sm shadow-xl py-0 pt-[.15rem]'>
-                        <div className='flex flex-wrap gap-4 justify-center mt-48 pb-4'>
+                        <div className='flex flex-wrap gap-3 justify-center mt-16 desktop:mt-48 pb-4 px-3'>
                             {schedule.map((daySchedule) => (
                                 <button
                                     key={daySchedule.id}
@@ -101,7 +101,7 @@ const Booking = () => {
                                                     {selectedDateInfo.classes.map((cls) => (
                                                         <div
                                                             key={cls.id}
-                                                            className='booking-class-card flex justify-between py-[15px] px-[55px] bg-[#e0ddd9] border-[2.3px] border-[#b2b799] w-full max-w-[800px] rounded-[40px]'
+                                                            className='booking-class-card flex flex-col md:flex-row justify-between py-4 px-6 desktop:py-[15px] desktop:px-[55px] bg-[#e0ddd9] border-[2.3px] border-[#b2b799] w-[calc(100%-1.5rem)] max-w-[800px] rounded-[40px]'
                                                             onClick={() => openBookingPopup(cls)}
                                                             role='button'
                                                             tabIndex={0}
@@ -113,16 +113,16 @@ const Booking = () => {
                                                             }}
                                                         >
                                                             <li className=''>
-                                                                <p className='text-[#ff8e43] text-[15px] min-w-[140px]'>Class Type:</p>
-                                                                <p className='text-[25px] font-medium'>{cls.type}</p>
+                                                                <p className='text-[#ff8e43] text-[15px] md:min-w-[140px]'>Class Type:</p>
+                                                                <p className='text-[20px] desktop:text-[25px] font-medium'>{cls.type}</p>
                                                             </li>
                                                             <li>
-                                                                <p className='text-[#ff8e43] text-[15px] text-center min-w-[205.98px]'>Time</p>
-                                                                <p className='text-[25px] font-medium'>{cls.time}</p>
+                                                                <p className='text-[#ff8e43] text-[15px] text-center md:min-w-[205.98px]'>Time</p>
+                                                                <p className='text-[20px] desktop:text-[25px] font-medium'>{cls.time}</p>
                                                             </li>
                                                             <li className='text-center'>
-                                                                <p className='text-[#ff8e43] text-[15px] min-w-[148px]'>Instructor</p>
-                                                                <p className='text-[25px] font-medium'>{cls.instructor}</p>
+                                                                <p className='text-[#ff8e43] text-[15px] md:min-w-[148px]'>Instructor</p>
+                                                                <p className='text-[20px] desktop:text-[25px] font-medium'>{cls.instructor}</p>
                                                             </li>
                                                         </div>
                                                     ))}
@@ -138,7 +138,7 @@ const Booking = () => {
                                 <p className='text-center text-white text-[20px] mt-6'>Please select a day to view the schedule.</p>
                             )}
                         </div>
-                        <div className='flex justify-center py-12'>
+                        <div className='flex justify-center py-8 desktop:py-12 px-3'>
                             <Calendar schedule={schedule} />
                         </div>
                         </div>

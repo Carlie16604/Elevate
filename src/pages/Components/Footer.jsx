@@ -10,8 +10,8 @@ const Footer = () => {
         <>
             <div className='bg-[#97ab86] opacity-[75%] z-[-1] py-[5rem] w-full cursor-default'>
                 <div className='container px-8'>
-                    <div className='flex justify-between min620:flex-col min620:items-center min620:text-center min620:gap-[5rem]'>
-                        <div className='flex flex-col w-[50%] gap-4'>
+                    <div className='flex flex-col desktop:flex-row desktop:justify-between gap-12 desktop:gap-8 min620:flex-col min620:items-center min620:text-center'>
+                        <div className='flex flex-col w-full desktop:w-[50%] gap-4'>
                             <p className='text-[25px] font-bold'>Studio Policies</p>
                             <p className='text-[25px] font-bold'>FAQs</p>
                             <p className="text-[18px] color-[#000] font-medium opacity-100">
