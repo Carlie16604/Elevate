@@ -1,3 +1,7 @@
+import Pregnancy from '../assets/Articles/pregnant-pilates-1296x728-header.jpg';
+import Instructor from '../assets/Articles/instructor.jpg';
+import PilatesDance from '../assets/Articles/pilates-dance.jpg';
+
 export const articles = [
     {
         id: 1,
@@ -10,7 +14,7 @@ export const articles = [
             { text: 'Pilates and Mothers.', highlight: true },
             { text: ' Pilates exercise during pregnancy prepares a woman for labor.' }
         ],
-        image: null,
+        image: Pregnancy,
         imageAlt: 'Prenatal Pilates at Elevate',
         pullQuote: 'Compared with standard care, structured prenatal Pilates significantly alleviates musculoskeletal pain and disability while also enhancing psychological status.',
         source: {
@@ -61,7 +65,7 @@ export const articles = [
             { text: 'mind-body workout', highlight: true },
             { text: ' routine—helps boost core strength, improve posture and make muscles more stable.' }
         ],
-        image: null,
+        image: PilatesDance,
         imageAlt: 'Pilates health benefits at Elevate',
         pullQuote: 'Participants who practiced Pilates once a week for three months showed significant reductions in anxiety, depression, and somatization compared with inactive controls.',
         source: {
@@ -114,7 +118,7 @@ export const articles = [
             { text: 'dedicated ambassador', highlight: true },
             { text: ' who is passionate about helping others reach their fitness goals.' }
         ],
-        image: null,
+        image: Instructor,
         imageAlt: 'Instructor Kayla at Elevate',
         pullQuote: 'Kayla walked in and just got it — the way we teach, the way we want people to feel.',
         source: {
